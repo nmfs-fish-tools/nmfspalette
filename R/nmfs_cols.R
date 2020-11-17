@@ -1,4 +1,4 @@
-noaa_fisheries_colors <- c(
+nmfs_colors <- c(
   "process_blue" = "#0093D0",
   "reflex_blue" = "#0055A4",
   "PMS_541" = "#00467FF",
