@@ -84,6 +84,7 @@ nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
 #'  p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #'  geom_point(size = 4) +
 #'    scale_color_nmfs("coral")
+#'@export
 scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
   pal <- nmfs_palette(palette = palette, reverse = reverse)
   
@@ -106,6 +107,7 @@ scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALS
 #'  geom_bar() +
 #'    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
 #'    scale_fill_nmfs(palette = "crustacean", discrete=FALSE)
+#'@export
 scale_fill_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
   pal <- nmfs_palette(palette = palette, reverse = reverse)
   
