@@ -22,6 +22,10 @@ plot_fun_fill <- function(palette_name = NULL){
 }
 
 test_that("color works", {
+  #check that a non color returns NA
+  p <- nmfs_cols("foo")
+  expect_true(is.na(p))
+  
   #Check that it plots for a real color
   p <- plot_fun("process_blue")
   expect_true(is.ggplot(p))
