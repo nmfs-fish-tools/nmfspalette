@@ -1,3 +1,5 @@
+library(ggplot2)
+
 plot_fun <- function(color_name){
   p<-ggplot(mtcars, aes(hp, mpg)) +
   geom_point(color = nmfs_cols(color_name),
