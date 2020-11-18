@@ -1,5 +1,31 @@
 # nmfspalette
 an R color palette for `ggplot2` using NOAA Fisheries official colors
+**************
+This implements these [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) to create a `ggplot2` compatible palette according to NOAA Fisheries branding.
+
+To install from Github use the following:
+```{r}
+remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+library(nmfspalette)
+```
+
+Examples using the built-in color palettes. These are named oceans (default), waves, seagrass, urchin, coral, regional web, and secondary.
+```{r}
+#Extract an interpolated color palette from the defaule "oceans" palette
+nmfs_palette("oceans")(10)
+
+#If no argument is given to scale_color_nmfs(), default "oceans" is used
+p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+     geom_point(size = 4) +
+     scale_color_nmfs()
+p
+
+#scale_fill_nmfs requires a named argument for now, this is an example using the crustacean palette
+ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
+    geom_bar() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+    scale_fill_nmfs(palette = "crustacean", discrete=FALSE)
+````
 
 **************
 
