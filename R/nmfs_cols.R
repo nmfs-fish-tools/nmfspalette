@@ -49,7 +49,13 @@ nmfs_palettes <- list(
   
   `crustacean`  = nmfs_cols("PMS_151", "PMS_717", "PMS_1525", "dk_gray_1"),
   
-  `coral` = nmfs_cols("warm_red", "PMS_711", "PMS_1805", "dk_gray_2")
+  `coral` = nmfs_cols("warm_red", "PMS_711", "PMS_1805", "dk_gray_2"),
+  
+  `regional web` = nmfs_cols("PMS_541", "PMS_321","PMS_356","PMS_2725","PMS_717","PMS_1805"),
+  
+  "secondary" = nmfs_cols("PMS_322", "PMS_362", "PMS_7670", "dk_gray_2")
+  
+  
 )
 
 #' Return function to interpolate a nmfs color palette
