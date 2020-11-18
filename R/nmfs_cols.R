@@ -1,14 +1,14 @@
 nmfs_colors <- c(
   "process_blue" = "#0093D0",
   "reflex_blue" = "#0055A4",
-  "PMS_541" = "#00467FF",
+  "PMS_541" = "#00467F",
   "PMS_319" = "#1ECAD3",
   "PMS_321" = "#008998",
   "PMS_322" = "#007078",
   "PMS_375" = "#93D500",
   "PMS_362" = "#4C9C2E",
   "PMS_356" = "#007934",
-  "Custom" = "#7F7FFF",
+  "custom" = "#7F7FFF",
   "PMS_2725" = "#625BC4",
   "PMS_7670" = "#575195",
   "PMS_151" = "#FF8300",
@@ -58,7 +58,7 @@ nmfs_palettes <- list(
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments to pass to colorRampPalette()
 #'
-nmfs_palette <- function(palette = "main", reverse = FALSE, ...) {
+nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
   pal <- nmfs_palettes[[palette]]
   
   if (reverse) pal <- rev(pal)
@@ -74,7 +74,7 @@ nmfs_palette <- function(palette = "main", reverse = FALSE, ...) {
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
 #'
-scale_color_nmfs <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
+scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
   pal <- nmfs_palette(palette = palette, reverse = reverse)
   
   if (discrete) {
@@ -92,7 +92,7 @@ scale_color_nmfs <- function(palette = "main", discrete = TRUE, reverse = FALSE,
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
 #'
-scale_fill_nmfs <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
+scale_fill_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
   pal <- nmfs_palette(palette = palette, reverse = reverse)
   
   if (discrete) {
