@@ -28,7 +28,7 @@ nmfs_colors <- c(
 #' Function to extract nmfs colors as hex codes
 #'
 #' @param ... Character names of nmfs_colors 
-#' @example nmfs_cols("process_blue")
+#' @examples nmfs_cols("process_blue")
 nmfs_cols <- function(...) {
   cols <- c(...)
   
@@ -63,7 +63,7 @@ nmfs_palettes <- list(
 #' @param palette Character name of palette in nmfs_palettes
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments to pass to colorRampPalette()
-#' @example 
+#' @examples 
 #' nmfs_palette("oceans")(10)
 nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
   pal <- nmfs_palettes[[palette]]

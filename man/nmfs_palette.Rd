@@ -16,3 +16,6 @@ nmfs_palette(palette = "oceans", reverse = FALSE, ...)
 \description{
 Return function to interpolate a nmfs color palette
 }
+\examples{
+nmfs_palette("oceans")(10)
+}

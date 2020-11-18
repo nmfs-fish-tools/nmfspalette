@@ -12,3 +12,6 @@ nmfs_cols(...)
 \description{
 Function to extract nmfs colors as hex codes
 }
+\examples{
+nmfs_cols("process_blue")
+}
