@@ -18,6 +18,7 @@ plot_fun_fill <- function(palette_name = NULL){
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     scale_fill_nmfs(palette = palette_name, discrete=FALSE)
+  return(p)
 }
 
 test_that("color works", {

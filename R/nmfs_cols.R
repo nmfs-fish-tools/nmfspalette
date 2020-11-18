@@ -28,7 +28,7 @@ nmfs_colors <- c(
 #' Function to extract nmfs colors as hex codes
 #'
 #' @param ... Character names of nmfs_colors 
-#'
+#' @example nmfs_cols("process_blue")
 nmfs_cols <- function(...) {
   cols <- c(...)
   
@@ -57,7 +57,8 @@ nmfs_palettes <- list(
 #' @param palette Character name of palette in nmfs_palettes
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments to pass to colorRampPalette()
-#'
+#' @example 
+#' nmfs_palette("oceans")(10)
 nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
   pal <- nmfs_palettes[[palette]]
   
@@ -73,7 +74,10 @@ nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
-#'
+#'@examples
+#'  p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#'  geom_point(size = 4) +
+#'    scale_color_nmfs("coral")
 scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
   pal <- nmfs_palette(palette = palette, reverse = reverse)
   
@@ -91,7 +95,11 @@ scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALS
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
-#'
+#'@examples
+#'  ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
+#'  geom_bar() +
+#'    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+#'    scale_fill_nmfs(palette = "crustacean", discrete=FALSE)
 scale_fill_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
   pal <- nmfs_palette(palette = palette, reverse = reverse)
   
