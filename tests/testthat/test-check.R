@@ -55,11 +55,22 @@ test_that("scale_color works",{
   #Check that it fails with non-name
   expect_error(plot_fun_scale("foo"))
   
+  #Check default works
+  p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+    geom_point(size = 4) +
+    scale_color_nmfs()
+  expect_true(is.ggplot(p))
 })
 
 test_that("scale_fill works",{
   #Check default
   i <- plot_fun_fill("urchin")
+  expect_true(is.ggplot(i))
+  
+  p <- ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
+    geom_bar() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+    scale_fill_nmfs()
   expect_true(is.ggplot(i))
 
   })
