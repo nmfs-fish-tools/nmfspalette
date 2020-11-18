@@ -10,17 +10,21 @@ library(nmfspalette)
 ```
 
 Examples using the built-in color palettes. These are named oceans (default), waves, seagrass, urchin, coral, regional web, and secondary.
-```S
-#Extract an interpolated color palette from the defaule "oceans" palette
-nmfs_palette("oceans")(10)
 
-#If no argument is given to scale_color_nmfs(), default "oceans" is used
+#Extract an interpolated color palette from the default "oceans" palette
+```S
+nmfs_palette("oceans")(10)
+```
+If no argument is given to scale_color_nmfs(), default "oceans" is used
+```S
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
      geom_point(size = 4) +
      scale_color_nmfs()
 p
+```
 
-#scale_fill_nmfs requires a named argument for now, this is an example using the crustacean palette
+`scale_fill_nmfs` requires a named argument for now, this is an example using the crustacean palette
+```S
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
