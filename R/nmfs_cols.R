@@ -78,14 +78,16 @@ nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
 #'
 #' @param name Character name of palette in nmfs_palettes 
 #' @param n Number of colors in palette
+#' @param ... Additiontal arguments to pass to image()
 #' @examples 
 #' display_nmfs_palette("oceans", 10)
 #' @export
-display_nmfs_palette <- function(name, n) {
+display_nmfs_palette <- function(name, n, ...) {
   pal <- nmfs_palette(name)(n)
   image(1:n, 1, as.matrix(1:n), col = pal, 
                xlab = paste(name), ylab = "", xaxt = "n", 
-               yaxt = "n", bty = "n")
+               yaxt = "n", bty = "n", ...)
+  box()
 }
 
 
