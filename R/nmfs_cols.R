@@ -30,6 +30,7 @@ nmfs_colors <- c(
 #' @param ... Character names of nmfs_colors 
 #' @examples 
 #' nmfs_cols("process_blue")
+#' @export
 nmfs_cols <- function(...) {
   cols <- c(...)
   
