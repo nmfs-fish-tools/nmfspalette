@@ -1,7 +1,5 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-    ## Loading required package: ggplot2
-
 # nmfspalette
 
 an R color palette for `ggplot2` using NOAA Fisheries official colors
@@ -20,11 +18,11 @@ To install from Github use the following:
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
 #> 
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpM7nAT9\remotes8447344690e\nmfs-general-modeling-tools-nmfspalette-f588bc3/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpM7nAT9\remotes8447344690e\nmfs-general-modeling-tools-nmfspalette-f588bc3/DESCRIPTION' (495ms)
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp4kCrBb\remotes89c29e71be8\nmfs-general-modeling-tools-nmfspalette-dc1d2f2/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp4kCrBb\remotes89c29e71be8\nmfs-general-modeling-tools-nmfspalette-dc1d2f2/DESCRIPTION' (907ms)
 #>       -  preparing 'nmfspalette':
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
 #>       -  checking for LF line-endings in source and make files and shell scripts
-#>   -  checking for empty or unneeded directories
+#>       -  checking for empty or unneeded directories
 #>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
 #>      
 #> 
