@@ -17,15 +17,6 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
-#> 
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp8gK5Yj\remotes1f78739572d1\nmfs-general-modeling-tools-nmfspalette-f45001f/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp8gK5Yj\remotes1f78739572d1\nmfs-general-modeling-tools-nmfspalette-f45001f/DESCRIPTION' (395ms)
-#>       -  preparing 'nmfspalette':
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
-#>       -  checking for LF line-endings in source and make files and shell scripts
-#>       -  checking for empty or unneeded directories
-#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
-#>      
-#> 
 library(nmfspalette)
 ```
 
@@ -50,7 +41,7 @@ To see the palettes, use the `display_nmfs_palette()` function.
 nmfspalette::display_nmfs_palette("oceans", 4)
 ```
 
-![](figure/unnamed-chunk-3-1.png)<!-- -->
+![](figure/displ_oceans-1.png)<!-- -->
 
 ### waves
 
@@ -58,7 +49,7 @@ nmfspalette::display_nmfs_palette("oceans", 4)
 nmfspalette::display_nmfs_palette("waves", 4)
 ```
 
-![](figure/unnamed-chunk-4-1.png)<!-- -->
+![](figure/displ_waves-1.png)<!-- -->
 
 ### seagrass
 
@@ -66,7 +57,7 @@ nmfspalette::display_nmfs_palette("waves", 4)
 nmfspalette::display_nmfs_palette("seagrass", 4)
 ```
 
-![](figure/unnamed-chunk-5-1.png)<!-- -->
+![](figure/displ_seagrass-1.png)<!-- -->
 
 ### urchin
 
@@ -74,7 +65,7 @@ nmfspalette::display_nmfs_palette("seagrass", 4)
 nmfspalette::display_nmfs_palette("urchin", 4)
 ```
 
-![](figure/unnamed-chunk-6-1.png)<!-- -->
+![](figure/displ_urchin-1.png)<!-- -->
 
 ### crustacean
 
@@ -82,7 +73,7 @@ nmfspalette::display_nmfs_palette("urchin", 4)
 nmfspalette::display_nmfs_palette("crustacean", 4)
 ```
 
-![](figure/unnamed-chunk-7-1.png)<!-- -->
+![](figure/displ_crustacean-1.png)<!-- -->
 
 ### coral
 
@@ -90,7 +81,7 @@ nmfspalette::display_nmfs_palette("crustacean", 4)
 nmfspalette::display_nmfs_palette("coral", 4)
 ```
 
-![](figure/unnamed-chunk-8-1.png)<!-- -->
+![](figure/displ_coral-1.png)<!-- -->
 
 ### regional web (discrete)
 
@@ -98,7 +89,7 @@ nmfspalette::display_nmfs_palette("coral", 4)
 nmfspalette::display_nmfs_palette("regional web", 6)
 ```
 
-![](figure/unnamed-chunk-9-1.png)<!-- -->
+![](figure/displ_regional_web-1.png)<!-- -->
 
 ### secondary (discrete)
 
@@ -106,7 +97,7 @@ nmfspalette::display_nmfs_palette("regional web", 6)
 nmfspalette::display_nmfs_palette("secondary", 4)
 ```
 
-![](figure/unnamed-chunk-10-1.png)<!-- -->
+![](figure/displ_secondary-1.png)<!-- -->
 
 ## Examples
 
