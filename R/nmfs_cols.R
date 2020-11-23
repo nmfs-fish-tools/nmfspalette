@@ -65,6 +65,7 @@ nmfs_palettes <- list(
 #' @param ... Additional arguments to pass to colorRampPalette()
 #' @examples 
 #' nmfs_palette("oceans")(10)
+#' @export
 nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
   pal <- nmfs_palettes[[palette]]
   
@@ -79,6 +80,7 @@ nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
 #' @param n Number of colors in palette
 #' @examples 
 #' display_nmfs_palette("oceans", 10)
+#' @export
 display_nmfs_palette <- function(name, n) {
   pal <- nmfs_palette(name)(n)
   image(1:n, 1, as.matrix(1:n), col = pal, 
