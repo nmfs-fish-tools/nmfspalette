@@ -21,6 +21,15 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+#> 
+#>       v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmpc3C9xW\remotesd4c4aa45765\nmfs-general-modeling-tools-nmfspalette-6bd5e1a/DESCRIPTION' (430ms)
+#>       -  preparing 'nmfspalette':
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
+#>       -  checking for LF line-endings in source and make files and shell scripts
+#>       -  checking for empty or unneeded directories
+#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
+#>      
+#> 
 library(nmfspalette)
 ```
 
@@ -39,13 +48,69 @@ nmfspalette::nmfs_palette("oceans")(10)
 
 To see the palettes, use the `display_nmfs_palette()` function.
 
+### oceans
+
 ``` r
 nmfspalette::display_nmfs_palette("oceans", 4)
 ```
 
 ![](figure/unnamed-chunk-3-1.png)<!-- -->
 
-## Examples
+### waves
+
+``` r
+nmfspalette::display_nmfs_palette("waves", 4)
+```
+
+![](figure/unnamed-chunk-4-1.png)<!-- -->
+
+### seagrass
+
+``` r
+nmfspalette::display_nmfs_palette("seagrass", 4)
+```
+
+![](figure/unnamed-chunk-5-1.png)<!-- -->
+
+### urchin
+
+``` r
+nmfspalette::display_nmfs_palette("urchin", 4)
+```
+
+![](figure/unnamed-chunk-6-1.png)<!-- -->
+
+### crustacean
+
+``` r
+nmfspalette::display_nmfs_palette("crustacean", 4)
+```
+
+![](figure/unnamed-chunk-7-1.png)<!-- -->
+
+### coral
+
+``` r
+nmfspalette::display_nmfs_palette("coral", 4)
+```
+
+![](figure/unnamed-chunk-8-1.png)<!-- -->
+
+### regional web (discrete)
+
+``` r
+nmfspalette::display_nmfs_palette("regional web", 6)
+```
+
+![](figure/unnamed-chunk-9-1.png)<!-- -->
+
+### secondary (discrete)
+
+``` r
+nmfspalette::display_nmfs_palette("secondary", 4)
+```
+
+![](figure/unnamed-chunk-10-1.png)<!-- --> \#\# Examples
 
 If no argument is given to scale\_color\_nmfs(), default “oceans” is
 used

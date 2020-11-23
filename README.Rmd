@@ -40,12 +40,46 @@ nmfspalette::nmfs_palette("oceans")(10)
 
 ## Palettes
 To see the palettes, use the `display_nmfs_palette()` function.
+
+### oceans
 ```{r, fig.height = 2}
 nmfspalette::display_nmfs_palette("oceans", 4)
 ```
 
+### waves
+```{r, fig.height = 2}
+nmfspalette::display_nmfs_palette("waves", 4)
+```
 
+### seagrass
+```{r, fig.height = 2}
+nmfspalette::display_nmfs_palette("seagrass", 4)
+```
 
+### urchin
+```{r, fig.height = 2}
+nmfspalette::display_nmfs_palette("urchin", 4)
+```
+
+### crustacean
+```{r, fig.height = 2}
+nmfspalette::display_nmfs_palette("crustacean", 4)
+```
+
+### coral
+```{r, fig.height = 2}
+nmfspalette::display_nmfs_palette("coral", 4)
+```
+
+### regional web (discrete)
+```{r, fig.height = 2}
+nmfspalette::display_nmfs_palette("regional web", 6)
+```
+
+### secondary (discrete)
+```{r, fig.height = 2}
+nmfspalette::display_nmfs_palette("secondary", 4)
+```
 ## Examples
 
 If no argument is given to scale_color_nmfs(), default "oceans" is used
