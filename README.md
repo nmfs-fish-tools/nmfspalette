@@ -2,8 +2,6 @@
 
     ## Loading required package: ggplot2
 
-    ## Warning: package 'ggplot2' was built under R version 4.0.2
-
 # nmfspalette
 
 an R color palette for `ggplot2` using NOAA Fisheries official colors
@@ -22,11 +20,11 @@ To install from Github use the following:
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
 #> 
-#>       v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmpc3C9xW\remotesd4c4aa45765\nmfs-general-modeling-tools-nmfspalette-6bd5e1a/DESCRIPTION' (430ms)
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpM7nAT9\remotes8447344690e\nmfs-general-modeling-tools-nmfspalette-f588bc3/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpM7nAT9\remotes8447344690e\nmfs-general-modeling-tools-nmfspalette-f588bc3/DESCRIPTION' (495ms)
 #>       -  preparing 'nmfspalette':
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
 #>       -  checking for LF line-endings in source and make files and shell scripts
-#>       -  checking for empty or unneeded directories
+#>   -  checking for empty or unneeded directories
 #>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
 #>      
 #> 
@@ -110,9 +108,11 @@ nmfspalette::display_nmfs_palette("regional web", 6)
 nmfspalette::display_nmfs_palette("secondary", 4)
 ```
 
-![](figure/unnamed-chunk-10-1.png)<!-- --> \#\# Examples
+![](figure/unnamed-chunk-10-1.png)<!-- -->
 
-If no argument is given to scale\_color\_nmfs(), default “oceans” is
+## Examples
+
+If no argument is given to `scale_color_nmfs()`, default “oceans” is
 used
 
 ``` r
@@ -125,7 +125,7 @@ p
 ![](figure/default_plot-1.png)<!-- -->
 
 `scale_fill_nmfs` requires a named argument for now, this is an example
-using the crustacean palette
+using the “crustacean” palette
 
 ``` r
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +

@@ -6,7 +6,7 @@ output:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, warning=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -80,9 +80,10 @@ nmfspalette::display_nmfs_palette("regional web", 6)
 ```{r, fig.height = 2}
 nmfspalette::display_nmfs_palette("secondary", 4)
 ```
+
 ## Examples
 
-If no argument is given to scale_color_nmfs(), default "oceans" is used
+If no argument is given to `scale_color_nmfs()`, default "oceans" is used
 
 ```{r, default_plot, fig.height=3}
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
@@ -91,7 +92,7 @@ p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 p
 ```
 
-`scale_fill_nmfs` requires a named argument for now, this is an example using the crustacean palette
+`scale_fill_nmfs` requires a named argument for now, this is an example using the "crustacean" palette
 ```{r, scale_fill_example, fig.height=3}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
