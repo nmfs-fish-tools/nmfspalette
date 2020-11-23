@@ -28,7 +28,8 @@ nmfs_colors <- c(
 #' Function to extract nmfs colors as hex codes
 #'
 #' @param ... Character names of nmfs_colors 
-#' @examples nmfs_cols("process_blue")
+#' @examples 
+#' nmfs_cols("process_blue")
 nmfs_cols <- function(...) {
   cols <- c(...)
   
