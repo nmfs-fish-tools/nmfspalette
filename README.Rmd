@@ -20,6 +20,8 @@ require(ggplot2)
 
 an R color palette for `ggplot2` using NOAA Fisheries official colors
 
+![R-CMD-check](https://github.com/nmfs-general-modeling-tools/nmfspalette/workflows/R-CMD-check/badge.svg)
+
 **************
 This implements these [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) to create a `ggplot2` compatible palette according to NOAA Fisheries branding.
 

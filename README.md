@@ -4,6 +4,8 @@
 
 an R color palette for `ggplot2` using NOAA Fisheries official colors
 
+![R-CMD-check](https://github.com/nmfs-general-modeling-tools/nmfspalette/workflows/R-CMD-check/badge.svg)
+
 -----
 
 This implements these
@@ -18,8 +20,8 @@ To install from Github use the following:
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
 #> 
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpQ7IhsR\remotes418438c49f7\nmfs-general-modeling-tools-nmfspalette-5860f2a/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpQ7IhsR\remotes418438c49f7\nmfs-general-modeling-tools-nmfspalette-5860f2a/DESCRIPTION' (393ms)
-#>       -  preparing 'nmfspalette':
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpCOaSrQ\remotesa3c46c22b3e\nmfs-general-modeling-tools-nmfspalette-afa2439/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpCOaSrQ\remotesa3c46c22b3e\nmfs-general-modeling-tools-nmfspalette-afa2439/DESCRIPTION' (377ms)
+#>       -  preparing 'nmfspalette': (381ms)
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
 #>       -  checking for LF line-endings in source and make files and shell scripts
 #>       -  checking for empty or unneeded directories
