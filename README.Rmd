@@ -26,7 +26,7 @@ This implements these [steps](https://drsimonj.svbtle.com/creating-corporate-col
 ## Installation 
 
 To install from Github use the following:
-```{r}
+```{r, message=FALSE}
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
 library(nmfspalette)
 ```
@@ -40,7 +40,7 @@ nmfspalette::nmfs_palette("oceans")(10)
 ```
 If no argument is given to scale_color_nmfs(), default "oceans" is used
 
-```{r, default_plot)
+```{r, default_plot, fig.height=3}
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
      geom_point(size = 4) +
      scale_color_nmfs()
@@ -48,7 +48,7 @@ p
 ```
 
 `scale_fill_nmfs` requires a named argument for now, this is an example using the crustacean palette
-```{r, scale_fill_example}
+```{r, scale_fill_example, fig.height=3}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +

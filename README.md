@@ -21,9 +21,6 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
-#> Using github PAT from envvar GITHUB_PAT
-#> Skipping install of 'nmfspalette' from a github remote, the SHA1 (f3b1f467) has not changed since last install.
-#>   Use `force = TRUE` to force installation
 library(nmfspalette)
 ```
 
@@ -43,8 +40,14 @@ nmfspalette::nmfs_palette("oceans")(10)
 If no argument is given to scale\_color\_nmfs(), default “oceans” is
 used
 
-`{r, default_plot) p <- ggplot(iris, aes(Sepal.Width, Sepal.Length,
-color = Species)) + geom_point(size = 4) + scale_color_nmfs() p`
+``` r
+p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+     geom_point(size = 4) +
+     scale_color_nmfs()
+p
+```
+
+![](figure/default_plot-1.png)<!-- -->
 
 `scale_fill_nmfs` requires a named argument for now, this is an example
 using the crustacean palette
