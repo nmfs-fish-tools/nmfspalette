@@ -17,6 +17,15 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+#> 
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpQ7IhsR\remotes418438c49f7\nmfs-general-modeling-tools-nmfspalette-5860f2a/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpQ7IhsR\remotes418438c49f7\nmfs-general-modeling-tools-nmfspalette-5860f2a/DESCRIPTION' (393ms)
+#>       -  preparing 'nmfspalette':
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
+#>       -  checking for LF line-endings in source and make files and shell scripts
+#>       -  checking for empty or unneeded directories
+#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
+#>      
+#> 
 library(nmfspalette)
 ```
 
