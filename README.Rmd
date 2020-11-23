@@ -40,7 +40,7 @@ nmfspalette::nmfs_palette("oceans")(10)
 
 ## Palettes
 To see the palettes, use the `display_nmfs_palette()` function.
-```{r, fig.height = 3}
+```{r, fig.height = 2}
 nmfspalette::display_nmfs_palette("oceans", 4)
 ```
 
