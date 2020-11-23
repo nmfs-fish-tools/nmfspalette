@@ -21,21 +21,40 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+#> 
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpwnJekY\remotes4c883050784\nmfs-general-modeling-tools-nmfspalette-b76b63a/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpwnJekY\remotes4c883050784\nmfs-general-modeling-tools-nmfspalette-b76b63a/DESCRIPTION' (417ms)
+#>       -  preparing 'nmfspalette':
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
+#>       -  checking for LF line-endings in source and make files and shell scripts
+#>   -  checking for empty or unneeded directories
+#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
+#>      
+#> 
 library(nmfspalette)
 ```
 
-Examples using the built-in color palettes. These are named oceans
-(default), waves, seagrass, urchin, coral, regional web, and secondary.
-
 ## Usage
 
-Extract an interpolated color palette from the default “oceans” palette
+Extract an interpolated color palette from the default “oceans” palette.
+You can change the number of colors (10 shown below).
 
 ``` r
 nmfspalette::nmfs_palette("oceans")(10)
 #>  [1] "#0093D0" "#007EC1" "#0069B2" "#0055A4" "#005097" "#004B8B" "#00467F"
 #>  [8] "#5483A9" "#A9C1D4" "#FFFFFF"
 ```
+
+## Palettes
+
+To see the palettes, use the `display_nmfs_palette()` function.
+
+``` r
+nmfspalette::display_nmfs_palette("oceans", 4)
+```
+
+![](figure/unnamed-chunk-3-1.png)<!-- -->
+
+## Examples
 
 If no argument is given to scale\_color\_nmfs(), default “oceans” is
 used
