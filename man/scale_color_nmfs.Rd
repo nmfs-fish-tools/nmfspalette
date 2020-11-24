@@ -20,7 +20,9 @@ scale_color_gradientn(), used respectively when discrete is TRUE or FALSE}
 Color scale constructor for nmfs colors
 }
 \examples{
- p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+\dontrun{
+ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
  geom_point(size = 4) +
    scale_color_nmfs("coral")
+}
 }
