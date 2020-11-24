@@ -102,7 +102,7 @@ display_nmfs_palette <- function(name, n, ...) {
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
-#' @importFrom ggplot2 ggplot geom_point discrete_scale scale_color_gradientn
+#' @importFrom ggplot2 ggplot geom_point discrete_scale scale_color_gradientn aes
 #'@examples
 #'  p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #'  geom_point(size = 4) +
@@ -125,9 +125,9 @@ scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALS
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
-#' @importFrom ggplot2 ggplot geom_bar theme discrete_scale scale_fill_gradientn
+#' @importFrom ggplot2 ggplot geom_bar theme discrete_scale scale_fill_gradientn element_text
 #'@examples
-#'  ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
+#'  ggplot2::ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
 #'  geom_bar() +
 #'    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
 #'    scale_fill_nmfs(palette = "crustacean", discrete=FALSE)

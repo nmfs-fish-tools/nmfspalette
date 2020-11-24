@@ -2,7 +2,7 @@
 
 # nmfspalette
 
-an R color palette for `ggplot2` using NOAA Fisheries official colors
+an R color palette for `ggplot2` using NOAA Fisheries branding colors
 
 ![R-CMD-check](https://github.com/nmfs-general-modeling-tools/nmfspalette/workflows/R-CMD-check/badge.svg)
 
@@ -19,15 +19,6 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
-#> 
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpCOaSrQ\remotesa3c46c22b3e\nmfs-general-modeling-tools-nmfspalette-afa2439/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpCOaSrQ\remotesa3c46c22b3e\nmfs-general-modeling-tools-nmfspalette-afa2439/DESCRIPTION' (377ms)
-#>       -  preparing 'nmfspalette': (381ms)
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
-#>       -  checking for LF line-endings in source and make files and shell scripts
-#>       -  checking for empty or unneeded directories
-#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
-#>      
-#> 
 library(nmfspalette)
 ```
 
@@ -112,8 +103,20 @@ nmfspalette::display_nmfs_palette("secondary", 4)
 
 ## Examples
 
-If no argument is given to `scale_color_nmfs()`, default “oceans” is
-used
+In addition to `nmfs_palette` and `display_nmfs_palette` to get in-built
+palettes, you can extract colors by name. Please see the NOAA Fisheries
+Branding guide for color names, all spaces are replaced with underscores
+in the color names.
+
+``` r
+nmfspalette::nmfs_cols("process_blue")
+#> process_blue 
+#>    "#0093D0"
+```
+
+To use the palettes with `ggplot2`, the `scale_color_nmfs()` and
+`scale_fill_nmfs()` functions are provided. If no argument is given to
+`scale_color_nmfs()`, a default (“oceans”) is used:
 
 ``` r
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
@@ -124,8 +127,8 @@ p
 
 ![](figure/default_plot-1.png)<!-- -->
 
-`scale_fill_nmfs` requires a named argument for now, this is an example
-using the “crustacean” palette
+`scale_fill_nmfs` does not have a default and therefore requires a named
+argument for now, this is an example using the “crustacean” palette
 
 ``` r
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +

@@ -18,7 +18,7 @@ require(ggplot2)
 
 # nmfspalette
 
-an R color palette for `ggplot2` using NOAA Fisheries official colors
+an R color palette for `ggplot2` using NOAA Fisheries branding colors
 
 ![R-CMD-check](https://github.com/nmfs-general-modeling-tools/nmfspalette/workflows/R-CMD-check/badge.svg)
 
@@ -85,7 +85,13 @@ nmfspalette::display_nmfs_palette("secondary", 4)
 
 ## Examples
 
-If no argument is given to `scale_color_nmfs()`, default "oceans" is used
+In addition to `nmfs_palette` and `display_nmfs_palette` to get in-built palettes, you can extract colors by name. Please see the NOAA Fisheries Branding guide for color names, all spaces are replaced with underscores in the color names.
+
+```{r, nmfs_cols}
+nmfspalette::nmfs_cols("process_blue")
+```
+
+To use the palettes with `ggplot2`, the `scale_color_nmfs()` and `scale_fill_nmfs()` functions are provided. If no argument is given to `scale_color_nmfs()`, a default ("oceans") is used:
 
 ```{r, default_plot, fig.height=3}
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
@@ -94,7 +100,7 @@ p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 p
 ```
 
-`scale_fill_nmfs` requires a named argument for now, this is an example using the "crustacean" palette
+`scale_fill_nmfs` does not have a default and therefore requires a named argument for now, this is an example using the "crustacean" palette
 ```{r, scale_fill_example, fig.height=3}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
