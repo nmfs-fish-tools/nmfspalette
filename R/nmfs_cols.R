@@ -127,7 +127,6 @@ scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALS
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
-#' @importFrom ggplot2 ggplot geom_bar theme discrete_scale scale_fill_gradientn element_text
 #' @examples
 #' \dontrun{
 #'  ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
