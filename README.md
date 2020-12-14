@@ -131,10 +131,9 @@ p
 argument for now, this is an example using the “crustacean” palette
 
 ``` r
-ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
-    geom_bar() +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-    scale_fill_nmfs(palette = "crustacean")
+ggplot(faithfuld, aes(waiting, eruptions)) +
+  geom_raster(aes(fill = density)) +
+  scale_fill_nmfs(palette="crustacean", discrete=FALSE, reverse=TRUE)
 ```
 
 ![](figure/scale_fill_example-1.png)<!-- -->
