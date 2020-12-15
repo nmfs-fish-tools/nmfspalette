@@ -1,0 +1,39 @@
+h1 {
+  background: white;
+  color: #48A2AB;
+  font-size: 36px;
+  font-family: Calibri;
+}
+
+h2 {
+  background: white;
+  color: #00467F;
+  font-size: 18px;
+  font-family: "Arial Narrow";
+  font-weight: bold;
+}
+
+h3 {
+  background: white;
+  color: #4D7393;
+  font-size: 14px;
+  font-family: "Arial Narrow";
+  font-weight: bold;
+}
+
+p1 {
+  background: white;
+  color: #646464;
+  font-size: 10px;
+  font-family: "Calibri light";
+  text-align: justify;
+  font-style: normal;
+}
+
+p2 {
+  background: white;
+  color: #4D7393;
+  font-size: 14px;
+  font-family: "Arial Narrow";
+  font-style: italic;
+}

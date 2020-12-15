@@ -1,0 +1,46 @@
+h1 {
+  background: white;
+  color: #00467F;
+  font-size: 36px;
+  font-family: "Arial Narrow";
+  font-weight: bold;
+}
+
+h2 {
+  background: white;
+  color: #7B7B7B;
+  font-size: 30px;
+  font-family: "Cambria";
+}
+
+h3 {
+  background: white;
+  color: #48A2AB;
+  font-size: 20px;
+  font-family: "Arial Narrow";
+  font-weight: bold;
+}
+
+h4 {
+  background: white;
+  color: #4D7393;
+  font-size: 16px;
+  font-family: "Cambria";
+  font-weight: bold;
+}
+
+p1 {
+  background: white;
+  color: #646464;
+  font-size: 11px;
+  font-family: "Cambria";
+  font-style: normal;
+}
+
+p2 {
+  background: white;
+  color: #4D7393;
+  font-size: 16px;
+  font-family: "Cambria";
+  font-style: italic;
+}
