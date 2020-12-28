@@ -1,12 +1,12 @@
 h1 {
-  background: white;
+  background: transparent;
   color: #48A2AB;
   font-size: 36px;
   font-family: Calibri;
 }
 
 h2 {
-  background: white;
+  background: transparent;
   color: #00467F;
   font-size: 18px;
   font-family: "Arial Narrow";
@@ -14,15 +14,15 @@ h2 {
 }
 
 h3 {
-  background: white;
+  background: transparent;
   color: #4D7393;
   font-size: 14px;
   font-family: "Arial Narrow";
   font-weight: bold;
 }
 
-p1 {
-  background: white;
+body {
+  background: transparent;
   color: #646464;
   font-size: 10px;
   font-family: "Calibri light";
@@ -30,8 +30,8 @@ p1 {
   font-style: normal;
 }
 
-p2 {
-  background: white;
+.intro {
+  background: transparent;
   color: #4D7393;
   font-size: 14px;
   font-family: "Arial Narrow";
