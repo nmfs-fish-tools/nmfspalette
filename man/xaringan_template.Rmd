@@ -1,0 +1,59 @@
+---
+title:  "title"
+subtitle: "subtitle"
+author: "author"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "Page %current%"
+---
+
+layout: true
+  
+
+```{r xaringanthemer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+base_color="#00467F"
+style_mono_light(base_color=base_color,
+                 white_color="#FFFFFF",
+  header_font_google = google_font("Arimo"),
+  text_font_google   = google_font("Carlito", "300", "300i"),
+  code_font_google   = google_font("Source Code Pro"),
+  background_image = "static/slideswoosh.PNG",
+  background_size = "930px 690px",
+  title_slide_background_image = "static/slideswooshver.png",
+  title_slide_background_size = "930px 690px",
+  inverse_background_color = "#00467F",
+  black_color = base_color,
+  title_slide_background_color = base_color,
+  footnote_font_size = "0.6em",
+  footnote_position_bottom = "10px",
+  link_color = "#1ECAD3"
+  )
+```
+
+.footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+# test
+
+- some content
+- a [link](http://www.google.com)
+
+---
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) and [**xaringanthemer**](https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
