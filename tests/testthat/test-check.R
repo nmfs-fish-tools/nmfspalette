@@ -29,7 +29,7 @@ test_that("color works", {
   expect_true(is.na(p))
   
   #Check that it plots for a real color
-  p <- plot_fun("process_blue")
+  p <- plot_fun("processblue")
   expect_true(is.ggplot(p))
   
 })

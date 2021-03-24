@@ -88,7 +88,7 @@ nmfspalette::display_nmfs_palette("secondary", 4)
 In addition to `nmfs_palette` and `display_nmfs_palette` to get in-built palettes, you can extract colors by name. Please see the NOAA Fisheries Branding guide for color names, all spaces are replaced with underscores in the color names.
 
 ```{r, nmfs_cols}
-nmfspalette::nmfs_cols("process_blue")
+nmfspalette::nmfs_cols("processblue")
 ```
 
 To use the palettes with `ggplot2`, the `scale_color_nmfs()` and `scale_fill_nmfs()` functions are provided. If no argument is given to `scale_color_nmfs()`, a default ("oceans") is used:

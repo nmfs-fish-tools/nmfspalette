@@ -1,35 +1,35 @@
 nmfs_colors <- c(
-  "process_blue" = "#0093D0",
-  "reflex_blue" = "#0055A4",
-  "PMS_541" = "#00467F",
-  "PMS_319" = "#1ECAD3",
-  "PMS_321" = "#008998",
-  "PMS_322" = "#007078",
-  "PMS_375" = "#93D500",
-  "PMS_362" = "#4C9C2E",
-  "PMS_356" = "#007934",
+  "processblue" = "#0093D0",
+  "reflexblue" = "#0055A4",
+  "darkblue" = "#00467F",
+  "lightteal"= "#1ECAD3",
+  "medteal" = "#008998",
+  "darkteal"= "#007078",
+  "ltgreen"  = "#93D500",
+  "medgreen" = "#4C9C2E",
+  "darkgreen" = "#007934",
   "custom" = "#7F7FFF",
-  "PMS_2725" = "#625BC4",
-  "PMS_7670" = "#575195",
-  "PMS_151" = "#FF8300",
-  "PMS_717" = "#D65F00",
-  "PMS_1525" = "#BC4700",
-  "warm_red" = "#FF4438",
-  "PMS_711" = "#D02C2F",
-  "PMS_1805" = "#B2292E",
+  "medpurple" = "#625BC4",
+  "darkpurple" = "#575195",
+  "ltorange" = "#FF8300",
+  "medorange" = "#D65F00",
+  "darkorange" = "#BC4700",
+  "warmred" = "#FF4438",
+  "medred" = "#D02C2F",
+  "darkred" = "#B2292E",
   "white" = "#FFFFFF",
-  "lt_gray_1" = "#E8E8E8",
-  "lt_gray_2" = "#D0D0D0",
-  "med_gray" = "#9A9A9A",
-  "dk_gray_1" = "#7B7B7B",
-  "dk_gray_2" = "#646464"
+  "supltgray" = "#E8E8E8",
+  "ltgray" = "#D0D0D0",
+  "medgray" = "#9A9A9A",
+  "dkgray" = "#7B7B7B",
+  "supdkgray" = "#646464"
 )
 
 #' Function to extract nmfs colors as hex codes
 #'
 #' @param ... Character names of nmfs_colors 
 #' @examples 
-#' nmfs_cols("process_blue")
+#' nmfs_cols("processblue")
 #' @export
 nmfs_cols <- function(...) {
   cols <- c(...)
@@ -41,21 +41,21 @@ nmfs_cols <- function(...) {
 }
 
 nmfs_palettes <- list(
-  `oceans`  = nmfs_cols("process_blue", "reflex_blue", "PMS_541", "white"),
+  `oceans`  = nmfs_cols("processblue", "reflexblue", "darkblue", "white"),
   
-  `waves`  = nmfs_cols("PMS_319", "PMS_321", "PMS_322", "lt_gray_1"),
+  `waves`  = nmfs_cols("ltteal", "medteal", "darkteal", "supltgray"),
   
-  `seagrass`   = nmfs_cols("PMS_375", "PMS_362", "PMS_356", "lt_gray_2"),
+  `seagrass`   = nmfs_cols("ltgreen", "medgreen", "darkgreen", "ltgray"),
   
-  `urchin` = nmfs_cols("custom", "PMS_2725", "PMS_7670", "med_gray"),
+  `urchin` = nmfs_cols("custom", "medpurp", "darkpurp", "medgray"),
   
-  `crustacean`  = nmfs_cols("PMS_151", "PMS_717", "PMS_1525", "dk_gray_1"),
+  `crustacean`  = nmfs_cols("ltorange", "medorange", "darkorange", "dkgray"),
   
-  `coral` = nmfs_cols("warm_red", "PMS_711", "PMS_1805", "dk_gray_2"),
+  `coral` = nmfs_cols("warmred", "medred", "darkred", "supdkgray"),
   
-  `regional web` = nmfs_cols("PMS_541", "PMS_321","PMS_356","PMS_2725","PMS_717","PMS_1805"),
+  `regional web` = nmfs_cols("darkblue", "medteal","darkgreen","medpurple","medorange","darkred"),
   
-  "secondary" = nmfs_cols("PMS_322", "PMS_362", "PMS_7670", "dk_gray_2")
+  "secondary" = nmfs_cols("darkteal", "medgreen", "darkpurple", "supdkgray")
   
   
 )

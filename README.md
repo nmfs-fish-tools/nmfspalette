@@ -19,6 +19,23 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+#> isoband (0.2.3 -> 0.2.4) [CRAN]
+#> package 'isoband' successfully unpacked and MD5 sums checked
+#> 
+#> The downloaded binary packages are in
+#>  C:\Users\chris\AppData\Local\Temp\RtmpSkcJru\downloaded_packages
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpSkcJru\remotes23581ba51186\nmfs-general-modeling-tools-nmfspalette-c00c8d4/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpSkcJru\remotes23581ba51186\nmfs-general-modeling-tools-nmfspalette-c00c8d4/DESCRIPTION' (463ms)
+#>       -  preparing 'nmfspalette': (631ms)
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
+#>       -  excluding invalid files
+#>    Subdirectory 'man' contains invalid file names:
+#>      'xaringan-themer.css' 'xaringan_template.Rmd'
+#>      'xaringan_template.html'
+#>       -  checking for LF line-endings in source and make files and shell scripts
+#>       -  checking for empty or unneeded directories
+#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
+#>      
+#> 
 library(nmfspalette)
 ```
 
@@ -109,9 +126,9 @@ Branding guide for color names, all spaces are replaced with underscores
 in the color names.
 
 ``` r
-nmfspalette::nmfs_cols("process_blue")
-#> process_blue 
-#>    "#0093D0"
+nmfspalette::nmfs_cols("processblue")
+#> <NA> 
+#>   NA
 ```
 
 To use the palettes with `ggplot2`, the `scale_color_nmfs()` and
