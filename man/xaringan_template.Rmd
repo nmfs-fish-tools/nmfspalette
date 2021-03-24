@@ -8,6 +8,7 @@ output:
     css: ["xaringan-themer.css"]
     lib_dir: libs
     nature:
+      ratio: '4:3'
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
@@ -33,9 +34,9 @@ style_xaringan(title_slide_background_color=unname(nmfs_cols("darkblue")),
   text_font_google   = google_font("Carlito", "300", "300i"),
   code_font_google   = google_font("Source Code Pro"),
   background_image = "static/slideswoosh.PNG",
-  background_size = "930px 690px",
+  background_size = "cover",
   title_slide_background_image = "static/slideswooshver.png",
-  title_slide_background_size = "930px 690px",
+  title_slide_background_size = "cover",
   inverse_background_color = unname(nmfs_cols("processblue")),
   inverse_text_color = unname(nmfs_cols("supltgray")),
   footnote_font_size = "0.6em",
@@ -72,7 +73,7 @@ r <- 2 + 2
 ---
 class: middle
 background-image: url("static/slideteal.png")
-background-image-size: "940px 690px"
+background-image-size: "cover"
 
 # This is another background image you can use
 

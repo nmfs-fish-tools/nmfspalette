@@ -76,7 +76,7 @@ h1, h2, h3 {
   background-color: var(--background-color);
   font-size: 1rem;
   background-image: url(static/slideswoosh.PNG);
-  background-size: 930px 690px;
+  background-size: cover;
   padding: 16px 64px 16px 64px;
   width: 100%;
   height: 100%;
@@ -136,7 +136,7 @@ a, a > code {
 .title-slide {
   background-color: var(--title-slide-background-color);
   background-image: url("static/slideswooshver.png");
-  background-size: 930px 690px;
+  background-size: cover;
 }
 .title-slide .remark-slide-number {
   display: none;
