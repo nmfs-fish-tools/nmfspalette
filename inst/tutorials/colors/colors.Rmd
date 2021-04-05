@@ -1,0 +1,60 @@
+---
+title: "Tutorial"
+author: "Christine Stawitz"
+output: learnr::tutorial
+runtime: shiny_prerendered
+description: Introduction to the nmfspalette package
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+remotes::install_github("allisonhorst/palmerpenguins")
+library(nmfspalette)
+library(palmerpenguins)
+library(ggplot2)
+library(xaringanthemer)
+data(package = 'palmerpenguins')
+```
+
+## The `nmfspalette` package
+
+`nmfspalette` is an R package that makes it easy to use NOAA Fisheries colors and branding in graphics, slides, and more. 
+
+## The colors and palettes
+
+The package comes with six monochrome palettes and two palettes that combine colors from multiple palettes for discrete color scales. The monochrome palettes are called oceans, waves, seagrass, urchin, crustacean, and coral. You can generate palettes of any size in these six palettes using `nmfs_palette` and display them using `display_nmfs_palette.` 
+
+Try modifying the number of colors in the palette in the example below to increase the colors in the package. Or use one of the other named palettes (names above).
+
+```{r palettes, exercise = TRUE}
+
+mypal <- nmfs_palette("oceans")
+mypal(3)
+
+display_nmfs_palette("oceans", 10)
+```
+
+
+## Using with `ggplot2`
+
+To include these palettes in plots made with `ggplot2`, you can use the `scale_color_nmfs()` function. Try out some of the other palettes in `scale_color_nmfs()`
+
+```{r ggplotthemes, echo=FALSE, message=FALSE, warning=FALSE, exercise = TRUE}
+p <- ggplot(penguins, aes(flipper_length_mm, body_mass_g, color = species)) +
+     geom_point(size = 4) +
+  ylab("Body Mass (g)") +
+  xlab("Flipper Length (mm)") + 
+  theme_bw() +
+     scale_color_nmfs("coral")
+p
+```
+
+By default, this uses the `oceans` palette. Try out continuous data types using `scale_fill_nmfs()`.
+
+```{r ggplotfill, exercise = TRUE}
+ggplot(faithfuld, aes(waiting, eruptions)) +
+  geom_raster(aes(fill = density)) +
+  scale_fill_nmfs(palette="crustacean", discrete=FALSE, reverse=TRUE)
+```
+
