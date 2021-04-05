@@ -41,17 +41,17 @@ nmfs_cols <- function(...) {
 }
 
 nmfs_palettes <- list(
-  `oceans`  = nmfs_cols("processblue", "reflexblue", "darkblue", "white"),
+  `oceans`  = nmfs_cols("processblue", "reflexblue", "darkblue"),
   
-  `waves`  = nmfs_cols("ltteal", "medteal", "darkteal", "supltgray"),
+  `waves`  = nmfs_cols("ltteal", "medteal", "darkteal"),
   
-  `seagrass`   = nmfs_cols("ltgreen", "medgreen", "darkgreen", "ltgray"),
+  `seagrass`   = nmfs_cols("ltgreen", "medgreen", "darkgreen"),
   
-  `urchin` = nmfs_cols("custom", "medpurp", "darkpurp", "medgray"),
+  `urchin` = nmfs_cols("custom", "medpurp", "darkpurp"),
   
-  `crustacean`  = nmfs_cols("ltorange", "medorange", "darkorange", "dkgray"),
+  `crustacean`  = nmfs_cols("ltorange", "medorange", "darkorange"),
   
-  `coral` = nmfs_cols("warmred", "medred", "darkred", "supdkgray"),
+  `coral` = nmfs_cols("warmred", "medred", "darkred"),
   
   `regional web` = nmfs_cols("darkblue", "medteal","darkgreen","medpurple","medorange","darkred"),
   
@@ -81,7 +81,7 @@ nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
 #'
 #' @param name Character name of palette in nmfs_palettes 
 #' @param n Number of colors in palette
-#' @param ... Additiontal arguments to pass to image()
+#' @param ... Additional arguments to pass to image()
 #' @importFrom graphics box image
 #' @examples 
 #' display_nmfs_palette("oceans", 10)

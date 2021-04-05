@@ -42,7 +42,7 @@ test_that("palette works",{
   
   #Check that nmfs_palette(n) returns a vector
   i <- nmfs_palette("crustacean")(10)
-  expect_equal(i, c("#FF8300", "#F17600", "#E36B00", "#D65F00", "#CD5700", "#C44F00", "#BC4700", "#A65828", "#906951", "#7B7B7B"))
+  expect_equal(i, c("#FF8300", "#F57A00", "#EC7200", "#E36B00", "#DA6300", "#D35C00", "#CD5700", "#C75100", "#C14C00", "#BC4700"))
   
   #Check that fake palette names create an error
   expect_error(nmfs_palette("foo"))

@@ -1,0 +1,127 @@
+---
+title: "Tutorial"
+author: "Christine Stawitz"
+output: learnr::tutorial
+runtime: shiny_prerendered
+description: Introduction to the nmfspalette package
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+remotes::install_github("allisonhorst/palmerpenguins")
+library(nmfspalette)
+library(palmerpenguins)
+library(ggplot2)
+library(xaringanthemer)
+data(package = 'palmerpenguins')
+```
+
+## The `nmfspalette` package
+
+`nmfspalette` is an R package that makes it easy to use NOAA Fisheries colors and branding in graphics, slides, and more. 
+
+## The colors and palettes
+
+The package comes with six monochrome palettes and two palettes that combine colors from multiple palettes for discrete color scales. The monochrome palettes are called oceans, waves, seagrass, urchin, crustacean, and coral. You can generate palettes of any size in these six palettes using `nmfs_palette` and display them using `display_nmfs_palette.` 
+
+Try modifying the number of colors in the palette in the example below to increase the colors in the package. Or use one of the other named palettes (names above).
+
+```{r palettes, exercise = TRUE}
+
+mypal <- nmfs_palette("oceans")
+mypal(3)
+
+display_nmfs_palette("oceans", 10)
+```
+
+
+## Using with `ggplot2`
+
+To include these palettes in plots made with `ggplot2`, you can use the `scale_color_nmfs()` function. Try out some of the other palettes in `scale_color_nmfs()`
+
+```{r ggplotthemes, echo=FALSE, message=FALSE, warning=FALSE, exercise = TRUE}
+p <- ggplot(penguins, aes(flipper_length_mm, body_mass_g, color = species)) +
+     geom_point(size = 4) +
+  ylab("Body Mass (g)") +
+  xlab("Flipper Length (mm)") + 
+  theme_bw() +
+     scale_color_nmfs("coral")
+p
+```
+
+By default, this uses the `oceans` palette. Try out continuous data types using `scale_fill_nmfs()`.
+
+```{r ggplotfill, exercise = TRUE}
+ggplot(faithfuld, aes(waiting, eruptions)) +
+  geom_raster(aes(fill = density)) +
+  scale_fill_nmfs(palette="crustacean", discrete=FALSE, reverse=TRUE)
+```
+
+
+## Theming presentations
+
+The `docs/` folder of the package includes an `.Rmd` called `xaringan_themer.Rmd` that allows you to create a themed xaringan presentation. The themer uses the `nmfspalette` package to source the colors for text, background, and footnotes and then the `xaringanthemer` package to apply the formatting to slides without having to write CSS.
+
+The `xaringanthemer` package is needed to use this template code. Custom theme settings can be modified using the `style_xaringan()` function. In general, the arguments to `style_xaringan` follow [CSS property](https://www.w3schools.com/cssref/) naming style and syntax. You don't need to know CSS to use it, but it can be helpful. The `style_xaringan()` function generates a .css file called `xaringan_themer.css` that you will need to add into the 
+
+First, we will look at the arguments to change colors of text and backgrounds, which all end in `_color`. The following code changes the background, text, footnote, link, and code highlight color to match NOAA Fisheries theming.
+
+
+
+# Color theming
+
+```{r theming, exercise = TRUE}
+
+style_xaringan(title_slide_background_color=unname(nmfs_cols("darkblue")),
+               title_slide_text_color = unname(nmfs_cols("supltgray")),
+                 background_color=unname(nmfs_cols("white")),
+  text_color = unname(nmfs_cols("darkblue")),
+  header_color = unname(nmfs_cols("darkblue")),
+  inverse_background_color = unname(nmfs_cols("processblue")),
+  inverse_text_color = unname(nmfs_cols("supltgray")),
+  footnote_color = unname(nmfs_cols("darkblue")),
+  link_color = unname(nmfs_cols("medteal")),
+  text_slide_number_color = unname(nmfs_cols("lightteal")),
+  code_highlight_color = unname(nmfs_cols("medteal"))
+  )
+```
+
+# Font theming
+
+To change fonts, we use the arguments ending in `_font_google`. To change the font size, use the arguments ending `_font_size`. We also change the footnote position using the `footnote_position_bottom` argument. You can provide the font size in *em* or *px* units. Font arguments need to be wrapped in `google_font()` or `xaringanthemer_font_default` wrappers. If you plan to use Google fonts, search for names on the web to find fonts similar to your choice - searching for "Calibri Google font" yielded their equivalent: "Carlito".
+
+```{r fonts, exercise = TRUE}
+
+style_xaringan(header_font_google = google_font("Arimo"),
+  text_font_google   = google_font("Carlito", "300", "300i"),
+  code_font_google   = google_font("Source Code Pro"),
+    footnote_font_size = "0.6em",
+    footnote_position_bottom = "10px",
+    text_slide_number_font_size = "0.6em"
+  )
+
+```
+
+# Background images
+
+```{r background_images, exercise = TRUE}
+#Find package directory
+images_path <- system.file("static", package = "nmfspalette")
+
+style_xaringan(background_image = file.path(images_path,"slideswoosh.PNG"),
+  background_size = "cover",
+  title_slide_background_image = file.path(images_path,"slideswooshver.png"),
+  title_slide_background_size = "cover")
+```
+
+# Extra css
+  
+```{r extracss, exercise = TRUE}
+style_xaringan(extra_css = list(".remark-slide-number" =list(
+  "font-size"="0.6em",
+  "font-weight"="bold",
+  "margin" = "0px 840px -2px 0px")))
+```
+
+
