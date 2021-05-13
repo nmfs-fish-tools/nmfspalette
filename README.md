@@ -19,18 +19,19 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
-#> isoband (0.2.3 -> 0.2.4) [CRAN]
-#> package 'isoband' successfully unpacked and MD5 sums checked
+#> rlang (0.4.10 -> 0.4.11) [CRAN]
+#> package 'rlang' successfully unpacked and MD5 sums checked
+#> Warning: cannot remove prior installation of package 'rlang'
+#> Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying
+#> C:\~\R\win-library\4.0\00LOCK\rlang\libs\x64\rlang.dll to C:\~\R\win-
+#> library\4.0\rlang\libs\x64\rlang.dll: Permission denied
+#> Warning: restored 'rlang'
 #> 
 #> The downloaded binary packages are in
-#>  C:\Users\chris\AppData\Local\Temp\RtmpSkcJru\downloaded_packages
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpSkcJru\remotes23581ba51186\nmfs-general-modeling-tools-nmfspalette-c00c8d4/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpSkcJru\remotes23581ba51186\nmfs-general-modeling-tools-nmfspalette-c00c8d4/DESCRIPTION' (463ms)
-#>       -  preparing 'nmfspalette': (631ms)
+#>  C:\Users\chris\AppData\Local\Temp\RtmpicFjUd\downloaded_packages
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpicFjUd\remotes2678def813\nmfs-general-modeling-tools-nmfspalette-f14e19b/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpicFjUd\remotes2678def813\nmfs-general-modeling-tools-nmfspalette-f14e19b/DESCRIPTION' (364ms)
+#>       -  preparing 'nmfspalette':
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
-#>       -  excluding invalid files
-#>    Subdirectory 'man' contains invalid file names:
-#>      'xaringan-themer.css' 'xaringan_template.Rmd'
-#>      'xaringan_template.html'
 #>       -  checking for LF line-endings in source and make files and shell scripts
 #>       -  checking for empty or unneeded directories
 #>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
@@ -46,8 +47,8 @@ You can change the number of colors (10 shown below).
 
 ``` r
 nmfspalette::nmfs_palette("oceans")(10)
-#>  [1] "#0093D0" "#007EC1" "#0069B2" "#0055A4" "#005097" "#004B8B" "#00467F"
-#>  [8] "#5483A9" "#A9C1D4" "#FFFFFF"
+#>  [1] "#0093D0" "#0085C6" "#0077BC" "#0069B2" "#005BA8" "#00539F" "#005097"
+#>  [8] "#004C8F" "#004987" "#00467F"
 ```
 
 ## Palettes
@@ -60,7 +61,7 @@ To see the palettes, use the `display_nmfs_palette()` function.
 nmfspalette::display_nmfs_palette("oceans", 4)
 ```
 
-![](figure/displ_oceans-1.png)<!-- -->
+![](man/figures/displ_oceans-1.png)<!-- -->
 
 ### waves
 
@@ -68,7 +69,7 @@ nmfspalette::display_nmfs_palette("oceans", 4)
 nmfspalette::display_nmfs_palette("waves", 4)
 ```
 
-![](figure/displ_waves-1.png)<!-- -->
+![](man/figures/displ_waves-1.png)<!-- -->
 
 ### seagrass
 
@@ -76,7 +77,7 @@ nmfspalette::display_nmfs_palette("waves", 4)
 nmfspalette::display_nmfs_palette("seagrass", 4)
 ```
 
-![](figure/displ_seagrass-1.png)<!-- -->
+![](man/figures/displ_seagrass-1.png)<!-- -->
 
 ### urchin
 
@@ -84,7 +85,7 @@ nmfspalette::display_nmfs_palette("seagrass", 4)
 nmfspalette::display_nmfs_palette("urchin", 4)
 ```
 
-![](figure/displ_urchin-1.png)<!-- -->
+![](man/figures/displ_urchin-1.png)<!-- -->
 
 ### crustacean
 
@@ -92,7 +93,7 @@ nmfspalette::display_nmfs_palette("urchin", 4)
 nmfspalette::display_nmfs_palette("crustacean", 4)
 ```
 
-![](figure/displ_crustacean-1.png)<!-- -->
+![](man/figures/displ_crustacean-1.png)<!-- -->
 
 ### coral
 
@@ -100,7 +101,7 @@ nmfspalette::display_nmfs_palette("crustacean", 4)
 nmfspalette::display_nmfs_palette("coral", 4)
 ```
 
-![](figure/displ_coral-1.png)<!-- -->
+![](man/figures/displ_coral-1.png)<!-- -->
 
 ### regional web (discrete)
 
@@ -108,7 +109,7 @@ nmfspalette::display_nmfs_palette("coral", 4)
 nmfspalette::display_nmfs_palette("regional web", 6)
 ```
 
-![](figure/displ_regional_web-1.png)<!-- -->
+![](man/figures/displ_regional_web-1.png)<!-- -->
 
 ### secondary (discrete)
 
@@ -116,7 +117,7 @@ nmfspalette::display_nmfs_palette("regional web", 6)
 nmfspalette::display_nmfs_palette("secondary", 4)
 ```
 
-![](figure/displ_secondary-1.png)<!-- -->
+![](man/figures/displ_secondary-1.png)<!-- -->
 
 ## Examples
 
@@ -127,8 +128,8 @@ in the color names.
 
 ``` r
 nmfspalette::nmfs_cols("processblue")
-#> <NA> 
-#>   NA
+#> processblue 
+#>   "#0093D0"
 ```
 
 To use the palettes with `ggplot2`, the `scale_color_nmfs()` and
@@ -142,7 +143,7 @@ p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 p
 ```
 
-![](figure/default_plot-1.png)<!-- -->
+![](man/figures/default_plot-1.png)<!-- -->
 
 `scale_fill_nmfs` does not have a default and therefore requires a named
 argument for now, this is an example using the “crustacean” palette
@@ -153,7 +154,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
   scale_fill_nmfs(palette="crustacean", discrete=FALSE, reverse=TRUE)
 ```
 
-![](figure/scale_fill_example-1.png)<!-- -->
+![](man/figures/scale_fill_example-1.png)<!-- -->
 
 -----
 

@@ -10,7 +10,7 @@ output:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "figure/",
+  fig.path = "man/figures/",
   fig.height = 1
 )
 require(ggplot2)
