@@ -43,7 +43,7 @@ nmfs_cols <- function(...) {
 nmfs_palettes <- list(
   `oceans`  = nmfs_cols("processblue", "reflexblue", "darkblue"),
   
-  `waves`  = nmfs_cols("ltteal", "medteal", "darkteal"),
+  `waves`  = nmfs_cols("lightteal", "medteal", "darkteal"),
   
   `seagrass`   = nmfs_cols("ltgreen", "medgreen", "darkgreen"),
   
