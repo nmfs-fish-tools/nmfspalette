@@ -1,6 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# nmfspalette <a href={https:://nmfs-general-modeling-tools.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=120 height=139 alt="logo with an image of a fish in multiple palette colors" />
+# nmfspalette <a href={https:://nmfs-general-modeling-tools.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
 
 an R color palette for `ggplot2` using NOAA Fisheries branding colors
 
@@ -20,8 +20,8 @@ To install from Github use the following:
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
 #> 
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp2ThU6L\remotes340878d969de\nmfs-general-modeling-tools-nmfspalette-cdd9bf6/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp2ThU6L\remotes340878d969de\nmfs-general-modeling-tools-nmfspalette-cdd9bf6/DESCRIPTION' (349ms)
-#>       -  preparing 'nmfspalette': (700ms)
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp2jo5AZ\remotes29944d194e4d\nmfs-general-modeling-tools-nmfspalette-5292ce1/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp2jo5AZ\remotes29944d194e4d\nmfs-general-modeling-tools-nmfspalette-5292ce1/DESCRIPTION'
+#>       -  preparing 'nmfspalette': (359ms)
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
 #>       -  checking for LF line-endings in source and make files and shell scripts
 #>       -  checking for empty or unneeded directories

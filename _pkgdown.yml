@@ -2,7 +2,6 @@ navbar:
   structure:
     left:
     - home
-    - intro
     - reference
     - github
     - issue
@@ -32,9 +31,13 @@ navbar:
       text: Vignettes
       icon: fas fa-file-contract fa-lg
       menu:
-      - text: Introduction
+      - text: Theming Presentations
         href: articles/ThemedPresentations.html
       - text: Xaringan RMarkdown template
         href: articles/xaringan_template.html
-      - text: Tutorial
-        href: articles/tutorials/colors
+
+    tutorials:
+    - name: colors
+      title: Using nmfspalette colors
+      url: https://cstawitz.shinyapps.io/colors/
+        
