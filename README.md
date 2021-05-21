@@ -1,6 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# nmfspalette
+# nmfspalette <a href={https:://nmfs-general-modeling-tools.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=120 height=139 alt="logo with an image of a fish in multiple palette colors" />
 
 an R color palette for `ggplot2` using NOAA Fisheries branding colors
 
@@ -19,18 +19,9 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
-#> rlang (0.4.10 -> 0.4.11) [CRAN]
-#> package 'rlang' successfully unpacked and MD5 sums checked
-#> Warning: cannot remove prior installation of package 'rlang'
-#> Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying
-#> C:\~\R\win-library\4.0\00LOCK\rlang\libs\x64\rlang.dll to C:\~\R\win-
-#> library\4.0\rlang\libs\x64\rlang.dll: Permission denied
-#> Warning: restored 'rlang'
 #> 
-#> The downloaded binary packages are in
-#>  C:\Users\chris\AppData\Local\Temp\RtmpicFjUd\downloaded_packages
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpicFjUd\remotes2678def813\nmfs-general-modeling-tools-nmfspalette-f14e19b/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpicFjUd\remotes2678def813\nmfs-general-modeling-tools-nmfspalette-f14e19b/DESCRIPTION' (364ms)
-#>       -  preparing 'nmfspalette':
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp2ThU6L\remotes340878d969de\nmfs-general-modeling-tools-nmfspalette-cdd9bf6/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp2ThU6L\remotes340878d969de\nmfs-general-modeling-tools-nmfspalette-cdd9bf6/DESCRIPTION' (349ms)
+#>       -  preparing 'nmfspalette': (700ms)
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
 #>       -  checking for LF line-endings in source and make files and shell scripts
 #>       -  checking for empty or unneeded directories
