@@ -19,15 +19,6 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
-#> 
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp2jo5AZ\remotes29944d194e4d\nmfs-general-modeling-tools-nmfspalette-5292ce1/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmp2jo5AZ\remotes29944d194e4d\nmfs-general-modeling-tools-nmfspalette-5292ce1/DESCRIPTION'
-#>       -  preparing 'nmfspalette': (359ms)
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
-#>       -  checking for LF line-endings in source and make files and shell scripts
-#>       -  checking for empty or unneeded directories
-#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
-#>      
-#> 
 library(nmfspalette)
 ```
 
@@ -170,3 +161,9 @@ commercial product or activity by DOC or the United States Government.”
     <https://vlab.ncep.noaa.gov/redmine/projects/integrated-fisheries-toolbox/files>
 
 -----
+
+<img src="./pkgdown/figures/noaa-fisheries-rgb-2line-horizontal-small.png" width="75" />
+
+[U.S. Department of Commerce](https://www.commerce.gov/) | [National
+Oceanographic and Atmospheric Administration](https://www.noaa.gov) |
+[NOAA Fisheries](https://www.fisheries.noaa.gov/)
