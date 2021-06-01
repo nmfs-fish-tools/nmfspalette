@@ -1,0 +1,197 @@
+
+/*---Use template from: https://ocsdata.ncd.noaa.gov/HSRP/css/ocs-fonts.css---*/
+/*---Use template from: https://www.legislative.noaa.gov/noaa-web/css/contentFormatting.css---*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.fas fa-home fa-lg{
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Open Sans", sans-serif;
+  color: #00467f;
+}
+
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px
+}
+
+h4 {
+  font-size: 16px
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  margin-top: 0px;
+  line-height: 19px;
+  margin-bottom: .9em;
+  text-align: left;
+  color: #000000;
+}
+
+h1.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  color: #00467f;
+}
+
+h1.mobile {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  color: #00467f;
+}
+
+a { font-weight: bold; }
+a:link { color: #007eb2;	}
+a:visited { color: #007eb2;	}
+a:hover { color: #007eb2; }
+
+.leftAlignImage img, .rightAlignImage img {
+  width: 200px;
+  border: none;
+}
+
+.leftAlignImage, .rightAlignImage {
+  padding: 4px;
+  border: none;
+  width: 200px;
+  height: auto;
+}
+
+.leftAlignImage {
+  float: left;
+  margin-right: 10px;
+}
+
+.rightAlignImage {
+  float: right;
+  margin-left: 10px;
+}
+
+.rightAlignImage p:first-child, .leftAlignImage p:first-child  {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.rightAlignImage p, .leftAlignImage p {
+  margin-bottom: 0px;
+  margin-top: 6px;
+}
+
+/*---navbar ---*/
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+  color: #FFFFFF;
+  background-color: #054698;
+  width: auto;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #FFFFFF;
+    background-color: #054698;
+} /*navbar text*/
+
+
+.navbar-default .navbar-link {
+    color: #FFFFFF;
+} /*navbar link*/
+
+.navbar-default .navbar-link:focus, .navbar-default .navbar-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+    background-color: #054698;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+  background-color: #054698;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #FFFFFF;
+    background-color: #054698;
+    text-decoration: underline;
+} /*Home button*/
+
+nav[data-toggle='toc'] .nav > li > a {
+    padding: 4px 20px 4px 6px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #00467f;
+    background-color: #FFFFFF;
+} /*Table of content in the vignettes*/
+
+nav[data-toggle='toc'] .nav > li > a:focus,  nav[data-toggle='toc'] .nav > li > a:hover{
+   color: #00467f;
+   background-color: #FFFFFF;
+}
+
+nav[data-toggle='toc'] .nav > .active > a, nav[data-toggle='toc'] .nav > .active:hover > a, nav[data-toggle='toc'] .nav > .active:focus > a {
+  color: #FFFFFF;
+}
+
+/*---footer---*/
+footer {
+  font-size: 14px;
+  color: #00467f;
+  background-color: #FFFFFF;
+  padding-top: 15px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  width: auto;
+}
+
+footer p {
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: Center;
+  color: #00467f;
+}
+
+footer a:link { color: #00467f; text-decoration: none; }
+footer a:visited { color: #00467f; text-decoration: none; }
+footer a:hover { color: #00467f; text-decoration: none; }
