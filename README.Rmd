@@ -118,7 +118,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 
 ***** *******
 ```{r out.width=75, echo=FALSE}
-knitr::include_graphics("./pkgdown/figures/noaa-fisheries-rgb-2line-horizontal-small.png")
+knitr::include_graphics("pkgdown/figures/noaa-fisheries-rgb-2line-horizontal-small.png")
 ```
 
  

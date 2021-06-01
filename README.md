@@ -19,6 +19,24 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+#> fansi (0.4.2 -> 0.5.0) [CRAN]
+#> package 'fansi' successfully unpacked and MD5 sums checked
+#> Warning: cannot remove prior installation of package 'fansi'
+#> Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying
+#> C:\~\R\win-library\4.0\00LOCK\fansi\libs\x64\fansi.dll to C:\~\R\win-
+#> library\4.0\fansi\libs\x64\fansi.dll: Permission denied
+#> Warning: restored 'fansi'
+#> 
+#> The downloaded binary packages are in
+#>  C:\Users\chris\AppData\Local\Temp\RtmpKawps9\downloaded_packages
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpKawps9\remotes5e4472471674\nmfs-general-modeling-tools-nmfspalette-c01b283/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpKawps9\remotes5e4472471674\nmfs-general-modeling-tools-nmfspalette-c01b283/DESCRIPTION' (480ms)
+#>       -  preparing 'nmfspalette': (1.1s)
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
+#>       -  checking for LF line-endings in source and make files and shell scripts
+#>       -  checking for empty or unneeded directories
+#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
+#>      
+#> 
 library(nmfspalette)
 ```
 
@@ -162,7 +180,7 @@ commercial product or activity by DOC or the United States Government.”
 
 -----
 
-<img src="./pkgdown/figures/noaa-fisheries-rgb-2line-horizontal-small.png" width="75" />
+<img src="pkgdown/figures/noaa-fisheries-rgb-2line-horizontal-small.png" width="75" />
 
 [U.S. Department of Commerce](https://www.commerce.gov/) | [National
 Oceanographic and Atmospheric Administration](https://www.noaa.gov) |
