@@ -28,9 +28,9 @@ remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
 #> Warning: restored 'fansi'
 #> 
 #> The downloaded binary packages are in
-#>  C:\Users\chris\AppData\Local\Temp\RtmpKawps9\downloaded_packages
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpKawps9\remotes5e4472471674\nmfs-general-modeling-tools-nmfspalette-c01b283/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpKawps9\remotes5e4472471674\nmfs-general-modeling-tools-nmfspalette-c01b283/DESCRIPTION' (480ms)
-#>       -  preparing 'nmfspalette': (1.1s)
+#>  C:\Users\chris\AppData\Local\Temp\RtmpIvMm0y\downloaded_packages
+#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpIvMm0y\remotes50f04b495184\nmfs-general-modeling-tools-nmfspalette-5f53637/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpIvMm0y\remotes50f04b495184\nmfs-general-modeling-tools-nmfspalette-5f53637/DESCRIPTION' (389ms)
+#>       -  preparing 'nmfspalette': (978ms)
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
 #>       -  checking for LF line-endings in source and make files and shell scripts
 #>       -  checking for empty or unneeded directories
@@ -39,6 +39,15 @@ remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
 #> 
 library(nmfspalette)
 ```
+
+## Contributing
+
+We welcome contributions to `nmfspalette`. You are welcome to make any
+changes you would like on a fork and submit a pull request. For more
+substantial changes or to create a branch, please contact
+<christine.stawitz@noaa.gov> (NOAA Affiliates only). We ask that all
+contributors adhere to The NOAA Fisheries Integrated Toolbox [code of
+conduct](https://github.com/nmfs-fish-tools/Resources/blob/master/CONTRIBUTING.md).
 
 ## Usage
 

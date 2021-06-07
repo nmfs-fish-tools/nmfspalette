@@ -33,6 +33,9 @@ remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
 library(nmfspalette)
 ```
 
+## Contributing
+We welcome contributions to `nmfspalette`. You are welcome to make any changes you would like on a fork and submit a pull request. For more substantial changes or to create a branch, please contact christine.stawitz@noaa.gov (NOAA Affiliates only). We ask that all contributors adhere to The NOAA Fisheries Integrated Toolbox [code of conduct](https://github.com/nmfs-fish-tools/Resources/blob/master/CONTRIBUTING.md).
+
 
 ## Usage 
 Extract an interpolated color palette from the default "oceans" palette. You can change the number of colors (10 shown below).
