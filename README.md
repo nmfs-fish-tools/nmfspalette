@@ -19,24 +19,6 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
-#> fansi (0.4.2 -> 0.5.0) [CRAN]
-#> package 'fansi' successfully unpacked and MD5 sums checked
-#> Warning: cannot remove prior installation of package 'fansi'
-#> Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying
-#> C:\~\R\win-library\4.0\00LOCK\fansi\libs\x64\fansi.dll to C:\~\R\win-
-#> library\4.0\fansi\libs\x64\fansi.dll: Permission denied
-#> Warning: restored 'fansi'
-#> 
-#> The downloaded binary packages are in
-#>  C:\Users\chris\AppData\Local\Temp\RtmpIvMm0y\downloaded_packages
-#>          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpIvMm0y\remotes50f04b495184\nmfs-general-modeling-tools-nmfspalette-5f53637/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpIvMm0y\remotes50f04b495184\nmfs-general-modeling-tools-nmfspalette-5f53637/DESCRIPTION' (389ms)
-#>       -  preparing 'nmfspalette': (978ms)
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
-#>       -  checking for LF line-endings in source and make files and shell scripts
-#>       -  checking for empty or unneeded directories
-#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
-#>      
-#> 
 library(nmfspalette)
 ```
 
@@ -50,6 +32,9 @@ contributors adhere to The NOAA Fisheries Integrated Toolbox [code of
 conduct](https://github.com/nmfs-fish-tools/Resources/blob/master/CONTRIBUTING.md).
 
 ## Usage
+
+To learn how to use `nmfspalette`, please check out the interactive
+`learnr` tutorial [here](https://cstawitz.shinyapps.io/colors/).
 
 Extract an interpolated color palette from the default “oceans” palette.
 You can change the number of colors (10 shown below).

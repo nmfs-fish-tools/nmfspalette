@@ -72,6 +72,9 @@
     Issues
   </a>
 </li>
+<li>
+  <a></a>
+</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fas fa-file-contract fa-lg"></span>
@@ -88,9 +91,6 @@
       <a href="articles/xaringan_template.html">Xaringan RMarkdown template</a>
     </li>
   </ul>
-</li>
-<li>
-  <a></a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right"></ul>
@@ -119,24 +119,6 @@
 <p>To install from Github use the following:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"nmfs-general-modeling-tools/nmfspalette"</span><span class="op">)</span>
-<span class="co">#&gt; fansi (0.4.2 -&gt; 0.5.0) [CRAN]</span>
-<span class="co">#&gt; package 'fansi' successfully unpacked and MD5 sums checked</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'fansi'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying</span>
-<span class="co">#&gt; C:\~\R\win-library\4.0\00LOCK\fansi\libs\x64\fansi.dll to C:\~\R\win-</span>
-<span class="co">#&gt; library\4.0\fansi\libs\x64\fansi.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'fansi'</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; The downloaded binary packages are in</span>
-<span class="co">#&gt;  C:\Users\chris\AppData\Local\Temp\RtmpIvMm0y\downloaded_packages</span>
-<span class="co">#&gt;          checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpIvMm0y\remotes50f04b495184\nmfs-general-modeling-tools-nmfspalette-5f53637/DESCRIPTION' ...  v  checking for file 'C:\Users\chris\AppData\Local\Temp\RtmpIvMm0y\remotes50f04b495184\nmfs-general-modeling-tools-nmfspalette-5f53637/DESCRIPTION' (389ms)</span>
-<span class="co">#&gt;       -  preparing 'nmfspalette': (978ms)</span>
-<span class="co">#&gt;    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information</span>
-<span class="co">#&gt;       -  checking for LF line-endings in source and make files and shell scripts</span>
-<span class="co">#&gt;       -  checking for empty or unneeded directories</span>
-<span class="co">#&gt;       -  building 'nmfspalette_0.0.0.9000.tar.gz'</span>
-<span class="co">#&gt;      </span>
-<span class="co">#&gt; </span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">nmfspalette</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="contributing" class="section level2">
@@ -147,6 +129,7 @@
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
+<p>To learn how to use <code>nmfspalette</code>, please check out the interactive <code>learnr</code> tutorial <a href="https://cstawitz.shinyapps.io/colors/">here</a>.</p>
 <p>Extract an interpolated color palette from the default “oceans” palette. You can change the number of colors (10 shown below).</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/nmfs_palette.html">nmfs_palette</a></span><span class="op">(</span><span class="st">"oceans"</span><span class="op">)</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>

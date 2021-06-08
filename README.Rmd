@@ -38,6 +38,9 @@ We welcome contributions to `nmfspalette`. You are welcome to make any changes y
 
 
 ## Usage 
+To learn how to use `nmfspalette`, please check out the interactive `learnr` tutorial [here](https://cstawitz.shinyapps.io/colors/).
+
+
 Extract an interpolated color palette from the default "oceans" palette. You can change the number of colors (10 shown below).
 ```{r, default_pal}
 nmfspalette::nmfs_palette("oceans")(10)
