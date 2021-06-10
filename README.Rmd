@@ -123,9 +123,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
  https://vlab.ncep.noaa.gov/redmine/projects/integrated-fisheries-toolbox/files
 
 ***** *******
-```{r out.width=75, echo=FALSE}
-knitr::include_graphics("pkgdown/figures/noaa-fisheries-rgb-2line-horizontal-small.png")
-```
+<a href="https://www.fisheries.noaa.gov/"><img src="man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" height=75 alt="NOAA Fisheries" />
 
  
 [U.S. Department of Commerce](https://www.commerce.gov/) | [National Oceanographic and Atmospheric Administration](https://www.noaa.gov) | [NOAA Fisheries](https://www.fisheries.noaa.gov/)

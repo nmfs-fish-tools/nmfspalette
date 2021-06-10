@@ -174,7 +174,7 @@ commercial product or activity by DOC or the United States Government.”
 
 -----
 
-<img src="pkgdown/figures/noaa-fisheries-rgb-2line-horizontal-small.png" width="75" />
+<a href="https://www.fisheries.noaa.gov/"><img src="man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" height=75 alt="NOAA Fisheries" />
 
 [U.S. Department of Commerce](https://www.commerce.gov/) | [National
 Oceanographic and Atmospheric Administration](https://www.noaa.gov) |
