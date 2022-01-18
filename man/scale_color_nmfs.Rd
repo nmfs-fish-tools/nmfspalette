@@ -21,8 +21,8 @@ Color scale constructor for nmfs colors
 }
 \examples{
 \dontrun{
- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
- geom_point(size = 4) +
-   scale_color_nmfs("coral")
+ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+  geom_point(size = 4) +
+  scale_color_nmfs("coral")
 }
 }
