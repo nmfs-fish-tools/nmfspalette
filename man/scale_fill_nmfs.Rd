@@ -21,9 +21,9 @@ Fill scale constructor for nmfs colors
 }
 \examples{
 \dontrun{
- ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
- geom_bar() +
-   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-   scale_fill_nmfs(palette = "crustacean", discrete=FALSE)
+ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_fill_nmfs(palette = "crustacean", discrete = FALSE)
 }
 }
