@@ -18,4 +18,5 @@ Suggests:
     testthat,
     dplyr
 Config/Needs/website:
-    rsconnect
+    rsconnect,
+    xaringan
