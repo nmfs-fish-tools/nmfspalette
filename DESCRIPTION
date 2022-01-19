@@ -17,3 +17,5 @@ Imports:
 Suggests: 
     testthat,
     dplyr
+Config/Needs/website:
+    rsconnect
