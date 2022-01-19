@@ -1,0 +1,8 @@
+pandoc: 2.7.3
+pkgdown: 2.0.2
+pkgdown_sha: ~
+articles:
+  ThemedPresentations: ThemedPresentations.html
+  xaringan_template: xaringan_template.html
+last_built: 2022-01-19T23:33Z
+
