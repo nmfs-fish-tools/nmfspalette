@@ -19,6 +19,7 @@ layout: true
   
 
 ```{r xaringanthemer, include=FALSE, warning=FALSE}
+install.packages("devtools")
 devtools::load_all(".")
 library(xaringanthemer)
 require(nmfspalette)
