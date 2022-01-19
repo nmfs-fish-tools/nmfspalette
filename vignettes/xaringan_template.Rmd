@@ -20,6 +20,8 @@ layout: true
 
 ```{r xaringanthemer, include=FALSE, warning=FALSE}
 devtools::load_all(".")
+install.packages("remotes")
+remotes::install_github('yihui/xaringan')
 library(xaringanthemer)
 require(nmfspalette)
 
