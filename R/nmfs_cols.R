@@ -2,10 +2,10 @@ nmfs_colors <- c(
   "processblue" = "#0093D0",
   "reflexblue" = "#0055A4",
   "darkblue" = "#00467F",
-  "lightteal"= "#1ECAD3",
+  "lightteal" = "#1ECAD3",
   "medteal" = "#008998",
-  "darkteal"= "#007078",
-  "ltgreen"  = "#93D500",
+  "darkteal" = "#007078",
+  "ltgreen" = "#93D500",
   "medgreen" = "#4C9C2E",
   "darkgreen" = "#007934",
   "custom" = "#7F7FFF",
@@ -27,37 +27,29 @@ nmfs_colors <- c(
 
 #' Function to extract nmfs colors as hex codes
 #'
-#' @param ... Character names of nmfs_colors 
-#' @examples 
+#' @param ... Character names of nmfs_colors
+#' @examples
 #' nmfs_cols("processblue")
 #' @export
 nmfs_cols <- function(...) {
   cols <- c(...)
-  
-  if (is.null(cols))
-    return (nmfs_colors)
-  
+
+  if (is.null(cols)) {
+    return(nmfs_colors)
+  }
+
   nmfs_colors[cols]
 }
 
 nmfs_palettes <- list(
   `oceans`  = nmfs_cols("processblue", "reflexblue", "darkblue"),
-  
   `waves`  = nmfs_cols("lightteal", "medteal", "darkteal"),
-  
   `seagrass`   = nmfs_cols("ltgreen", "medgreen", "darkgreen"),
-  
   `urchin` = nmfs_cols("custom", "medpurp", "darkpurp"),
-  
   `crustacean`  = nmfs_cols("ltorange", "medorange", "darkorange"),
-  
   `coral` = nmfs_cols("warmred", "medred", "darkred"),
-  
-  `regional web` = nmfs_cols("darkblue", "medteal","darkgreen","medpurple","medorange","darkred"),
-  
+  `regional web` = nmfs_cols("darkblue", "medteal", "darkgreen", "medpurple", "medorange", "darkred"),
   "secondary" = nmfs_cols("darkteal", "medgreen", "darkpurple", "supdkgray")
-  
-  
 )
 
 #' Return function to interpolate a nmfs color palette
@@ -66,31 +58,33 @@ nmfs_palettes <- list(
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments to pass to colorRampPalette()
 #' @importFrom grDevices colorRampPalette
-#' @examples 
+#' @examples
 #' nmfs_palette("oceans")(10)
 #' @export
 nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
   pal <- nmfs_palettes[[palette]]
-  
+
   if (reverse) pal <- rev(pal)
-  
+
   colorRampPalette(pal, ...)
 }
 
 #' Return function to interpolate a nmfs color palette
 #'
-#' @param name Character name of palette in nmfs_palettes 
+#' @param name Character name of palette in nmfs_palettes
 #' @param n Number of colors in palette
 #' @param ... Additional arguments to pass to image()
 #' @importFrom graphics box image
-#' @examples 
+#' @examples
 #' display_nmfs_palette("oceans", 10)
 #' @export
 display_nmfs_palette <- function(name, n, ...) {
   pal <- nmfs_palette(name)(n)
-  image(1:n, 1, as.matrix(1:n), col = pal, 
-               xlab = paste(name), ylab = "", xaxt = "n", 
-               yaxt = "n", bty = "n", ...)
+  image(1:n, 1, as.matrix(1:n),
+    col = pal,
+    xlab = paste(name), ylab = "", xaxt = "n",
+    yaxt = "n", bty = "n", ...
+  )
   box()
 }
 
@@ -105,14 +99,14 @@ display_nmfs_palette <- function(name, n, ...) {
 #' @importFrom ggplot2 ggplot geom_point discrete_scale scale_color_gradientn aes
 #' @examples
 #' \dontrun{
-#'  ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
-#'  geom_point(size = 4) +
-#'    scale_color_nmfs("coral")
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#'   geom_point(size = 4) +
+#'   scale_color_nmfs("coral")
 #' }
 #' @export
 scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
   pal <- nmfs_palette(palette = palette, reverse = reverse)
-  
+
   if (discrete) {
     discrete_scale("colour", paste0("nmfs_", palette), palette = pal, ...)
   } else {
@@ -130,15 +124,15 @@ scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALS
 #' @importFrom ggplot2 ggplot geom_bar theme aes discrete_scale scale_fill_gradientn
 #' @examples
 #' \dontrun{
-#'  ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
-#'  geom_bar() +
-#'    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-#'    scale_fill_nmfs(palette = "crustacean", discrete=FALSE)
+#' ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
+#'   geom_bar() +
+#'   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+#'   scale_fill_nmfs(palette = "crustacean", discrete = FALSE)
 #' }
-#'@export
+#' @export
 scale_fill_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
   pal <- nmfs_palette(palette = palette, reverse = reverse)
-  
+
   if (discrete) {
     discrete_scale("fill", paste0("nmfs_", palette), palette = pal, ...)
   } else {
