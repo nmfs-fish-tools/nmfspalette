@@ -14,6 +14,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+install.packages("remotes")
 remotes::install_github("gadenbuie/xaringanthemer")
 library(xaringanthemer)
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
