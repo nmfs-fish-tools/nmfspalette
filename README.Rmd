@@ -101,8 +101,8 @@ To use the palettes with `ggplot2`, the `scale_color_nmfs()` and `scale_fill_nmf
 
 ```{r, default_plot, fig.height=3}
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
-     geom_point(size = 4) +
-     scale_color_nmfs()
+  geom_point(size = 4) +
+  scale_color_nmfs()
 p
 ```
 
@@ -110,7 +110,7 @@ p
 ```{r, scale_fill_example, fig.height=3}
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density)) +
-  scale_fill_nmfs(palette="crustacean", discrete=FALSE, reverse=TRUE)
+  scale_fill_nmfs(palette = "crustacean", discrete = FALSE, reverse = TRUE)
 ```
 
 **************

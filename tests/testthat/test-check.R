@@ -36,7 +36,6 @@ test_that("color works", {
 })
 
 test_that("palette works", {
-
   # Check that nmfs_palette returns a function
   i <- nmfs_palette("coral")
   expect_type(i, "closure")
@@ -50,7 +49,6 @@ test_that("palette works", {
 })
 
 test_that("scale_color works", {
-
   # Check that it works with waves
   i <- plot_fun_scale("waves")
   expect_true(is.ggplot(i))
