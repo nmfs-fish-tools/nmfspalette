@@ -23,7 +23,7 @@ an R color palette for `ggplot2` using NOAA Fisheries branding colors
 ![R-CMD-check](https://github.com/nmfs-general-modeling-tools/nmfspalette/workflows/R-CMD-check/badge.svg)
 
 **************
-This implements these [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) to create a `ggplot2` compatible palette according to NOAA Fisheries branding.
+This implements these [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) to create a `ggplot2` compatible palette according to NOAA Fisheries branding. The branding materials can be found [here](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J) (NOAA internal only).
 
 ## Installation 
 
@@ -51,42 +51,37 @@ To see the palettes, use the `display_nmfs_palette()` function.
 
 ### oceans
 ```{r, fig.height = 2, displ_oceans}
-nmfspalette::display_nmfs_palette("oceans", 4)
+nmfspalette::display_nmfs_palette("oceans", 6)
 ```
 
 ### waves
 ```{r, fig.height = 2, displ_waves}
-nmfspalette::display_nmfs_palette("waves", 4)
+nmfspalette::display_nmfs_palette("waves", 6)
 ```
 
 ### seagrass
 ```{r, fig.height = 2, displ_seagrass}
-nmfspalette::display_nmfs_palette("seagrass", 4)
+nmfspalette::display_nmfs_palette("seagrass", 6)
 ```
 
 ### urchin
 ```{r, fig.height = 2, displ_urchin}
-nmfspalette::display_nmfs_palette("urchin", 4)
+nmfspalette::display_nmfs_palette("urchin", 6)
 ```
 
 ### crustacean
 ```{r, fig.height = 2, displ_crustacean}
-nmfspalette::display_nmfs_palette("crustacean", 4)
+nmfspalette::display_nmfs_palette("crustacean", 6)
 ```
 
 ### coral
 ```{r, fig.height = 2, displ_coral}
-nmfspalette::display_nmfs_palette("coral", 4)
+nmfspalette::display_nmfs_palette("coral", 6)
 ```
 
-### regional web (discrete)
+### regional (discrete)
 ```{r, fig.height = 2, displ_regional_web}
-nmfspalette::display_nmfs_palette("regional web", 6)
-```
-
-### secondary (discrete)
-```{r, fig.height = 2, displ_secondary}
-nmfspalette::display_nmfs_palette("secondary", 4)
+nmfspalette::display_nmfs_palette("regional", 6)
 ```
 
 ## Examples
@@ -101,8 +96,8 @@ To use the palettes with `ggplot2`, the `scale_color_nmfs()` and `scale_fill_nmf
 
 ```{r, default_plot, fig.height=3}
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
-     geom_point(size = 4) +
-     scale_color_nmfs()
+  geom_point(size = 4) +
+  scale_color_nmfs()
 p
 ```
 
@@ -110,7 +105,7 @@ p
 ```{r, scale_fill_example, fig.height=3}
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density)) +
-  scale_fill_nmfs(palette="crustacean", discrete=FALSE, reverse=TRUE)
+  scale_fill_nmfs(palette = "crustacean", discrete = FALSE, reverse = TRUE)
 ```
 
 **************

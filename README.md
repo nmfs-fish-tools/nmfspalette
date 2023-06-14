@@ -11,7 +11,7 @@ an R color palette for `ggplot2` using NOAA Fisheries branding colors
 This implements these
 [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
 to create a `ggplot2` compatible palette according to NOAA Fisheries
-branding.
+branding. The branding materials can be found [here](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J) (NOAA internal only).
 
 ## Installation
 

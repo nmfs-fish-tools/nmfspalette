@@ -1,0 +1,41 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/rocker-org/devcontainer-templates/tree/main/src/r-ver
+{
+	"name": "R (rocker/r-ver base) for R pkg dev",
+	"image": "ghcr.io/rocker-org/devcontainer/r-ver:4.3",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		// more info: https://github.com/rocker-org/devcontainer-features/blob/main/src/r-packages/README.md
+	  "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
+		//devtools, usethis, and pak contain utilities for r package development.
+           "packages": "cli,rlang,devtools,usethis,pak,ggplot2,dplyr",
+            "installSystemRequirements": true
+        }
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// needed so check() wil work. 
+	"postCreateCommand": "echo 'options(repos = c(CRAN = \"https://cloud.r-project.org\"))' | sudo sh -c 'cat - >>\"${R_HOME}/etc/Rprofile.site\"'",
+
+	// Configure tool-specific properties.
+	"customizations": {
+	  "vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": { 
+     		},
+			// Add the IDs of extensions you want installed when the container is created.
+			// HTML preview needed to view in development documentation, vignettes
+			//rendered to HTML
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"george-alisson.html-preview-vscode"
+			]
+	    } // vscode
+	} // customizations
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

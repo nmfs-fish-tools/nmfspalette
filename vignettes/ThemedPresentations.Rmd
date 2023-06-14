@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 install.packages("remotes")
 remotes::install_github("gadenbuie/xaringanthemer")
 library(xaringanthemer)
-remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+remotes::install_github("nmfs-fish-tools/nmfspalette")
 library(nmfspalette)
 ```
 
@@ -34,10 +34,10 @@ First, we will look at the arguments to change colors of text and backgrounds, w
 # Color theming
 
 ```{r theming, exercise = TRUE}
-
-style_xaringan(title_slide_background_color=unname(nmfs_cols("darkblue")),
-               title_slide_text_color = unname(nmfs_cols("supltgray")),
-                 background_color=unname(nmfs_cols("white")),
+style_xaringan(
+  title_slide_background_color = unname(nmfs_cols("darkblue")),
+  title_slide_text_color = unname(nmfs_cols("supltgray")),
+  background_color = unname(nmfs_cols("white")),
   text_color = unname(nmfs_cols("darkblue")),
   header_color = unname(nmfs_cols("darkblue")),
   inverse_background_color = unname(nmfs_cols("processblue")),
@@ -46,7 +46,7 @@ style_xaringan(title_slide_background_color=unname(nmfs_cols("darkblue")),
   link_color = unname(nmfs_cols("medteal")),
   text_slide_number_color = unname(nmfs_cols("lightteal")),
   code_highlight_color = unname(nmfs_cols("medteal"))
-  )
+)
 ```
 
 # Font theming
@@ -54,35 +54,37 @@ style_xaringan(title_slide_background_color=unname(nmfs_cols("darkblue")),
 To change fonts, we use the arguments ending in `_font_google`. To change the font size, use the arguments ending `_font_size`. We also change the footnote position using the `footnote_position_bottom` argument. You can provide the font size in *em* or *px* units. Font arguments need to be wrapped in `google_font()` or `xaringanthemer_font_default` wrappers. If you plan to use Google fonts, search for names on the web to find fonts similar to your choice - searching for "Calibri Google font" yielded their equivalent: "Carlito".
 
 ```{r fonts, exercise = TRUE}
-
-style_xaringan(header_font_google = google_font("Arimo"),
-  text_font_google   = google_font("Carlito", "300", "300i"),
-  code_font_google   = google_font("Source Code Pro"),
-    footnote_font_size = "0.6em",
-    footnote_position_bottom = "10px",
-    text_slide_number_font_size = "0.6em"
-  )
-
+style_xaringan(
+  header_font_google = google_font("Arimo"),
+  text_font_google = google_font("Carlito", "300", "300i"),
+  code_font_google = google_font("Source Code Pro"),
+  footnote_font_size = "0.6em",
+  footnote_position_bottom = "10px",
+  text_slide_number_font_size = "0.6em"
+)
 ```
 
 # Background images
 
 ```{r background_images, exercise = TRUE}
-#Find package directory
+# Find package directory
 images_path <- system.file("static", package = "nmfspalette")
 
-style_xaringan(background_image = file.path(images_path,"slideswoosh.PNG"),
+style_xaringan(
+  background_image = file.path(images_path, "slideswoosh.PNG"),
   background_size = "cover",
-  title_slide_background_image = file.path(images_path,"slideswooshver.png"),
-  title_slide_background_size = "cover")
+  title_slide_background_image = file.path(images_path, "slideswooshver.png"),
+  title_slide_background_size = "cover"
+)
 ```
 
 # Extra css
   
 ```{r extracss, exercise = TRUE}
-style_xaringan(extra_css = list(".remark-slide-number" =list(
-  "font-size"="0.6em",
-  "font-weight"="bold",
-  "margin" = "0px 840px -2px 0px")))
+style_xaringan(extra_css = list(".remark-slide-number" = list(
+  "font-size" = "0.6em",
+  "font-weight" = "bold",
+  "margin" = "0px 840px -2px 0px"
+)))
 ```
 
