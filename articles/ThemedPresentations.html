@@ -74,6 +74,20 @@
     Issues
   </a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fas fa-file-contract fa-lg"></span>
+     
+    Vignettes
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="../articles/ThemedPresentations.html">Theming Presentations</a>
+    </li>
+  </ul>
+</li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
@@ -93,13 +107,14 @@
 
       
 
-      </header><script src="ThemedPresentations_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+      </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>NOAA Themed Presentations</h1>
-                        <h4 data-toc-skip class="author">Christine Stawitz</h4>
+                        <h4 data-toc-skip class="author">Christine
+Stawitz</h4>
             
-            <h4 data-toc-skip class="date">2022-01-31</h4>
+            <h4 data-toc-skip class="date">2023-06-30</h4>
       
       
       <div class="hidden name"><code>ThemedPresentations.Rmd</code></div>
@@ -111,62 +126,91 @@
 <div class="section level3">
 <h3 id="theming-presentations">Theming presentations<a class="anchor" aria-label="anchor" href="#theming-presentations"></a>
 </h3>
-<p>The <code>docs/</code> folder of the package includes an <code>.Rmd</code> called <code>xaringan_themer.Rmd</code> that allows you to create a themed xaringan presentation. The themer uses the <code>nmfspalette</code> package to source the colors for text, background, and footnotes and then the <code>xaringanthemer</code> package to apply the formatting to slides without having to write CSS.</p>
-<p>The <code>xaringanthemer</code> package is needed to use this template code. Custom theme settings can be modified using the <code>style_xaringan()</code> function. In general, the arguments to <code>style_xaringan</code> follow <a href="https://www.w3schools.com/cssref/" class="external-link">CSS property</a> naming style and syntax. You don’t need to know CSS to use it, but it can be helpful. The <code>style_xaringan()</code> function generates a .css file called <code>xaringan_themer.css</code> that you will need to add into the</p>
-<p>First, we will look at the arguments to change colors of text and backgrounds, which all end in <code>_color</code>. The following code changes the background, text, footnote, link, and code highlight color to match NOAA Fisheries theming.</p>
+<p>The <code>docs/</code> folder of the package includes an
+<code>.Rmd</code> called <code>xaringan_themer.Rmd</code> that allows
+you to create a themed xaringan presentation. The themer uses the
+<code>nmfspalette</code> package to source the colors for text,
+background, and footnotes and then the <code>xaringanthemer</code>
+package to apply the formatting to slides without having to write
+CSS.</p>
+<p>The <code>xaringanthemer</code> package is needed to use this
+template code. Custom theme settings can be modified using the
+<code>style_xaringan()</code> function. In general, the arguments to
+<code>style_xaringan</code> follow <a href="https://www.w3schools.com/cssref/" class="external-link">CSS property</a> naming style
+and syntax. You don’t need to know CSS to use it, but it can be helpful.
+The <code>style_xaringan()</code> function generates a .css file called
+<code>xaringan_themer.css</code> that you will need to add into the</p>
+<p>First, we will look at the arguments to change colors of text and
+backgrounds, which all end in <code>_color</code>. The following code
+changes the background, text, footnote, link, and code highlight color
+to match NOAA Fisheries theming.</p>
 </div>
 <div class="section level2">
 <h2 id="color-theming">Color theming<a class="anchor" aria-label="anchor" href="#color-theming"></a>
 </h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="fu">style_xaringan</span><span class="op">(</span>title_slide_background_color<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"darkblue"</span><span class="op">)</span><span class="op">)</span>,
-               title_slide_text_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"supltgray"</span><span class="op">)</span><span class="op">)</span>,
-                 background_color<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"white"</span><span class="op">)</span><span class="op">)</span>,
-  text_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"darkblue"</span><span class="op">)</span><span class="op">)</span>,
-  header_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"darkblue"</span><span class="op">)</span><span class="op">)</span>,
-  inverse_background_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"processblue"</span><span class="op">)</span><span class="op">)</span>,
-  inverse_text_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"supltgray"</span><span class="op">)</span><span class="op">)</span>,
-  footnote_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"darkblue"</span><span class="op">)</span><span class="op">)</span>,
-  link_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"medteal"</span><span class="op">)</span><span class="op">)</span>,
-  text_slide_number_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"lightteal"</span><span class="op">)</span><span class="op">)</span>,
-  code_highlight_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"medteal"</span><span class="op">)</span><span class="op">)</span>
-  <span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">style_xaringan</span><span class="op">(</span></span>
+<span>  title_slide_background_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"darkblue"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  title_slide_text_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"supltgray"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  background_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"white"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  text_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"darkblue"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  header_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"darkblue"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  inverse_background_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"processblue"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  inverse_text_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"supltgray"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  footnote_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"darkblue"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  link_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"medteal"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  text_slide_number_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"lightteal"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  code_highlight_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"medteal"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">)</span></span>
+<span><span class="co">#&gt; Warning: Colors that will be used by `theme_xaringan()` need to be in</span></span>
+<span><span class="co">#&gt; hexadecimal format: text_color, header_color</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="font-theming">Font theming<a class="anchor" aria-label="anchor" href="#font-theming"></a>
 </h2>
-<p>To change fonts, we use the arguments ending in <code>_font_google</code>. To change the font size, use the arguments ending <code>_font_size</code>. We also change the footnote position using the <code>footnote_position_bottom</code> argument. You can provide the font size in <em>em</em> or <em>px</em> units. Font arguments need to be wrapped in <code>google_font()</code> or <code>xaringanthemer_font_default</code> wrappers. If you plan to use Google fonts, search for names on the web to find fonts similar to your choice - searching for “Calibri Google font” yielded their equivalent: “Carlito”.</p>
+<p>To change fonts, we use the arguments ending in
+<code>_font_google</code>. To change the font size, use the arguments
+ending <code>_font_size</code>. We also change the footnote position
+using the <code>footnote_position_bottom</code> argument. You can
+provide the font size in <em>em</em> or <em>px</em> units. Font
+arguments need to be wrapped in <code>google_font()</code> or
+<code>xaringanthemer_font_default</code> wrappers. If you plan to use
+Google fonts, search for names on the web to find fonts similar to your
+choice - searching for “Calibri Google font” yielded their equivalent:
+“Carlito”.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="fu">style_xaringan</span><span class="op">(</span>header_font_google <span class="op">=</span> <span class="fu">google_font</span><span class="op">(</span><span class="st">"Arimo"</span><span class="op">)</span>,
-  text_font_google   <span class="op">=</span> <span class="fu">google_font</span><span class="op">(</span><span class="st">"Carlito"</span>, <span class="st">"300"</span>, <span class="st">"300i"</span><span class="op">)</span>,
-  code_font_google   <span class="op">=</span> <span class="fu">google_font</span><span class="op">(</span><span class="st">"Source Code Pro"</span><span class="op">)</span>,
-    footnote_font_size <span class="op">=</span> <span class="st">"0.6em"</span>,
-    footnote_position_bottom <span class="op">=</span> <span class="st">"10px"</span>,
-    text_slide_number_font_size <span class="op">=</span> <span class="st">"0.6em"</span>
-  <span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">style_xaringan</span><span class="op">(</span></span>
+<span>  header_font_google <span class="op">=</span> <span class="fu">google_font</span><span class="op">(</span><span class="st">"Arimo"</span><span class="op">)</span>,</span>
+<span>  text_font_google <span class="op">=</span> <span class="fu">google_font</span><span class="op">(</span><span class="st">"Carlito"</span>, <span class="st">"300"</span>, <span class="st">"300i"</span><span class="op">)</span>,</span>
+<span>  code_font_google <span class="op">=</span> <span class="fu">google_font</span><span class="op">(</span><span class="st">"Source Code Pro"</span><span class="op">)</span>,</span>
+<span>  footnote_font_size <span class="op">=</span> <span class="st">"0.6em"</span>,</span>
+<span>  footnote_position_bottom <span class="op">=</span> <span class="st">"10px"</span>,</span>
+<span>  text_slide_number_font_size <span class="op">=</span> <span class="st">"0.6em"</span></span>
+<span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="background-images">Background images<a class="anchor" aria-label="anchor" href="#background-images"></a>
 </h2>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">#Find package directory</span>
-<span class="va">images_path</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"static"</span>, package <span class="op">=</span> <span class="st">"nmfspalette"</span><span class="op">)</span>
-
-<span class="fu">style_xaringan</span><span class="op">(</span>background_image <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="va">images_path</span>,<span class="st">"slideswoosh.PNG"</span><span class="op">)</span>,
-  background_size <span class="op">=</span> <span class="st">"cover"</span>,
-  title_slide_background_image <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="va">images_path</span>,<span class="st">"slideswooshver.png"</span><span class="op">)</span>,
-  title_slide_background_size <span class="op">=</span> <span class="st">"cover"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Find package directory</span></span>
+<span><span class="va">images_path</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"static"</span>, package <span class="op">=</span> <span class="st">"nmfspalette"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">style_xaringan</span><span class="op">(</span></span>
+<span>  background_image <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="va">images_path</span>, <span class="st">"slideswoosh.PNG"</span><span class="op">)</span>,</span>
+<span>  background_size <span class="op">=</span> <span class="st">"cover"</span>,</span>
+<span>  title_slide_background_image <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="va">images_path</span>, <span class="st">"slideswooshver.png"</span><span class="op">)</span>,</span>
+<span>  title_slide_background_size <span class="op">=</span> <span class="st">"cover"</span></span>
+<span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="extra-css">Extra css<a class="anchor" aria-label="anchor" href="#extra-css"></a>
 </h2>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">style_xaringan</span><span class="op">(</span>extra_css <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">".remark-slide-number"</span> <span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>
-  <span class="st">"font-size"</span><span class="op">=</span><span class="st">"0.6em"</span>,
-  <span class="st">"font-weight"</span><span class="op">=</span><span class="st">"bold"</span>,
-  <span class="st">"margin"</span> <span class="op">=</span> <span class="st">"0px 840px -2px 0px"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">style_xaringan</span><span class="op">(</span>extra_css <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">".remark-slide-number"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
+<span>  <span class="st">"font-size"</span> <span class="op">=</span> <span class="st">"0.6em"</span>,</span>
+<span>  <span class="st">"font-weight"</span> <span class="op">=</span> <span class="st">"bold"</span>,</span>
+<span>  <span class="st">"margin"</span> <span class="op">=</span> <span class="st">"0px 840px -2px 0px"</span></span>
+<span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
   </div>
 
@@ -187,7 +231,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
