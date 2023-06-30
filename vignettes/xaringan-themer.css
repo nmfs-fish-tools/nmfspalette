@@ -15,21 +15,21 @@
  *    - xaringan wiki: https://github.com/yihui/xaringan/wiki
  *    - remarkjs wiki: https://github.com/gnab/remark/wiki
  *
- *  Version: 0.3.4
+ *  Version: 0.4.2
  *
  * ------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Carlito:300,300i&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Arimo&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Cabin:600,600i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap);
 
 
 :root {
   /* Fonts */
-  --text-font-family: Carlito;
+  --text-font-family: 'Noto Sans';
   --text-font-is-google: 1;
   --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
   --text-font-base: sans-serif;
-  --header-font-family: Arimo;
+  --header-font-family: Cabin;
   --header-font-is-google: 1;
   --header-font-family-fallback: Georgia, serif;
   --code-font-family: 'Source Code Pro';
@@ -43,19 +43,19 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #00467F;
-  --header-color: #00467F;
-  --background-color: #FFFFFF;
-  --link-color: #008998;
-  --code-highlight-color: #008998;
-  --inverse-text-color: #E8E8E8;
-  --inverse-background-color: #0093D0;
+  --text-color: #000;
+  --header-color: #000;
+  --background-color: #FFF;
+  --link-color: rgb(249, 38, 114);
+  --code-highlight-color: rgba(255,255,0,0.5);
+  --inverse-text-color: #d6d6d6;
+  --inverse-background-color: #272822;
   --inverse-header-color: #f3f3f3;
-  --inverse-link-color: #008998;
-  --title-slide-background-color: #00467F;
-  --title-slide-text-color: #E8E8E8;
-  --header-background-color: #00467F;
-  --header-background-text-color: #FFFFFF;
+  --inverse-link-color: rgb(249, 38, 114);
+  --title-slide-background-color: #272822;
+  --title-slide-text-color: #d6d6d6;
+  --header-background-color: #000;
+  --header-background-text-color: #FFF;
 }
 
 html {
@@ -64,7 +64,7 @@ html {
 
 body {
   font-family: var(--text-font-family), var(--text-font-family-fallback), var(--text-font-base);
-  font-weight: 300;
+  font-weight: normal;
   color: var(--text-color);
 }
 h1, h2, h3 {
@@ -75,8 +75,6 @@ h1, h2, h3 {
 .remark-slide-content {
   background-color: var(--background-color);
   font-size: 1rem;
-  background-image: url(static/slideswoosh.PNG);
-  background-size: cover;
   padding: 16px 64px 16px 64px;
   width: 100%;
   height: 100%;
@@ -101,9 +99,12 @@ h1, h2, h3 {
   color: #000;
 }
 .remark-slide-number {
-  color: #1ECAD3;
+  color: #272822;
   opacity: 1;
-  font-size: 0.6em;
+  font-size: 0.9rem;
+}
+strong {
+  font-weight: bold;
 }
 a, a > code {
   color: var(--link-color);
@@ -111,10 +112,9 @@ a, a > code {
 }
 .footnote {
   position: absolute;
-  color: #00467F;
-  bottom: 10px;
+  bottom: 60px;
   padding-right: 4em;
-  font-size: 0.6em;
+  font-size: 0.9em;
 }
 .remark-code-line-highlighted {
   background-color: var(--code-highlight-color);
@@ -135,8 +135,6 @@ a, a > code {
 }
 .title-slide {
   background-color: var(--title-slide-background-color);
-  background-image: url("static/slideswooshver.png");
-  background-size: cover;
 }
 .title-slide .remark-slide-number {
   display: none;
@@ -187,7 +185,9 @@ blockquote {
 th, td {
   padding: 5px;
 }
-.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
+.remark-slide table:not(.table-unshaded) thead,
+.remark-slide table:not(.table-unshaded) tfoot,
+.remark-slide table:not(.table-unshaded) tr:nth-child(even) {
   background: #eee;
 }
 table.dataTable tbody {
@@ -208,6 +208,36 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   color: var(--text-color) !important;
+}
+
+/* Horizontal alignment of code blocks */
+.remark-slide-content.left pre,
+.remark-slide-content.center pre,
+.remark-slide-content.right pre {
+  text-align: start;
+  width: max-content;
+  max-width: 100%;
+}
+.remark-slide-content.left pre,
+.remark-slide-content.right pre {
+  min-width: 50%;
+  min-width: min(40ch, 100%);
+}
+.remark-slide-content.center pre {
+  min-width: 66%;
+  min-width: min(50ch, 100%);
+}
+.remark-slide-content.left pre {
+  margin-left: unset;
+  margin-right: auto;
+}
+.remark-slide-content.center pre {
+  margin-left: auto;
+  margin-right: auto;
+}
+.remark-slide-content.right pre {
+  margin-left: auto;
+  margin-right: unset;
 }
 
 /* Slide Header Background for h1 elements */
