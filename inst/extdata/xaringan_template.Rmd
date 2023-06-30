@@ -1,0 +1,92 @@
+---
+title:  "title"
+subtitle: "subtitle"
+author: "author"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css"]
+    lib_dir: libs
+    nature:
+      ratio: '4:3'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "Page %current%"
+---
+
+layout: true
+  
+
+```{r xaringanthemer, include=FALSE, warning=FALSE}
+install.packages("devtools")
+devtools::load_all(".")
+library(xaringanthemer)
+require(nmfspalette)
+
+# make colors css names
+
+style_xaringan(
+  title_slide_background_color = unname(nmfs_cols("darkblue")),
+  title_slide_text_color = unname(nmfs_cols("supltgray")),
+  background_color = unname(nmfs_cols("white")),
+  header_font_google = google_font("Arimo"),
+  text_color = unname(nmfs_cols("darkblue")),
+  header_color = unname(nmfs_cols("darkblue")),
+  text_font_google = google_font("Carlito", "300", "300i"),
+  code_font_google = google_font("Source Code Pro"),
+  background_image = "static/slideswoosh.PNG",
+  background_size = "cover",
+  title_slide_background_image = "static/slideswooshver.png",
+  title_slide_background_size = "cover",
+  inverse_background_color = unname(nmfs_cols("processblue")),
+  inverse_text_color = unname(nmfs_cols("supltgray")),
+  footnote_font_size = "0.6em",
+  footnote_color = unname(nmfs_cols("darkblue")),
+  footnote_position_bottom = "10px",
+  link_color = unname(nmfs_cols("medteal")),
+  text_slide_number_color = unname(nmfs_cols("lightteal")),
+  text_slide_number_font_size = "0.6em",
+  code_highlight_color = unname(nmfs_cols("medteal")),
+  extra_css = list(".remark-slide-number" = list(
+    "font-size" = "0.6em",
+    "font-weight" = "bold",
+    "margin" = "0px 840px -2px 0px"
+  ))
+)
+```
+
+.footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+# test
+
+- some content
+- a [link](http://www.google.com)
+
+```{r}
+r <- 2 + 2
+```
+
+---
+class: middle
+background-image: url("static/slideteal.png")
+background-image-size: "cover"
+
+# This is another background image you can use
+
+- To use this image as your title slide
+- replace the URL in the `background-image` argument of the first code chunk with the URL in this slide.
+
+
+---
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) and [**xaringanthemer**](https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).

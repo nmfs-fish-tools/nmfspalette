@@ -15,7 +15,7 @@
  *    - xaringan wiki: https://github.com/yihui/xaringan/wiki
  *    - remarkjs wiki: https://github.com/gnab/remark/wiki
  *
- *  Version: 0.3.3
+ *  Version: 0.4.2
  *
  * ------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Carlito:300,300i&display=swap);
@@ -43,18 +43,18 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #00467F;
-  --header-color: #00467F;
+  --text-color: ;
+  --header-color: ;
   --background-color: #FFFFFF;
-  --link-color: #008998;
-  --code-highlight-color: #008998;
+  --link-color: ;
+  --code-highlight-color: ;
   --inverse-text-color: #E8E8E8;
-  --inverse-background-color: #0093D0;
+  --inverse-background-color: #0085CA;
   --inverse-header-color: #f3f3f3;
-  --inverse-link-color: #008998;
-  --title-slide-background-color: #00467F;
+  --inverse-link-color: ;
+  --title-slide-background-color: ;
   --title-slide-text-color: #E8E8E8;
-  --header-background-color: #00467F;
+  --header-background-color: ;
   --header-background-text-color: #FFFFFF;
 }
 
@@ -105,13 +105,15 @@ h1, h2, h3 {
   opacity: 1;
   font-size: 0.6em;
 }
+strong {
+  font-weight: bold;
+}
 a, a > code {
   color: var(--link-color);
   text-decoration: none;
 }
 .footnote {
   position: absolute;
-  color: #00467F;
   bottom: 10px;
   padding-right: 4em;
   font-size: 0.6em;
@@ -187,7 +189,9 @@ blockquote {
 th, td {
   padding: 5px;
 }
-.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
+.remark-slide table:not(.table-unshaded) thead,
+.remark-slide table:not(.table-unshaded) tfoot,
+.remark-slide table:not(.table-unshaded) tr:nth-child(even) {
   background: #eee;
 }
 table.dataTable tbody {
@@ -208,6 +212,36 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   color: var(--text-color) !important;
+}
+
+/* Horizontal alignment of code blocks */
+.remark-slide-content.left pre,
+.remark-slide-content.center pre,
+.remark-slide-content.right pre {
+  text-align: start;
+  width: max-content;
+  max-width: 100%;
+}
+.remark-slide-content.left pre,
+.remark-slide-content.right pre {
+  min-width: 50%;
+  min-width: min(40ch, 100%);
+}
+.remark-slide-content.center pre {
+  min-width: 66%;
+  min-width: min(50ch, 100%);
+}
+.remark-slide-content.left pre {
+  margin-left: unset;
+  margin-right: auto;
+}
+.remark-slide-content.center pre {
+  margin-left: auto;
+  margin-right: auto;
+}
+.remark-slide-content.right pre {
+  margin-left: auto;
+  margin-right: unset;
 }
 
 /* Slide Header Background for h1 elements */

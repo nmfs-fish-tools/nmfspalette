@@ -5,7 +5,7 @@ navbar:
     - reference
     - github
     - issue
-    - article
+    - articles
 
   components:
     home:
@@ -33,11 +33,9 @@ navbar:
       menu:
       - text: Theming Presentations
         href: articles/ThemedPresentations.html
-      - text: Xaringan RMarkdown template
-        href: articles/xaringan_template.html
 
     tutorials:
-    - name: colors
-      title: Using nmfspalette colors
-      url: https://cstawitz.shinyapps.io/colors/
+      - name: colors
+        title: Using nmfspalette colors
+        url: https://cstawitz.shinyapps.io/colors/
         
