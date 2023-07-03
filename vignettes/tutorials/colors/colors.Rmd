@@ -8,8 +8,8 @@ description: Introduction to the nmfspalette package
 
 ```{r setup, include=FALSE}
 library(learnr)
-remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
-remotes::install_github("allisonhorst/palmerpenguins")
+pak::pak("nmfs-fish-tools/nmfspalette")
+pak::pak("allisonhorst/palmerpenguins")
 library(nmfspalette)
 library(palmerpenguins)
 library(ggplot2)

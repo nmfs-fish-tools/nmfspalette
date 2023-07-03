@@ -21,16 +21,6 @@ To install from Github use the following:
 
 ``` r
 remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
-#> -- R CMD build --------------------------------------------------------------------------------
-#>       v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmpi2pedi\remotes23a81fbd6f80\nmfs-fish-tools-nmfspalette-009e347/DESCRIPTION'
-#>       -  preparing 'nmfspalette': (919ms)
-#>    checking DESCRIPTION meta-information ...  v  checking DESCRIPTION meta-information
-#>       -  checking for LF line-endings in source and make files and shell scripts
-#>       -  checking for empty or unneeded directories
-#>      Omitted 'LazyData' from DESCRIPTION
-#>       -  building 'nmfspalette_0.0.0.9000.tar.gz'
-#>      
-#> 
 library(nmfspalette)
 ```
 
@@ -45,16 +35,16 @@ conduct](https://github.com/nmfs-fish-tools/Resources/blob/master/CONTRIBUTING.m
 
 ## Usage
 
-To learn how to use `nmfspalette`, please check out the interactive
-`learnr` tutorial [here](https://cstawitz.shinyapps.io/colors/).
+To learn how to use `nmfspalette`, please check out the [interactive
+`learnr` tutorial](https://connect.fisheries.noaa.gov/colors/).
 
 Extract an interpolated color palette from the default “oceans” palette.
 You can change the number of colors (10 shown below).
 
 ``` r
 nmfspalette::nmfs_palette("oceans")(10)
-#>  [1] "#A6D4EC" "#78BEE2" "#4AA8D9" "#1C92CF" "#0072BB" "#004295" "#002B7B" "#002467" "#001D55"
-#> [10] "#001743"
+#>  [1] "#A6D4EC" "#78BEE2" "#4AA8D9" "#1C92CF" "#0072BB" "#004295" "#002B7B"
+#>  [8] "#002467" "#001D55" "#001743"
 ```
 
 ## Palettes
@@ -172,9 +162,9 @@ The Department of Commerce seal and logo, or the seal and logo of a DOC
 bureau, shall not be used in any manner to imply endorsement of any
 commercial product or activity by DOC or the United States Government.”
 
--   This project code is made available through GitHub but is managed by
-    NOAA at
-    <https://vlab.ncep.noaa.gov/redmine/projects/integrated-fisheries-toolbox/files>
+- This project code is made available through GitHub but is managed by
+  NOAA at
+  <https://vlab.ncep.noaa.gov/redmine/projects/integrated-fisheries-toolbox/files>
 
 ------------------------------------------------------------------------
 
