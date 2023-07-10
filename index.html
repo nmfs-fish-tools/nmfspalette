@@ -124,17 +124,7 @@
 </h2>
 <p>To install from Github use the following:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"nmfs-general-modeling-tools/nmfspalette"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; -- R CMD build --------------------------------------------------------------------------------</span></span>
-<span><span class="co">#&gt;       v  checking for file 'C:\Users\chris\AppData\Local\Temp\Rtmpi2pedi\remotes23a81fbd6f80\nmfs-fish-tools-nmfspalette-009e347/DESCRIPTION'</span></span>
-<span><span class="co">#&gt;       -  preparing 'nmfspalette': (919ms)</span></span>
-<span><span class="co">#&gt;    checking DESCRIPTION meta-information ...  v  checking DESCRIPTION meta-information</span></span>
-<span><span class="co">#&gt;       -  checking for LF line-endings in source and make files and shell scripts</span></span>
-<span><span class="co">#&gt;       -  checking for empty or unneeded directories</span></span>
-<span><span class="co">#&gt;      Omitted 'LazyData' from DESCRIPTION</span></span>
-<span><span class="co">#&gt;       -  building 'nmfspalette_0.0.0.9000.tar.gz'</span></span>
-<span><span class="co">#&gt;      </span></span>
-<span><span class="co">#&gt; </span></span>
+<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"nmfs-general-modeling-tools/nmfspalette"</span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">nmfspalette</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
@@ -145,12 +135,12 @@
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
-<p>To learn how to use <code>nmfspalette</code>, please check out the interactive <code>learnr</code> tutorial <a href="https://cstawitz.shinyapps.io/colors/" class="external-link">here</a>.</p>
+<p>To learn how to use <code>nmfspalette</code>, please check out the <a href="https://connect.fisheries.noaa.gov/colors/" class="external-link">interactive <code>learnr</code> tutorial</a>.</p>
 <p>Extract an interpolated color palette from the default “oceans” palette. You can change the number of colors (10 shown below).</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/nmfs_palette.html">nmfs_palette</a></span><span class="op">(</span><span class="st">"oceans"</span><span class="op">)</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "#A6D4EC" "#78BEE2" "#4AA8D9" "#1C92CF" "#0072BB" "#004295" "#002B7B" "#002467" "#001D55"</span></span>
-<span><span class="co">#&gt; [10] "#001743"</span></span></code></pre></div>
+<span><span class="co">#&gt;  [1] "#A6D4EC" "#78BEE2" "#4AA8D9" "#1C92CF" "#0072BB" "#004295" "#002B7B"</span></span>
+<span><span class="co">#&gt;  [8] "#002467" "#001D55" "#001743"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="palettes">Palettes<a class="anchor" aria-label="anchor" href="#palettes"></a>
