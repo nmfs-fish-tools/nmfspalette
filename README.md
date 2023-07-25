@@ -1,10 +1,10 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# nmfspalette <a href={https:://nmfs-fish-tools.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
+# nmfspalette <a href={https:://nmfs-general-modeling-tools.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
 
 an R color palette for `ggplot2` using NOAA Fisheries branding colors
 
-![R-CMD-check](https://github.com/nmfs-fish-tools/nmfspalette/workflows/R-CMD-check/badge.svg)
+![R-CMD-check](https://github.com/nmfs-general-modeling-tools/nmfspalette/workflows/R-CMD-check/badge.svg)
 
 ------------------------------------------------------------------------
 
@@ -20,7 +20,16 @@ branding. The branding materials can be found
 To install from Github use the following:
 
 ``` r
-remotes::install_github("nmfs-fish-tools/nmfspalette")
+remotes::install_github("nmfs-general-modeling-tools/nmfspalette")
+#> 
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#> * checking for file ‘/tmp/RtmpjENFEl/remotes756171a623d1/nmfs-fish-tools-nmfspalette-467d858/DESCRIPTION’ ... OK
+#> * preparing ‘nmfspalette’:
+#> * checking DESCRIPTION meta-information ... OK
+#> * checking for LF line-endings in source and make files and shell scripts
+#> * checking for empty or unneeded directories
+#> Omitted ‘LazyData’ from DESCRIPTION
+#> * building ‘nmfspalette_0.0.0.9000.tar.gz’
 library(nmfspalette)
 ```
 
