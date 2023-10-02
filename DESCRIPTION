@@ -11,7 +11,7 @@ Imports:
 Suggests: 
     dplyr,
     testthat
-Config/Needs/website:rsconnect, xaringan
+Config/Needs/website: rsconnect, xaringan
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
