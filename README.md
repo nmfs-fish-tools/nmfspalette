@@ -1,37 +1,50 @@
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- README.md is generated from README.Rmd. Please edit README.Rmd -->
 
 # nmfspalette <a href={https:://nmfs-fish-tools.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
 
-an R color palette for `ggplot2` using NOAA Fisheries branding colors
+An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 
-![R-CMD-check](https://github.com/nmfs-fish-tools/nmfspalette/workflows/R-CMD-check/badge.svg)
+[![call-r-cmd-check](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml)
 
 ------------------------------------------------------------------------
 
-This implements these
+`{nmfspalette}` implements these
 [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
-to create a `ggplot2` compatible palette according to NOAA Fisheries
-branding. The branding materials can be found
-[here](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J)
-(NOAA internal only).
+to create a `{ggplot2}` compatible palette according to [NOAA Fisheries
+branding](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J)(NOAA
+internal only).
 
 ## Installation
 
-To install from Github use the following:
+To install from GitHub use the following:
 
 ``` r
 remotes::install_github("nmfs-fish-tools/nmfspalette")
+#> 
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#> * checking for file ‘/tmp/Rtmppl2Bha/remotes76d23e0c443b/nmfs-fish-tools-nmfspalette-a43127b/DESCRIPTION’ ... OK
+#> * preparing ‘nmfspalette’:
+#> * checking DESCRIPTION meta-information ... OK
+#> * checking for LF line-endings in source and make files and shell scripts
+#> * checking for empty or unneeded directories
+#> Omitted ‘LazyData’ from DESCRIPTION
+#> * building ‘nmfspalette_0.0.0.9000.tar.gz’
+```
+
+To load the package, use:
+
+``` r
 library(nmfspalette)
 ```
 
 ## Contributing
 
-We welcome contributions to `nmfspalette`. You are welcome to make any
+We welcome contributions to `{nmfspalette}`. You are welcome to make any
 changes you would like on a fork and submit a pull request. For more
 substantial changes or to create a branch, please contact
 <christine.stawitz@noaa.gov> (NOAA Affiliates only). We ask that all
 contributors adhere to The NOAA Fisheries Integrated Toolbox [code of
-conduct](https://github.com/nmfs-fish-tools/Resources/blob/master/CONTRIBUTING.md).
+conduct](https://github.com/nmfs-fish-tools/Resources/blob/main/CONTRIBUTING.md).
 
 ## Usage
 
@@ -39,6 +52,7 @@ To learn how to use `nmfspalette`, please check out the [interactive
 `learnr` tutorial](https://connect.fisheries.noaa.gov/colors/).
 
 Extract an interpolated color palette from the default “oceans” palette.
+
 You can change the number of colors (10 shown below).
 
 ``` r
@@ -109,10 +123,12 @@ nmfspalette::display_nmfs_palette("regional", 6)
 
 ## Examples
 
-In addition to `nmfs_palette` and `display_nmfs_palette` to get in-built
-palettes, you can extract colors by name. Please see the NOAA Fisheries
-Branding guide for color names, all spaces are replaced with underscores
-in the color names.
+In addition to `nmfs_palette` and `display_nmfs_palette` to get
+palettes, you can extract colors by name. Please see the [NOAA Fisheries
+Branding
+guide](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J)(NOAA
+internal only) for color names. Here, all spaces are removed in the
+color names.
 
 ``` r
 nmfspalette::nmfs_cols("processblue")
@@ -120,7 +136,7 @@ nmfspalette::nmfs_cols("processblue")
 #>   "#0085CA"
 ```
 
-To use the palettes with `ggplot2`, the `scale_color_nmfs()` and
+To use the palettes with `{ggplot2}`, the `scale_color_nmfs()` and
 `scale_fill_nmfs()` functions are provided. If no argument is given to
 `scale_color_nmfs()`, a default (“oceans”) is used:
 
@@ -133,8 +149,8 @@ p
 
 ![](man/figures/default_plot-1.png)<!-- -->
 
-`scale_fill_nmfs` does not have a default and therefore requires a named
-argument for now, this is an example using the “crustacean” palette
+`scale_fill_nmfs()` does not have a default and therefore requires a
+named argument, this is an example using the “crustacean” palette:
 
 ``` r
 ggplot(faithfuld, aes(waiting, eruptions)) +
@@ -161,10 +177,6 @@ endorsement, recommendation or favoring by the Department of Commerce.
 The Department of Commerce seal and logo, or the seal and logo of a DOC
 bureau, shall not be used in any manner to imply endorsement of any
 commercial product or activity by DOC or the United States Government.”
-
-- This project code is made available through GitHub but is managed by
-  NOAA at
-  <https://vlab.ncep.noaa.gov/redmine/projects/integrated-fisheries-toolbox/files>
 
 ------------------------------------------------------------------------
 
