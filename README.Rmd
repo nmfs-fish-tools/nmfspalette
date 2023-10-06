@@ -20,7 +20,7 @@ require(ggplot2)
 
 An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 
-![R-CMD-check](https://github.com/nmfs-fish-tools/nmfspalette/workflows/call-r-cmd-check/badge.svg)
+[![call-r-cmd-check](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml)
 
 **************
 `{nmfspalette}` implements these [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) to create a `{ggplot2}` compatible palette according to [NOAA Fisheries branding](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J)(NOAA internal only).
@@ -30,6 +30,11 @@ An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 To install from GitHub use the following:
 ```{r, message=FALSE}
 remotes::install_github("nmfs-fish-tools/nmfspalette")
+```
+
+To load the package, use:
+```{r, message=FALSE}
+library(nmfspalette)
 ```
 
 ## Contributing
