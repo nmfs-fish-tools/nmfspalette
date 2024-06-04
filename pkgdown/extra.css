@@ -136,8 +136,7 @@ a:hover { color: #007eb2; }
 
 .nav>li {
     position: relative;
-    display: block;
-    background-color: #054698;
+    color: #054698;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
