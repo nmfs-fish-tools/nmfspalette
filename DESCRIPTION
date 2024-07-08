@@ -1,8 +1,10 @@
 Package: nmfspalette
 Title: A Color Palette for NOAA Fisheries
 Version: 3.0.0.000
-Authors@R: 
-    person("Christine", "Stawitz", , "christine.stawitz@noaa.gov", role = c("aut", "cre"))
+Authors@R: c(
+    person("Christine", "Stawitz", , "christine.stawitz@noaa.gov", role = c("aut", "cre")),
+    person("Bai", "Li", "bai.li@noaa.gov", role = "aut"),
+    person("Kathryn", "Doering", "kathryn.doering@noaa.gov", role = "aut"))
 Description: This is a package that implements a color palette in line
     with the NOAA Fisheries Branding Guide.
 License: GPL-3 | file LICENSE
