@@ -1,42 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>/articles/ThemedPresentations.html</loc>
-  </url>
-  <url>
-    <loc>/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/display_nmfs_palette.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/nmfs_cols.html</loc>
-  </url>
-  <url>
-    <loc>/reference/nmfs_palette.html</loc>
-  </url>
-  <url>
-    <loc>/reference/nmfspalette.html</loc>
-  </url>
-  <url>
-    <loc>/reference/scale_color_nmfs.html</loc>
-  </url>
-  <url>
-    <loc>/reference/scale_fill_nmfs.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/articles/ThemedPresentations.html</loc></url>
+<url><loc>/articles/index.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/reference/display_nmfs_palette.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/nmfs_cols.html</loc></url>
+<url><loc>/reference/nmfs_palette.html</loc></url>
+<url><loc>/reference/nmfspalette.html</loc></url>
+<url><loc>/reference/scale_color_nmfs.html</loc></url>
+<url><loc>/reference/scale_fill_nmfs.html</loc></url>
 </urlset>
+
