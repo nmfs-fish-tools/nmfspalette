@@ -2,6 +2,7 @@
 % Please edit documentation in R/nmfspalette.R
 \docType{package}
 \name{nmfspalette}
+\alias{nmfspalette-package}
 \alias{nmfspalette}
 \title{nmfspalette: A package for NOAA Fisheries color schemes}
 \description{
@@ -14,3 +15,13 @@ This package contains functions to support graphing in base R and ggplot2 using 
 colors.
 }
 
+\author{
+\strong{Maintainer}: Christine Stawitz \email{christine.stawitz@noaa.gov}
+
+Authors:
+\itemize{
+  \item Bai bai.li@noaa.gov Li
+  \item Kathryn kathryn.doering@noaa.gov Doering
+}
+
+}
