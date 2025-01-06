@@ -16,12 +16,12 @@ colors.
 }
 
 \author{
-\strong{Maintainer}: Christine Stawitz \email{christine.stawitz@noaa.gov}
+\strong{Maintainer}: Christine christine.stawitz@noaa.gov Stawitz
 
 Authors:
 \itemize{
-  \item Bai bai.li@noaa.gov Li
-  \item Kathryn kathryn.doering@noaa.gov Doering
+  \item Bai Li bai.li@noaa.gov
+  \item Kathryn Doering kathryn.doering@noaa.gov
 }
 
 }
