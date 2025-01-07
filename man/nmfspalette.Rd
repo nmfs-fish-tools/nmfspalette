@@ -24,4 +24,11 @@ Authors:
   \item Kathryn Doering kathryn.doering@noaa.gov
 }
 
+Other contributors:
+\itemize{
+  \item Sophie sophie.breitbart@noaa.gov Breitbart [contributor]
+  \item Steve steven.saul@noaa.gov Saul [contributor]
+  \item Sam samantha.schiano@noaa.gov Schiano [contributor]
+}
+
 }
