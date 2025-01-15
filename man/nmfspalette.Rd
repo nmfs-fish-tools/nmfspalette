@@ -16,17 +16,17 @@ colors.
 }
 
 \author{
-\strong{Maintainer}: Christine Stawitz \email{christine.stawitz@noaa.gov}
+\strong{Maintainer}: Sophie Breitbart \email{sophie.breitbart@noaa.gov}
 
 Authors:
 \itemize{
+  \item Christine Stawitz \email{christine.stawitz@noaa.gov}
   \item Bai Li \email{bai.li@noaa.gov}
 }
 
 Other contributors:
 \itemize{
   \item Kathryn Doering \email{kathryn.doering@noaa.gov} [contributor]
-  \item Sophie Breitbart \email{sophie.breitbart@noaa.gov} [contributor]
   \item Steve Saul \email{steven.saul@noaa.gov} [contributor]
   \item Sam Schiano \email{samantha.schiano@noaa.gov} [contributor]
 }
