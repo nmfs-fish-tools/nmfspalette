@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 install.packages("remotes")
 remotes::install_github("gadenbuie/xaringanthemer")
 library(xaringanthemer)
-#remotes::install_github("nmfs-fish-tools/nmfspalette")
+# remotes::install_github("nmfs-fish-tools/nmfspalette")
 library(nmfspalette)
 ```
 
