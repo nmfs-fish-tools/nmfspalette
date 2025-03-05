@@ -26,15 +26,15 @@ nmfs_colors <- c(
   "CO33white" = "#FF827A",
   "CO30black" = "#9C2122",
   "lightteal" = "#1ECAD3",
-  "westcoast" = "#007582",
+  "westcoast" = "#00797F",
   "ltgreen" = "#76BC21",
-  "southeast" = "#4a8b2c",
+  "southeast" = "#4B8320",
   "lightpurple" = "#7171FF",
-  "midatlantic" = "#5145b9",
+  "midatlantic" = "#5761C0",
   "ltorange" = "#FF8400",
   "alaska" = "#db6015",
   "warmred" = "#FF4438",
-  "pacificislands" = "#D02C2F",
+  "pacificislands" = "#B71300",
   "white" = "#FFFFFF",
   "supltgray" = "#E8E8E8",
   "ltgray" = "#D0D0D0",
@@ -66,7 +66,7 @@ nmfs_palettes <- list(
   `urchin` = nmfs_cols("U66white", "U33white", "lightpurple", "midatlantic", "U30black", "U50black"),
   `crustacean` = nmfs_cols("CR66white", "CR33white", "ltorange", "alaska", "CR30black", "CR50black"),
   `coral` = nmfs_cols("CO66white", "CO33white", "warmred", "pacificislands", "CO30black", "CO50black"),
-  `regional` = nmfs_cols("national", "westcoast", "midatlantic", "alaska", "pacificislands", "darkred")
+  `regional` = nmfs_cols("national", "westcoast", "southeast", "midatlantic", "alaska", "pacificislands")
 )
 
 #' Return function to interpolate a nmfs color palette
