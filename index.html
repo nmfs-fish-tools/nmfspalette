@@ -122,16 +122,7 @@
 </h2>
 <p>To install from GitHub use the following:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"nmfs-fish-tools/nmfspalette"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ── R CMD build ─────────────────────────────────────────────────────────────────</span></span>
-<span><span class="co">#&gt; * checking for file ‘/tmp/Rtmppl2Bha/remotes76d23e0c443b/nmfs-fish-tools-nmfspalette-a43127b/DESCRIPTION’ ... OK</span></span>
-<span><span class="co">#&gt; * preparing ‘nmfspalette’:</span></span>
-<span><span class="co">#&gt; * checking DESCRIPTION meta-information ... OK</span></span>
-<span><span class="co">#&gt; * checking for LF line-endings in source and make files and shell scripts</span></span>
-<span><span class="co">#&gt; * checking for empty or unneeded directories</span></span>
-<span><span class="co">#&gt; Omitted ‘LazyData’ from DESCRIPTION</span></span>
-<span><span class="co">#&gt; * building ‘nmfspalette_0.0.0.9000.tar.gz’</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"nmfs-fish-tools/nmfspalette"</span><span class="op">)</span></span></code></pre></div>
 <p>To load the package, use:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">nmfspalette</span><span class="op">)</span></span></code></pre></div>
@@ -149,8 +140,9 @@
 <p>You can change the number of colors (10 shown below).</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/nmfs_palette.html">nmfs_palette</a></span><span class="op">(</span><span class="st">"oceans"</span><span class="op">)</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "#A6D4EC" "#78BEE2" "#4AA8D9" "#1C92CF" "#0072BB" "#004295" "#002B7B"</span></span>
-<span><span class="co">#&gt;  [8] "#002467" "#001D55" "#001743"</span></span></code></pre></div>
+<span><span class="co">#&gt;  [1] "#A6D4EC" "#78BEE2" "#4AA8D9" "#1C92CF"</span></span>
+<span><span class="co">#&gt;  [5] "#0072BB" "#004295" "#002B7B" "#002467"</span></span>
+<span><span class="co">#&gt;  [9] "#001D55" "#001743"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="palettes">Palettes<a class="anchor" aria-label="anchor" href="#palettes"></a>
@@ -161,49 +153,63 @@
 </h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"oceans"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/displ_oceans-1.png"><!-- --></p>
+<div class="float">
+<img src="reference/figures/displ_oceans-1.png" alt="plot of chunk displ_oceans"><div class="figcaption">plot of chunk displ_oceans</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="waves">waves<a class="anchor" aria-label="anchor" href="#waves"></a>
 </h3>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"waves"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/displ_waves-1.png"><!-- --></p>
+<div class="float">
+<img src="reference/figures/displ_waves-1.png" alt="plot of chunk displ_waves"><div class="figcaption">plot of chunk displ_waves</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="seagrass">seagrass<a class="anchor" aria-label="anchor" href="#seagrass"></a>
 </h3>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"seagrass"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/displ_seagrass-1.png"><!-- --></p>
+<div class="float">
+<img src="reference/figures/displ_seagrass-1.png" alt="plot of chunk displ_seagrass"><div class="figcaption">plot of chunk displ_seagrass</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="urchin">urchin<a class="anchor" aria-label="anchor" href="#urchin"></a>
 </h3>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"urchin"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/displ_urchin-1.png"><!-- --></p>
+<div class="float">
+<img src="reference/figures/displ_urchin-1.png" alt="plot of chunk displ_urchin"><div class="figcaption">plot of chunk displ_urchin</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="crustacean">crustacean<a class="anchor" aria-label="anchor" href="#crustacean"></a>
 </h3>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"crustacean"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/displ_crustacean-1.png"><!-- --></p>
+<div class="float">
+<img src="reference/figures/displ_crustacean-1.png" alt="plot of chunk displ_crustacean"><div class="figcaption">plot of chunk displ_crustacean</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="coral">coral<a class="anchor" aria-label="anchor" href="#coral"></a>
 </h3>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"coral"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/displ_coral-1.png"><!-- --></p>
+<div class="float">
+<img src="reference/figures/displ_coral-1.png" alt="plot of chunk displ_coral"><div class="figcaption">plot of chunk displ_coral</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="regional-discrete">regional (discrete)<a class="anchor" aria-label="anchor" href="#regional-discrete"></a>
 </h3>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"regional"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/displ_regional_web-1.png"><!-- --></p>
+<div class="float">
+<img src="reference/figures/displ_regional_web-1.png" alt="plot of chunk displ_regional_web"><div class="figcaption">plot of chunk displ_regional_web</div>
+</div>
 </div>
 </div>
 <div class="section level2">
@@ -220,13 +226,17 @@
 <span>  <span class="fu">geom_point</span><span class="op">(</span>size <span class="op">=</span> <span class="fl">4</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/scale_color_nmfs.html">scale_color_nmfs</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">p</span></span></code></pre></div>
-<p><img src="reference/figures/default_plot-1.png"><!-- --></p>
+<div class="float">
+<img src="reference/figures/default_plot-1.png" alt="plot of chunk default_plot"><div class="figcaption">plot of chunk default_plot</div>
+</div>
 <p><code><a href="reference/scale_fill_nmfs.html">scale_fill_nmfs()</a></code> does not have a default and therefore requires a named argument, this is an example using the “crustacean” palette:</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">faithfuld</span>, <span class="fu">aes</span><span class="op">(</span><span class="va">waiting</span>, <span class="va">eruptions</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_raster</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>fill <span class="op">=</span> <span class="va">density</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/scale_fill_nmfs.html">scale_fill_nmfs</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"crustacean"</span>, discrete <span class="op">=</span> <span class="cn">FALSE</span>, reverse <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/scale_fill_example-1.png"><!-- --></p>
+<div class="float">
+<img src="reference/figures/scale_fill_example-1.png" alt="plot of chunk scale_fill_example"><div class="figcaption">plot of chunk scale_fill_example</div>
+</div>
 <hr>
 </div>
 <div class="section level2">
