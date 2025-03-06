@@ -179,7 +179,7 @@ nmfs_cols <- function(...) {
 
 nmfs_palettes <- list(
   `oceans` = nmfs_cols("pale_sea_blue", "light_sea_blue", "processblue", "reflexblue", "national", "o50pblack"),
-  `waves` = nmfs_cols("dark_teal_green", "westcoast", "bright_teal", "pale_teal"),
+  `waves` = nmfs_cols("pale_teal", "bright_teal", "westcoast", "dark_teal_green"),
   `seagrass` = nmfs_cols("bright_seagrass", "ltgreen", "southeast", "dark_seagrass"),
   `urchin` = nmfs_cols("bright_urchin", "vivid_urchin", "midatlantic", "dark_urchin"),
   `crustacean` = nmfs_cols("bright_crustacean", "ltorange", "alaska", "dark_crustacean"),
