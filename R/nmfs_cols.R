@@ -127,7 +127,6 @@ nmfs_colors <- c(
   "sky_tint_1" = "#C2D9E3",
   "sky_tint_2" = "#D5E6ED",
   "sky_tint_3" = "#E9F3F6",
-
   "turtle_green" = "#283A38",
   "green_tint_1" = "#CBDAC5",
   "green_tint_2" = "#E7EFD5",
@@ -144,17 +143,14 @@ nmfs_colors <- c(
   "red" = "#B71300",
   "vivid_red" = "#DB2207",
   "bright_red" = "#FF6C57",
-
   "dark_orange" = "#853B00",
   "orange" = "#DB6015",
   "vivid_orange" = "#FF8400",
   "bright_orange" = "#FFAB38",
-
   "dark_yellow" = "#A8821B",
   "yellow" = "#DDBB25",
   "vivid_yellow" = "#F0DE02",
   "bright_yellow" = "#FFFF65",
-
   "dark_green" = "#365E17",
   "green" = "#4B8320",
   "vivid_green" = "#76BC21",
@@ -185,19 +181,15 @@ nmfs_palettes <- list(
   `crustacean` = nmfs_cols("bright_crustacean", "ltorange", "alaska", "dark_crustacean"),
   `coral` = nmfs_cols("bright_coral", "vivid_coral", "pacificislands", "dark_coral"),
   `regional` = nmfs_cols("national", "westcoast", "southeast", "midatlantic", "alaska", "pacificislands"),
-
   `complement_teal` = nmfs_cols("dark_green_teal", "teal_green", "bright_teal", "pale_teal"),
   `complement_seagrass` = nmfs_cols("dark_seagrass", "seagrass", "vivid_seagrass", "bright_seagrass"),
   `complement_urchin` = nmfs_cols("dark_urchin", "urchin", "vivid_urchin", "bright_urchin"),
   `complement_crustacean` = nmfs_cols("dark_crustacean", "crustacean", "vivid_crustacean", "bright_crustacean"),
   `complement_coral` = nmfs_cols("dark_coral", "coral", "vivid_coral", "bright_coral"),
-
   `background_sky` = nmfs_cols("midnight_sky", "sky_tint_1", "sky_tint_2", "sky_tint_3"),
   `background_green` = nmfs_cols("turtle_green", "green_tint_1", "green_tint_2", "green_tint_3"),
   `background_gray` = nmfs_cols("whale_gray", "dove_gray_tint_1", "dove_gray_tint_2", "gray_tint_3"),
-
   `core` = nmfs_cols("noaa_sky", "noaa_sea", "whale_gray", "midnight_sky", "twilight_sky", "light_sea_blue", "pale_sea_blue", "medium_sea_blue", "deep_sea_blue", "dove_gray", "gull_white"),
-
   `alert_red` = nmfs_cols("dark_red", "red", "vivid_red", "bright_red"),
   `alert_orange` = nmfs_cols("dark_orange", "orange", "vivid_orange", "bright_orange"),
   `alert_yellow` = nmfs_cols("dark_yellow", "yellow", "vivid_yellow", "bright_yellow"),
@@ -291,4 +283,3 @@ scale_fill_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE
     scale_fill_gradientn(colours = pal(256), ...)
   }
 }
-
