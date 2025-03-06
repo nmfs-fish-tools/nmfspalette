@@ -22,7 +22,7 @@ An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 ## Installation 
 
 To install from GitHub use the following:
-```{r, message=FALSE}
+```{r, eval=FALSE, message=FALSE}
 remotes::install_github("nmfs-fish-tools/nmfspalette")
 ```
 
