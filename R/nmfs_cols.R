@@ -1,10 +1,7 @@
 nmfs_colors <- c(
+  # original package colors (leaving in to protect users' existing code)
   "o66white" = "#A6D4EC",
   "o33white" = "#54ADDB",
-  "processblue" = "#0085CA",
-  "reflexblue" = "#003087",
-  "national" = "#002364",
-  "o50pblack" = "#001743",
   "w66white" = "#B3EDEF",
   "w33white" = "#6DDBE1",
   "w30black" = "#005761",
@@ -26,21 +23,142 @@ nmfs_colors <- c(
   "CO33white" = "#FF827A",
   "CO30black" = "#9C2122",
   "lightteal" = "#1ECAD3",
-  "westcoast" = "#007582",
-  "ltgreen" = "#76BC21",
-  "southeast" = "#4a8b2c",
   "lightpurple" = "#7171FF",
-  "midatlantic" = "#5145b9",
-  "ltorange" = "#FF8400",
-  "alaska" = "#db6015",
   "warmred" = "#FF4438",
-  "pacificislands" = "#D02C2F",
   "white" = "#FFFFFF",
   "supltgray" = "#E8E8E8",
   "ltgray" = "#D0D0D0",
   "medgray" = "#9A9A9A",
   "dkgray" = "#7B7B7B",
-  "supdkgray" = "#646464"
+  "supdkgray" = "#646464",
+
+  # 2023 oceans colors
+  "o50pblack" = "#001743",
+  "national" = "#002364",
+  "reflexblue" = "#003087",
+  "processblue" = "#0085CA",
+  "light_sea_blue" = "#5EB6D9",
+  "pale_sea_blue" = "#C6E6F0",
+
+  # 2023 waves colors
+  "dark_teal_green" = "#005E5E",
+  "westcoast" = "#00797F",
+  "bright_teal" = "#1EBEC7",
+  "pale_teal" = "#90DFE3",
+
+  # 2023 seagrass colors
+  "dark_seagrass" = "#365E17",
+  "southeast" = "#4B8320",
+  "ltgreen" = "#76BC21",
+  "bright_seagrass" = "#B1DC6B",
+
+  # 2023 urchin colors
+  "dark_urchin" = "#3B469A",
+  "midatlantic" = "#5761C0",
+  "vivid_urchin" = "#737BE6",
+  "bright_urchin" = "#A8B8FF",
+
+  # 2023 crustacean colors
+  "dark_crustacean" = "#853B00",
+  "alaska" = "#db6015",
+  "ltorange" = "#FF8400",
+  "bright_crustacean" = "#FFAB38",
+
+  # 2023 coral colors
+  "dark_coral" = "#901200",
+  "pacificislands" = "#B71300",
+  "vivid_coral" = "#DB2207",
+  "bright_coral" = "#FF6C57",
+
+
+  # 2023 NOAA core colors (fisheries version)
+  # Some colors, such as noaa_sky below and reflexblue above (both #003087),
+  # have the same color code but different names.
+  # This is because the branding guidance has been updated.
+  # We will leave the old colors as-is, and simply add the new color names (with
+  # repeated color codes), for ease of use. So, users can reference the same color
+  # with different names.
+  "noaa_sky" = "#003087",
+  "noaa_sea" = "#0085CA",
+  "whale_gray" = "#323C46",
+  "midnight_sky" = "#001743",
+  "twilight_sky" = "#002364",
+  # "light_sea_blue" # already defined above
+  # "pale_sea_blue" # already defined above
+  "medium_sea_blue" = "#056FB7",
+  "deep_sea_blue" = "#00559B",
+  "dove_gray" = "#A5AAAF",
+  "gull_white" = "#FFFFFF",
+
+
+  # 2023 fisheries complementary colors
+  # All of these palettes, except for the teal palette, are identical to the
+  # oceans, waves, urchin, etc. palettes above.
+
+  # "dark_green_teal" # already defined above
+  "teal_green" = "#008DA8", # this color differs from the waves' second color
+  # "bright_teal" # already defined above
+  # "pale_teal" # already defined above
+
+  # "dark_seagrass" # already defined above
+  "seagrass" = "#4B8320",
+  "vivid_seagrass" = "#76BC21",
+  # "bright_seagrass" # already defined above
+
+  # "dark_urchin" # already defined above
+  "urchin" = "#5761C0",
+  # "vivid_urchin" # already defined above
+  # "bright_urchin" # already defined above
+
+  # "dark_crustacean" # already defined above
+  "crustacean" = "#DB6015",
+  "vivid_crustacean" = "#FF8400",
+  # "bright_crustacean" # already defined above
+
+  # "dark_coral" # already defined above
+  "coral" = "#B71300",
+  # "vivid_coral" # already defined above
+  # "bright_coral" # already defined above
+
+
+  # 2023 fisheries background & tint colors
+
+  # "midnight_sky" # already defined above
+  "sky_tint_1" = "#C2D9E3",
+  "sky_tint_2" = "#D5E6ED",
+  "sky_tint_3" = "#E9F3F6",
+
+  "turtle_green" = "#283A38",
+  "green_tint_1" = "#CBDAC5",
+  "green_tint_2" = "#E7EFD5",
+  "green_tint_3" = "#F7FAEE",
+
+  # "whale_gray" # already defined above
+  "dove_gray_tint_1" = "#A5AAAF",
+  "dove_gray_tint_2" = "#CBCFD1",
+  "gray_tint_3" = "#F1F3F3",
+
+
+  # NOAA alert colors
+  "dark_red" = "#901200",
+  "red" = "#B71300",
+  "vivid_red" = "#DB2207",
+  "bright_red" = "#FF6C57",
+
+  "dark_orange" = "#853B00",
+  "orange" = "#DB6015",
+  "vivid_orange" = "#FF8400",
+  "bright_orange" = "#FFAB38",
+
+  "dark_yellow" = "#A8821B",
+  "yellow" = "#DDBB25",
+  "vivid_yellow" = "#F0DE02",
+  "bright_yellow" = "#FFFF65",
+
+  "dark_green" = "#365E17",
+  "green" = "#4B8320",
+  "vivid_green" = "#76BC21",
+  "bright_green" = "#B1DC6B"
 )
 
 #' Function to extract nmfs colors as hex codes
@@ -60,13 +178,30 @@ nmfs_cols <- function(...) {
 }
 
 nmfs_palettes <- list(
-  `oceans` = nmfs_cols("o66white", "o33white", "processblue", "reflexblue", "national", "o50pblack"),
-  `waves` = nmfs_cols("w66white", "w33white", "lightteal", "westcoast", "w30black", "w50black"),
-  `seagrass` = nmfs_cols("S66white", "S33white", "ltgreen", "southeast", "S30black", "S50black"),
-  `urchin` = nmfs_cols("U66white", "U33white", "lightpurple", "midatlantic", "U30black", "U50black"),
-  `crustacean` = nmfs_cols("CR66white", "CR33white", "ltorange", "alaska", "CR30black", "CR50black"),
-  `coral` = nmfs_cols("CO66white", "CO33white", "warmred", "pacificislands", "CO30black", "CO50black"),
-  `regional` = nmfs_cols("national", "westcoast", "midatlantic", "alaska", "pacificislands", "darkred")
+  `oceans` = nmfs_cols("pale_sea_blue", "light_sea_blue", "processblue", "reflexblue", "national", "o50pblack"),
+  `waves` = nmfs_cols("dark_teal_green", "westcoast", "bright_teal", "pale_teal"),
+  `seagrass` = nmfs_cols("bright_seagrass", "ltgreen", "southeast", "dark_seagrass"),
+  `urchin` = nmfs_cols("bright_urchin", "vivid_urchin", "midatlantic", "dark_urchin"),
+  `crustacean` = nmfs_cols("bright_crustacean", "ltorange", "alaska", "dark_crustacean"),
+  `coral` = nmfs_cols("bright_coral", "vivid_coral", "pacificislands", "dark_coral"),
+  `regional` = nmfs_cols("national", "westcoast", "southeast", "midatlantic", "alaska", "pacificislands"),
+
+  `complement_teal` = nmfs_cols("dark_green_teal", "teal_green", "bright_teal", "pale_teal"),
+  `complement_seagrass` = nmfs_cols("dark_seagrass", "seagrass", "vivid_seagrass", "bright_seagrass"),
+  `complement_urchin` = nmfs_cols("dark_urchin", "urchin", "vivid_urchin", "bright_urchin"),
+  `complement_crustacean` = nmfs_cols("dark_crustacean", "crustacean", "vivid_crustacean", "bright_crustacean"),
+  `complement_coral` = nmfs_cols("dark_coral", "coral", "vivid_coral", "bright_coral"),
+
+  `background_sky` = nmfs_cols("midnight_sky", "sky_tint_1", "sky_tint_2", "sky_tint_3"),
+  `background_green` = nmfs_cols("turtle_green", "green_tint_1", "green_tint_2", "green_tint_3"),
+  `background_gray` = nmfs_cols("whale_gray", "dove_gray_tint_1", "dove_gray_tint_2", "gray_tint_3"),
+
+  `core` = nmfs_cols("noaa_sky", "noaa_sea", "whale_gray", "midnight_sky", "twilight_sky", "light_sea_blue", "pale_sea_blue", "medium_sea_blue", "deep_sea_blue", "dove_gray", "gull_white"),
+
+  `alert_red` = nmfs_cols("dark_red", "red", "vivid_red", "bright_red"),
+  `alert_orange` = nmfs_cols("dark_orange", "orange", "vivid_orange", "bright_orange"),
+  `alert_yellow` = nmfs_cols("dark_yellow", "yellow", "vivid_yellow", "bright_yellow"),
+  `alert_green` = nmfs_cols("dark_green", "green", "vivid_green", "bright_green")
 )
 
 #' Return function to interpolate a nmfs color palette
@@ -156,3 +291,4 @@ scale_fill_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE
     scale_fill_gradientn(colours = pal(256), ...)
   }
 }
+
