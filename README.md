@@ -21,6 +21,15 @@ To install from GitHub use the following:
 
 ``` r
 remotes::install_github("nmfs-fish-tools/nmfspalette")
+#> 
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#> * checking for file ‘/tmp/RtmpNSuTvy/remotes1b5843209785/nmfs-fish-tools-nmfspalette-9b80fc0/DESCRIPTION’ ... OK
+#> * preparing ‘nmfspalette’:
+#> * checking DESCRIPTION meta-information ... OK
+#> * checking for LF line-endings in source and make files and shell scripts
+#> * checking for empty or unneeded directories
+#> Omitted ‘LazyData’ from DESCRIPTION
+#> * building ‘nmfspalette_3.0.0.000.tar.gz’
 ```
 
 To load the package, use:
