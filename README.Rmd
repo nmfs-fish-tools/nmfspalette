@@ -32,7 +32,7 @@ library(nmfspalette)
 ```
 
 ## Contributing
-We welcome contributions to `{nmfspalette}`. You are welcome to make any changes you would like on a fork and submit a pull request. For more substantial changes or to create a branch, please contact christine.stawitz@noaa.gov (NOAA Affiliates only). We ask that all contributors adhere to The NOAA Fisheries Integrated Toolbox [code of conduct](https://github.com/nmfs-fish-tools/Resources/blob/main/CONTRIBUTING.md).
+We welcome contributions to `{nmfspalette}`. You are welcome to make any changes you would like on a fork and submit a pull request. For more substantial changes or to create a branch, please contact sophie.breitbart@noaa.gov (NOAA Affiliates only). We ask that all contributors adhere to The NOAA Fisheries Integrated Toolbox [code of conduct](https://github.com/nmfs-fish-tools/Resources/blob/main/CONTRIBUTING.md).
 
 
 ## Usage 
@@ -48,44 +48,99 @@ nmfspalette::nmfs_palette("oceans")(10)
 ## Palettes
 To see the palettes, use the `display_nmfs_palette()` function.
 
-### oceans
+### Main NOAA Fisheries palettes
+These palettes contain 4 or 6 colors.
+
+#### oceans
 ```{r, fig.height = 2, displ_oceans}
 nmfspalette::display_nmfs_palette("oceans", 6)
 ```
 
-### waves
+#### waves
 ```{r, fig.height = 2, displ_waves}
-nmfspalette::display_nmfs_palette("waves", 6)
+nmfspalette::display_nmfs_palette("waves", 4)
 ```
 
-### seagrass
+#### seagrass
 ```{r, fig.height = 2, displ_seagrass}
-nmfspalette::display_nmfs_palette("seagrass", 6)
+nmfspalette::display_nmfs_palette("seagrass", 4)
 ```
 
-### urchin
+#### urchin
 ```{r, fig.height = 2, displ_urchin}
-nmfspalette::display_nmfs_palette("urchin", 6)
+nmfspalette::display_nmfs_palette("urchin", 4)
 ```
 
-### crustacean
+#### crustacean
 ```{r, fig.height = 2, displ_crustacean}
-nmfspalette::display_nmfs_palette("crustacean", 6)
+nmfspalette::display_nmfs_palette("crustacean", 4)
 ```
 
-### coral
+#### coral
 ```{r, fig.height = 2, displ_coral}
-nmfspalette::display_nmfs_palette("coral", 6)
+nmfspalette::display_nmfs_palette("coral", 4)
 ```
 
-### regional (discrete)
+#### regional (discrete)
 ```{r, fig.height = 2, displ_regional_web}
 nmfspalette::display_nmfs_palette("regional", 6)
 ```
 
+### NOAA Fisheries complementary colors
+These 5 palettes contain 4 complementary colors each. With the exception of the waves/complementary teal palettes (which vary in 1/4 colors), the remaining palettes are identical to the main NOAA Fisheries palettes. Check out the [nmfs_cols.R file](https://github.com/nmfs-fish-tools/nmfspalette/blob/main/R/nmfs_cols.R) for more information.
+
+### NOAA Fisheries background & tint colors
+These palettes contain 4 colors.
+
+#### background sky
+```{r, fig.height = 2, displ_background_sky}
+nmfspalette::display_nmfs_palette("background_sky", 4)
+```
+
+#### background green
+```{r, fig.height = 2, displ_background_green}
+nmfspalette::display_nmfs_palette("background_green", 4)
+```
+
+#### background gray
+```{r, fig.height = 2, displ_background_gray}
+nmfspalette::display_nmfs_palette("background_gray", 4)
+```
+
+
+### NOAA core colors (Fisheries version)
+This palette contains 11 colors.
+
+```{r, fig.height = 2, displ_core}
+nmfspalette::display_nmfs_palette("core", 11)
+```
+
+### NOAA alert colors
+These palettes contain 4 colors.
+
+#### alert red
+```{r, fig.height = 2, displ_alert_red}
+nmfspalette::display_nmfs_palette("alert_red", 4)
+```
+
+#### alert orange
+```{r, fig.height = 2, displ_alert_orange}
+nmfspalette::display_nmfs_palette("alert_orange", 4)
+```
+
+#### alert yellow
+```{r, fig.height = 2, displ_alert_yellow}
+nmfspalette::display_nmfs_palette("alert_yellow", 4)
+```
+
+#### alert green
+```{r, fig.height = 2, displ_alert_green}
+nmfspalette::display_nmfs_palette("alert_green", 4)
+```
+
 ## Examples
 
-In addition to `nmfs_palette` and `display_nmfs_palette` to get palettes, you can extract colors by name. Please see the [NOAA Fisheries Branding guide](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J)(NOAA internal only) for color names. Here, all spaces are removed in the color names.
+In addition to `nmfs_palette` and `display_nmfs_palette` to get palettes, you can extract colors by name. Please see the [NOAA Fisheries Branding guide](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J) (NOAA internal only) for color names. Here, all spaces are removed in the color names.
 
 ```{r, nmfs_cols}
 nmfspalette::nmfs_cols("processblue")

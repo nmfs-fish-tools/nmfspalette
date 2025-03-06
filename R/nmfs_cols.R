@@ -92,9 +92,11 @@ nmfs_colors <- c(
 
 
   # 2023 fisheries complementary colors
+  # All of these palettes, except for the teal palette, are identical to the
+  # oceans, waves, urchin, etc. palettes above.
 
   # "dark_green_teal" # already defined above
-  "teal_green" = "#008DA8",
+  "teal_green" = "#008DA8", # this color differs from the waves' second color
   # "bright_teal" # already defined above
   # "pale_teal" # already defined above
 
@@ -184,22 +186,22 @@ nmfs_palettes <- list(
   `coral` = nmfs_cols("bright_coral", "vivid_coral", "pacificislands", "dark_coral"),
   `regional` = nmfs_cols("national", "westcoast", "southeast", "midatlantic", "alaska", "pacificislands"),
 
-  `core` = nmfscols("noaa_sky", "noaa_sea", "whale_gray", "midnight_sky", "twilight_sky", "light_sea_blue", "pale_sea_blue", "medium_sea_blue", "deep_sea_blue", "dove_gray", "gull_white"),
+  `complement_teal` = nmfs_cols("dark_green_teal", "teal_green", "bright_teal", "pale_teal"),
+  `complement_seagrass` = nmfs_cols("dark_seagrass", "seagrass", "vivid_seagrass", "bright_seagrass"),
+  `complement_urchin` = nmfs_cols("dark_urchin", "urchin", "vivid_urchin", "bright_urchin"),
+  `complement_crustacean` = nmfs_cols("dark_crustacean", "crustacean", "vivid_crustacean", "bright_crustacean"),
+  `complement_coral` = nmfs_cols("dark_coral", "coral", "vivid_coral", "bright_coral"),
 
-  `complement_teal` = nmfscols("dark_green_teal", "teal_green", "bright_teal", "pale_teal"),
-  `complement_seagrass` = nmfscols("dark_seagrass", "seagrass", "vivid_seagrass", "bright_seagrass"),
-  `complement_urchin` = nmfscols("dark_urchin", "urchin", "vivid_urchin", "bright_urchin"),
-  `complement_crustacean` = nmfscols("dark_crustacean", "crustacean", "vivid_crustacean", "bright_crustacean"),
-  `complement_coral` = nmfscols("dark_coral", "coral", "vivid_coral", "bright_coral"),
+  `background_sky` = nmfs_cols("midnight_sky", "sky_tint_1", "sky_tint_2", "sky_tint_3"),
+  `background_green` = nmfs_cols("turtle_green", "green_tint_1", "green_tint_2", "green_tint_3"),
+  `background_gray` = nmfs_cols("whale_gray", "dove_gray_tint_1", "dove_gray_tint_2", "gray_tint_3"),
 
-  `background_sky` = nmfscols("midnight_sky", "sky_tint_1", "sky_tint_2", "sky_tint_3"),
-  `background_green` = nmfscols("turtle_green", "green_tint_1", "green_tint_2", "green_tint_3"),
-  `background_gray` = nmfscols("whale_gray", "dove_gray_tint_1", "dove_gray_tint_2", "gray_tint_3"),
+  `core` = nmfs_cols("noaa_sky", "noaa_sea", "whale_gray", "midnight_sky", "twilight_sky", "light_sea_blue", "pale_sea_blue", "medium_sea_blue", "deep_sea_blue", "dove_gray", "gull_white"),
 
-  `alert_red` = nmfscols("dark_red", "red", "vivid_red", "bright_red"),
-  `alert_orange` = nmfscols("dark_orange", "orange", "vivid_orange", "bright_orange"),
-  `alert_yellow` = nmfscols("dark_yellow", "yellow", "vivid_yellow", "bright_yellow"),
-  `alert_green` = nmfscols("dark_green", "green", "vivid_green", "bright_green")
+  `alert_red` = nmfs_cols("dark_red", "red", "vivid_red", "bright_red"),
+  `alert_orange` = nmfs_cols("dark_orange", "orange", "vivid_orange", "bright_orange"),
+  `alert_yellow` = nmfs_cols("dark_yellow", "yellow", "vivid_yellow", "bright_yellow"),
+  `alert_green` = nmfs_cols("dark_green", "green", "vivid_green", "bright_green")
 )
 
 #' Return function to interpolate a nmfs color palette
@@ -289,3 +291,4 @@ scale_fill_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE
     scale_fill_gradientn(colours = pal(256), ...)
   }
 }
+
