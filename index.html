@@ -130,7 +130,7 @@
 <div class="section level2">
 <h2 id="contributing">Contributing<a class="anchor" aria-label="anchor" href="#contributing"></a>
 </h2>
-<p>We welcome contributions to <code>{nmfspalette}</code>. You are welcome to make any changes you would like on a fork and submit a pull request. For more substantial changes or to create a branch, please contact <a href="mailto:christine.stawitz@noaa.gov" class="email">christine.stawitz@noaa.gov</a> (NOAA Affiliates only). We ask that all contributors adhere to The NOAA Fisheries Integrated Toolbox <a href="https://github.com/nmfs-fish-tools/Resources/blob/main/CONTRIBUTING.md" class="external-link">code of conduct</a>.</p>
+<p>We welcome contributions to <code>{nmfspalette}</code>. You are welcome to make any changes you would like on a fork and submit a pull request. For more substantial changes or to create a branch, please contact <a href="mailto:sophie.breitbart@noaa.gov" class="email">sophie.breitbart@noaa.gov</a> (NOAA Affiliates only). We ask that all contributors adhere to The NOAA Fisheries Integrated Toolbox <a href="https://github.com/nmfs-fish-tools/Resources/blob/main/CONTRIBUTING.md" class="external-link">code of conduct</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
@@ -140,103 +140,161 @@
 <p>You can change the number of colors (10 shown below).</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/nmfs_palette.html">nmfs_palette</a></span><span class="op">(</span><span class="st">"oceans"</span><span class="op">)</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "#A6D4EC" "#78BEE2" "#4AA8D9" "#1C92CF"</span></span>
-<span><span class="co">#&gt;  [5] "#0072BB" "#004295" "#002B7B" "#002467"</span></span>
-<span><span class="co">#&gt;  [9] "#001D55" "#001743"</span></span></code></pre></div>
+<span><span class="co">#&gt;  [1] "#C6E6F0" "#8CCBE3" "#53B0D7" "#1F95CF" "#0072BB" "#004295" "#002B7B"</span></span>
+<span><span class="co">#&gt;  [8] "#002467" "#001D55" "#001743"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="palettes">Palettes<a class="anchor" aria-label="anchor" href="#palettes"></a>
 </h2>
 <p>To see the palettes, use the <code><a href="reference/display_nmfs_palette.html">display_nmfs_palette()</a></code> function.</p>
 <div class="section level3">
-<h3 id="oceans">oceans<a class="anchor" aria-label="anchor" href="#oceans"></a>
+<h3 id="main-noaa-fisheries-palettes">Main NOAA Fisheries palettes<a class="anchor" aria-label="anchor" href="#main-noaa-fisheries-palettes"></a>
 </h3>
+<p>These palettes contain 4 or 6 colors.</p>
+<div class="section level4">
+<h4 id="oceans">oceans<a class="anchor" aria-label="anchor" href="#oceans"></a>
+</h4>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"oceans"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<div class="float">
-<img src="reference/figures/displ_oceans-1.png" alt="plot of chunk displ_oceans"><div class="figcaption">plot of chunk displ_oceans</div>
+<p><img src="reference/figures/displ_oceans-1.png"><!-- --></p>
 </div>
-</div>
-<div class="section level3">
-<h3 id="waves">waves<a class="anchor" aria-label="anchor" href="#waves"></a>
-</h3>
+<div class="section level4">
+<h4 id="waves">waves<a class="anchor" aria-label="anchor" href="#waves"></a>
+</h4>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"waves"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<div class="float">
-<img src="reference/figures/displ_waves-1.png" alt="plot of chunk displ_waves"><div class="figcaption">plot of chunk displ_waves</div>
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"waves"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_waves-1.png"><!-- --></p>
 </div>
-</div>
-<div class="section level3">
-<h3 id="seagrass">seagrass<a class="anchor" aria-label="anchor" href="#seagrass"></a>
-</h3>
+<div class="section level4">
+<h4 id="seagrass">seagrass<a class="anchor" aria-label="anchor" href="#seagrass"></a>
+</h4>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"seagrass"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<div class="float">
-<img src="reference/figures/displ_seagrass-1.png" alt="plot of chunk displ_seagrass"><div class="figcaption">plot of chunk displ_seagrass</div>
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"seagrass"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_seagrass-1.png"><!-- --></p>
 </div>
-</div>
-<div class="section level3">
-<h3 id="urchin">urchin<a class="anchor" aria-label="anchor" href="#urchin"></a>
-</h3>
+<div class="section level4">
+<h4 id="urchin">urchin<a class="anchor" aria-label="anchor" href="#urchin"></a>
+</h4>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"urchin"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<div class="float">
-<img src="reference/figures/displ_urchin-1.png" alt="plot of chunk displ_urchin"><div class="figcaption">plot of chunk displ_urchin</div>
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"urchin"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_urchin-1.png"><!-- --></p>
 </div>
-</div>
-<div class="section level3">
-<h3 id="crustacean">crustacean<a class="anchor" aria-label="anchor" href="#crustacean"></a>
-</h3>
+<div class="section level4">
+<h4 id="crustacean">crustacean<a class="anchor" aria-label="anchor" href="#crustacean"></a>
+</h4>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"crustacean"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<div class="float">
-<img src="reference/figures/displ_crustacean-1.png" alt="plot of chunk displ_crustacean"><div class="figcaption">plot of chunk displ_crustacean</div>
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"crustacean"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_crustacean-1.png"><!-- --></p>
 </div>
-</div>
-<div class="section level3">
-<h3 id="coral">coral<a class="anchor" aria-label="anchor" href="#coral"></a>
-</h3>
+<div class="section level4">
+<h4 id="coral">coral<a class="anchor" aria-label="anchor" href="#coral"></a>
+</h4>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"coral"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<div class="float">
-<img src="reference/figures/displ_coral-1.png" alt="plot of chunk displ_coral"><div class="figcaption">plot of chunk displ_coral</div>
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"coral"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_coral-1.png"><!-- --></p>
 </div>
-</div>
-<div class="section level3">
-<h3 id="regional-discrete">regional (discrete)<a class="anchor" aria-label="anchor" href="#regional-discrete"></a>
-</h3>
+<div class="section level4">
+<h4 id="regional-discrete">regional (discrete)<a class="anchor" aria-label="anchor" href="#regional-discrete"></a>
+</h4>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"regional"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
-<div class="float">
-<img src="reference/figures/displ_regional_web-1.png" alt="plot of chunk displ_regional_web"><div class="figcaption">plot of chunk displ_regional_web</div>
+<p><img src="reference/figures/displ_regional_web-1.png"><!-- --></p>
+</div>
+</div>
+<div class="section level3">
+<h3 id="noaa-fisheries-complementary-colors">NOAA Fisheries complementary colors<a class="anchor" aria-label="anchor" href="#noaa-fisheries-complementary-colors"></a>
+</h3>
+<p>These 5 palettes contain 4 complementary colors each. With the exception of the waves/complementary teal palettes (which vary in 1/4 colors), the remaining palettes are identical to the main NOAA Fisheries palettes. Check out the <a href="https://github.com/nmfs-fish-tools/nmfspalette/blob/main/R/nmfs_cols.R" class="external-link">nmfs_cols.R file</a> for more information.</p>
+</div>
+<div class="section level3">
+<h3 id="noaa-fisheries-background--tint-colors">NOAA Fisheries background &amp; tint colors<a class="anchor" aria-label="anchor" href="#noaa-fisheries-background--tint-colors"></a>
+</h3>
+<p>These palettes contain 4 colors.</p>
+<div class="section level4">
+<h4 id="background-sky">background sky<a class="anchor" aria-label="anchor" href="#background-sky"></a>
+</h4>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"background_sky"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_background_sky-1.png"><!-- --></p>
+</div>
+<div class="section level4">
+<h4 id="background-green">background green<a class="anchor" aria-label="anchor" href="#background-green"></a>
+</h4>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"background_green"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_background_green-1.png"><!-- --></p>
+</div>
+<div class="section level4">
+<h4 id="background-gray">background gray<a class="anchor" aria-label="anchor" href="#background-gray"></a>
+</h4>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"background_gray"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_background_gray-1.png"><!-- --></p>
+</div>
+</div>
+<div class="section level3">
+<h3 id="noaa-core-colors-fisheries-version">NOAA core colors (Fisheries version)<a class="anchor" aria-label="anchor" href="#noaa-core-colors-fisheries-version"></a>
+</h3>
+<p>This palette contains 11 colors.</p>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"core"</span>, <span class="fl">11</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_core-1.png"><!-- --></p>
+</div>
+<div class="section level3">
+<h3 id="noaa-alert-colors">NOAA alert colors<a class="anchor" aria-label="anchor" href="#noaa-alert-colors"></a>
+</h3>
+<p>These palettes contain 4 colors.</p>
+<div class="section level4">
+<h4 id="alert-red">alert red<a class="anchor" aria-label="anchor" href="#alert-red"></a>
+</h4>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"alert_red"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_alert_red-1.png"><!-- --></p>
+</div>
+<div class="section level4">
+<h4 id="alert-orange">alert orange<a class="anchor" aria-label="anchor" href="#alert-orange"></a>
+</h4>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"alert_orange"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_alert_orange-1.png"><!-- --></p>
+</div>
+<div class="section level4">
+<h4 id="alert-yellow">alert yellow<a class="anchor" aria-label="anchor" href="#alert-yellow"></a>
+</h4>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"alert_yellow"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_alert_yellow-1.png"><!-- --></p>
+</div>
+<div class="section level4">
+<h4 id="alert-green">alert green<a class="anchor" aria-label="anchor" href="#alert-green"></a>
+</h4>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"alert_green"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_alert_green-1.png"><!-- --></p>
 </div>
 </div>
 </div>
 <div class="section level2">
 <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h2>
-<p>In addition to <code>nmfs_palette</code> and <code>display_nmfs_palette</code> to get palettes, you can extract colors by name. Please see the <a href="https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J" class="external-link">NOAA Fisheries Branding guide</a>(NOAA internal only) for color names. Here, all spaces are removed in the color names.</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<p>In addition to <code>nmfs_palette</code> and <code>display_nmfs_palette</code> to get palettes, you can extract colors by name. Please see the <a href="https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J" class="external-link">NOAA Fisheries Branding guide</a> (NOAA internal only) for color names. Here, all spaces are removed in the color names.</p>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"processblue"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; processblue </span></span>
 <span><span class="co">#&gt;   "#0085CA"</span></span></code></pre></div>
 <p>To use the palettes with <a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a>, the <code><a href="reference/scale_color_nmfs.html">scale_color_nmfs()</a></code> and <code><a href="reference/scale_fill_nmfs.html">scale_fill_nmfs()</a></code> functions are provided. If no argument is given to <code><a href="reference/scale_color_nmfs.html">scale_color_nmfs()</a></code>, a default (“oceans”) is used:</p>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span><span class="va">iris</span>, <span class="fu">aes</span><span class="op">(</span><span class="va">Sepal.Width</span>, <span class="va">Sepal.Length</span>, color <span class="op">=</span> <span class="va">Species</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span>size <span class="op">=</span> <span class="fl">4</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/scale_color_nmfs.html">scale_color_nmfs</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">p</span></span></code></pre></div>
-<div class="float">
-<img src="reference/figures/default_plot-1.png" alt="plot of chunk default_plot"><div class="figcaption">plot of chunk default_plot</div>
-</div>
+<p><img src="reference/figures/default_plot-1.png"><!-- --></p>
 <p><code><a href="reference/scale_fill_nmfs.html">scale_fill_nmfs()</a></code> does not have a default and therefore requires a named argument, this is an example using the “crustacean” palette:</p>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">faithfuld</span>, <span class="fu">aes</span><span class="op">(</span><span class="va">waiting</span>, <span class="va">eruptions</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_raster</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>fill <span class="op">=</span> <span class="va">density</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/scale_fill_nmfs.html">scale_fill_nmfs</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"crustacean"</span>, discrete <span class="op">=</span> <span class="cn">FALSE</span>, reverse <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
-<div class="float">
-<img src="reference/figures/scale_fill_example-1.png" alt="plot of chunk scale_fill_example"><div class="figcaption">plot of chunk scale_fill_example</div>
-</div>
+<p><img src="reference/figures/scale_fill_example-1.png"><!-- --></p>
 <hr>
 </div>
 <div class="section level2">
