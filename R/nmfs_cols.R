@@ -85,7 +85,7 @@ nmfs_colors <- c(
   "twilight_sky" = "#002364",
   # "light_sea_blue" # already defined above
   # "pale_sea_blue" # already defined above
-  "medium_sea_blue" = "#056FB7",
+  "medium_sea_blue" = "#056FAA",
   "deep_sea_blue" = "#00559B",
   "dove_gray" = "#A5AAAF",
   "gull_white" = "#FFFFFF",
@@ -135,7 +135,7 @@ nmfs_colors <- c(
   # "whale_gray" # already defined above
   "dove_gray_tint_1" = "#A5AAAF",
   "dove_gray_tint_2" = "#CBCFD1",
-  "gray_tint_3" = "#F1F3F3",
+  "gray_tint_3" = "#F1F2F3",
 
 
   # NOAA alert colors
