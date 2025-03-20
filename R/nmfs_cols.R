@@ -85,7 +85,7 @@ nmfs_colors <- c(
   "twilight_sky" = "#002364",
   # "light_sea_blue" # already defined above
   # "pale_sea_blue" # already defined above
-  "medium_sea_blue" = "#056FAA",
+  "medium_sea_blue" = "#056FB7",
   "deep_sea_blue" = "#00559B",
   "dove_gray" = "#A5AAAF",
   "gull_white" = "#FFFFFF",
