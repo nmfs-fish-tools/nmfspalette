@@ -135,7 +135,7 @@ nmfs_colors <- c(
   # "whale_gray" # already defined above
   "dove_gray_tint_1" = "#A5AAAF",
   "dove_gray_tint_2" = "#CBCFD1",
-  "gray_tint_3" = "#F1F3F3",
+  "gray_tint_3" = "#F1F2F3",
 
 
   # NOAA alert colors
