@@ -12,8 +12,8 @@ An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 `{nmfspalette}` implements these
 [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
 to create a `{ggplot2}` compatible palette according to [NOAA Fisheries
-branding](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J)(NOAA
-internal only).
+branding](https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view?usp=sharing)
+(NOAA internal only).
 
 ## Installation
 
@@ -23,7 +23,7 @@ To install from GitHub use the following:
 remotes::install_github("nmfs-fish-tools/nmfspalette")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/tmp/RtmpNSuTvy/remotes1b5843209785/nmfs-fish-tools-nmfspalette-9b80fc0/DESCRIPTION’ ... OK
+#> * checking for file ‘/tmp/Rtmpy83RTU/remotes716f159df107/nmfs-fish-tools-nmfspalette-aaf5f5e/DESCRIPTION’ ... OK
 #> * preparing ‘nmfspalette’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
@@ -128,10 +128,9 @@ nmfspalette::display_nmfs_palette("regional", 6)
 
 ### NOAA Fisheries complementary colors
 
-These 5 palettes contain 4 complementary colors each. With the exception
-of the waves/complementary teal palettes (which vary in 1/4 colors), the
-remaining palettes are identical to the main NOAA Fisheries palettes.
-Check out the [nmfs_cols.R
+These 5 palettes contain 4 complementary colors each and are identical
+to the main NOAA Fisheries palettes, but some colors have different
+names. Check out the [nmfs_cols.R
 file](https://github.com/nmfs-fish-tools/nmfspalette/blob/main/R/nmfs_cols.R)
 for more information.
 
@@ -214,11 +213,15 @@ nmfspalette::display_nmfs_palette("alert_green", 4)
 In addition to `nmfs_palette` and `display_nmfs_palette` to get
 palettes, you can extract colors by name. Please see the [NOAA Fisheries
 Branding
-guide](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J)
-(NOAA internal only) for color names. Here, all spaces are removed in
-the color names.
+guide](https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view?usp=sharing)
+(NOAA internal only) for color names. Here, for most color names,
+underscores are used in place of spaces. Colors defined before 2023 have
+no spaces in the color names.
 
 ``` r
+nmfspalette::nmfs_cols("vivid_crustacean")
+#> vivid_crustacean 
+#>        "#FF8400"
 nmfspalette::nmfs_cols("processblue")
 #> processblue 
 #>   "#0085CA"
