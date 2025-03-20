@@ -31,8 +31,9 @@ nmfs_colors <- c(
   "medgray" = "#9A9A9A",
   "dkgray" = "#7B7B7B",
   "supdkgray" = "#646464",
+  "teal_green" = "#008DA8",
 
-  # 2023 oceans colors
+  # 2024 oceans colors
   "o50pblack" = "#001743",
   "national" = "#002364",
   "reflexblue" = "#003087",
@@ -40,38 +41,38 @@ nmfs_colors <- c(
   "light_sea_blue" = "#5EB6D9",
   "pale_sea_blue" = "#C6E6F0",
 
-  # 2023 waves colors
+  # 2024 waves colors
   "dark_teal_green" = "#005E5E",
   "westcoast" = "#00797F",
   "bright_teal" = "#1EBEC7",
   "pale_teal" = "#90DFE3",
 
-  # 2023 seagrass colors
+  # 2024 seagrass colors
   "dark_seagrass" = "#365E17",
   "southeast" = "#4B8320",
   "ltgreen" = "#76BC21",
   "bright_seagrass" = "#B1DC6B",
 
-  # 2023 urchin colors
+  # 2024 urchin colors
   "dark_urchin" = "#3B469A",
   "midatlantic" = "#5761C0",
   "vivid_urchin" = "#737BE6",
   "bright_urchin" = "#A8B8FF",
 
-  # 2023 crustacean colors
+  # 2024 crustacean colors
   "dark_crustacean" = "#853B00",
-  "alaska" = "#db6015",
+  "alaska" = "#DB6015",
   "ltorange" = "#FF8400",
   "bright_crustacean" = "#FFAB38",
 
-  # 2023 coral colors
+  # 2024 coral colors
   "dark_coral" = "#901200",
   "pacificislands" = "#B71300",
   "vivid_coral" = "#DB2207",
   "bright_coral" = "#FF6C57",
 
 
-  # 2023 NOAA core colors (fisheries version)
+  # 2024 NOAA core colors (fisheries version)
   # Some colors, such as noaa_sky below and reflexblue above (both #003087),
   # have the same color code but different names.
   # This is because the branding guidance has been updated.
@@ -90,14 +91,15 @@ nmfs_colors <- c(
   "dove_gray" = "#A5AAAF",
   "gull_white" = "#FFFFFF",
 
+  # 2024 fisheries web-only colors
+  "navy_blend" = "#004391",
+  "shark_gray" = "#44545F",
 
-  # 2023 fisheries complementary colors
-  # All of these palettes, except for the teal palette, are identical to the
-  # oceans, waves, urchin, etc. palettes above.
-
-  # "dark_green_teal" # already defined above
-  "teal_green" = "#008DA8", # this color differs from the waves' second color
-  # "bright_teal" # already defined above
+  # 2024 fisheries complementary colors
+  # All of these palettes are identical to the oceans, waves, urchin, etc. palettes above.
+  "dark_teal"  = "#005E5E",
+  "fisheries_teal" = "#00797F",
+  "waves" = "#1EBEC7",
   # "pale_teal" # already defined above
 
   # "dark_seagrass" # already defined above
@@ -121,7 +123,7 @@ nmfs_colors <- c(
   # "bright_coral" # already defined above
 
 
-  # 2023 fisheries background & tint colors
+  # 2024 fisheries background & tint colors
 
   # "midnight_sky" # already defined above
   "sky_tint_1" = "#C2D9E3",
@@ -181,7 +183,7 @@ nmfs_palettes <- list(
   `crustacean` = nmfs_cols("bright_crustacean", "ltorange", "alaska", "dark_crustacean"),
   `coral` = nmfs_cols("bright_coral", "vivid_coral", "pacificislands", "dark_coral"),
   `regional` = nmfs_cols("national", "westcoast", "southeast", "midatlantic", "alaska", "pacificislands"),
-  `complement_teal` = nmfs_cols("dark_green_teal", "teal_green", "bright_teal", "pale_teal"),
+  `complement_teal` = nmfs_cols("dark_teal", "fisheries_teal", "waves", "pale_teal"),
   `complement_seagrass` = nmfs_cols("dark_seagrass", "seagrass", "vivid_seagrass", "bright_seagrass"),
   `complement_urchin` = nmfs_cols("dark_urchin", "urchin", "vivid_urchin", "bright_urchin"),
   `complement_crustacean` = nmfs_cols("dark_crustacean", "crustacean", "vivid_crustacean", "bright_crustacean"),
