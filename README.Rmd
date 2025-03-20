@@ -167,10 +167,11 @@ nmfspalette::display_nmfs_palette("alert_green", 4)
 
 ## Examples
 
-In addition to `nmfs_palette` and `display_nmfs_palette` to get palettes, you can extract colors by name. Please see the [NOAA Fisheries Branding guide](https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view?usp=sharing) (NOAA internal only) for color names. Here, underscores are used in place of spaces in the color names.
+In addition to `nmfs_palette` and `display_nmfs_palette` to get palettes, you can extract colors by name. Please see the [NOAA Fisheries Branding guide](https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view?usp=sharing) (NOAA internal only) for color names. Here, for most color names, underscores are used in place of spaces. Colors defined before 2023 have no spaces in the color names.
 
 ```{r, nmfs_cols}
 nmfspalette::nmfs_cols("vivid_crustacean")
+nmfspalette::nmfs_cols("processblue")
 ```
 
 To use the palettes with `{ggplot2}`, the `scale_color_nmfs()` and `scale_fill_nmfs()` functions are provided. If no argument is given to `scale_color_nmfs()`, a default ("oceans") is used:
