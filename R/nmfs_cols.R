@@ -97,7 +97,7 @@ nmfs_colors <- c(
 
   # 2024 fisheries complementary colors
   # All of these palettes are identical to the oceans, waves, urchin, etc. palettes above.
-  "dark_teal"  = "#005E5E",
+  "dark_teal" = "#005E5E",
   "fisheries_teal" = "#00797F",
   "waves" = "#1EBEC7",
   # "pale_teal" # already defined above
