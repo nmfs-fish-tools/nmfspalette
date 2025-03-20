@@ -21,16 +21,19 @@ An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 [![call-r-cmd-check](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml)
 
 **************
-`{nmfspalette}` implements these [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) to create a `{ggplot2}` compatible palette according to [NOAA Fisheries branding](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J)(NOAA internal only).
 
-## Installation 
+`{nmfspalette}` implements these [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) to create a `{ggplot2}` compatible palette according to [NOAA Fisheries branding](https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view?usp=sharing) (NOAA internal only).
+
+## Installation
 
 To install from GitHub use the following:
+
 ```{r, message=FALSE}
 remotes::install_github("nmfs-fish-tools/nmfspalette")
 ```
 
 To load the package, use:
+
 ```{r, message=FALSE}
 library(nmfspalette)
 ```
@@ -45,74 +48,89 @@ To learn how to use `nmfspalette`, please check out the [interactive `learnr` tu
 Extract an interpolated color palette from the default "oceans" palette. 
 
 You can change the number of colors (10 shown below).
+
 ```{r, default_pal}
 nmfspalette::nmfs_palette("oceans")(10)
 ```
 
 ## Palettes
+
 To see the palettes, use the `display_nmfs_palette()` function.
 
 ### Main NOAA Fisheries palettes
+
 These palettes contain 4 or 6 colors.
 
 #### oceans
+
 ```{r, fig.height = 2, displ_oceans}
 nmfspalette::display_nmfs_palette("oceans", 6)
 ```
 
 #### waves
+
 ```{r, fig.height = 2, displ_waves}
 nmfspalette::display_nmfs_palette("waves", 4)
 ```
 
 #### seagrass
+
 ```{r, fig.height = 2, displ_seagrass}
 nmfspalette::display_nmfs_palette("seagrass", 4)
 ```
 
 #### urchin
+
 ```{r, fig.height = 2, displ_urchin}
 nmfspalette::display_nmfs_palette("urchin", 4)
 ```
 
 #### crustacean
+
 ```{r, fig.height = 2, displ_crustacean}
 nmfspalette::display_nmfs_palette("crustacean", 4)
 ```
 
 #### coral
+
 ```{r, fig.height = 2, displ_coral}
 nmfspalette::display_nmfs_palette("coral", 4)
 ```
 
 #### regional (discrete)
+
 ```{r, fig.height = 2, displ_regional_web}
 nmfspalette::display_nmfs_palette("regional", 6)
 ```
 
 ### NOAA Fisheries complementary colors
-These 5 palettes contain 4 complementary colors each. With the exception of the waves/complementary teal palettes (which vary in 1/4 colors), the remaining palettes are identical to the main NOAA Fisheries palettes. Check out the [nmfs_cols.R file](https://github.com/nmfs-fish-tools/nmfspalette/blob/main/R/nmfs_cols.R) for more information.
+
+These 5 palettes contain 4 complementary colors each and are identical to the main NOAA Fisheries palettes, but some colors have different names. Check out the [nmfs_cols.R file](https://github.com/nmfs-fish-tools/nmfspalette/blob/main/R/nmfs_cols.R) for more information.
 
 ### NOAA Fisheries background & tint colors
+
 These palettes contain 4 colors.
 
 #### background sky
+
 ```{r, fig.height = 2, displ_background_sky}
 nmfspalette::display_nmfs_palette("background_sky", 4)
 ```
 
 #### background green
+
 ```{r, fig.height = 2, displ_background_green}
 nmfspalette::display_nmfs_palette("background_green", 4)
 ```
 
 #### background gray
+
 ```{r, fig.height = 2, displ_background_gray}
 nmfspalette::display_nmfs_palette("background_gray", 4)
 ```
 
-
 ### NOAA core colors (Fisheries version)
+
 This palette contains 11 colors.
 
 ```{r, fig.height = 2, displ_core}
@@ -120,33 +138,39 @@ nmfspalette::display_nmfs_palette("core", 11)
 ```
 
 ### NOAA alert colors
+
 These palettes contain 4 colors.
 
 #### alert red
+
 ```{r, fig.height = 2, displ_alert_red}
 nmfspalette::display_nmfs_palette("alert_red", 4)
 ```
 
 #### alert orange
+
 ```{r, fig.height = 2, displ_alert_orange}
 nmfspalette::display_nmfs_palette("alert_orange", 4)
 ```
 
 #### alert yellow
+
 ```{r, fig.height = 2, displ_alert_yellow}
 nmfspalette::display_nmfs_palette("alert_yellow", 4)
 ```
 
 #### alert green
+
 ```{r, fig.height = 2, displ_alert_green}
 nmfspalette::display_nmfs_palette("alert_green", 4)
 ```
 
 ## Examples
 
-In addition to `nmfs_palette` and `display_nmfs_palette` to get palettes, you can extract colors by name. Please see the [NOAA Fisheries Branding guide](https://drive.google.com/drive/folders/1pcMRQHGdzX4NfsiDNTCYIBpRyP1-F57J) (NOAA internal only) for color names. Here, all spaces are removed in the color names.
+In addition to `nmfs_palette` and `display_nmfs_palette` to get palettes, you can extract colors by name. Please see the [NOAA Fisheries Branding guide](https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view?usp=sharing) (NOAA internal only) for color names. Here, for most color names, underscores are used in place of spaces. Colors defined before 2023 have no spaces in the color names.
 
 ```{r, nmfs_cols}
+nmfspalette::nmfs_cols("vivid_crustacean")
 nmfspalette::nmfs_cols("processblue")
 ```
 
@@ -160,6 +184,7 @@ p
 ```
 
 `scale_fill_nmfs()` does not have a default and therefore requires a named argument, this is an example using the "crustacean" palette:
+
 ```{r, scale_fill_example, fig.height=3}
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density)) +
