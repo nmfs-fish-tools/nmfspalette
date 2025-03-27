@@ -14,11 +14,11 @@ knitr::opts_chunk$set(
 require(ggplot2)
 ```
 
-# nmfspalette <a href={https:://nmfs-fish-tools.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
+# nmfspalette <a href={https:://nmfs-ost.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
 
 An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 
-[![call-r-cmd-check](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml)
+[![call-r-cmd-check](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml)
 
 **************
 
@@ -29,7 +29,7 @@ An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 To install from GitHub use the following:
 
 ```{r, message=FALSE}
-remotes::install_github("nmfs-fish-tools/nmfspalette")
+remotes::install_github("nmfs-ost/nmfspalette")
 ```
 
 To load the package, use:
@@ -105,7 +105,7 @@ nmfspalette::display_nmfs_palette("regional", 6)
 
 ### NOAA Fisheries complementary colors
 
-These 5 palettes contain 4 complementary colors each and are identical to the main NOAA Fisheries palettes, but some colors have different names. Check out the [nmfs_cols.R file](https://github.com/nmfs-fish-tools/nmfspalette/blob/main/R/nmfs_cols.R) for more information.
+These 5 palettes contain 4 complementary colors each and are identical to the main NOAA Fisheries palettes, but some colors have different names. Check out the [nmfs_cols.R file](https://github.com/nmfs-ost/nmfspalette/blob/main/R/nmfs_cols.R) for more information.
 
 ### NOAA Fisheries background & tint colors
 
