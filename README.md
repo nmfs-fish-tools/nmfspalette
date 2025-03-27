@@ -1,11 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit README.Rmd -->
 
-# nmfspalette <a href={https:://nmfs-fish-tools.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
+# nmfspalette <a href={https:://nmfs-ost.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
 
 An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 
-[![call-r-cmd-check](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-fish-tools/nmfspalette/actions/workflows/call-r-cmd-check.yml)
+[![call-r-cmd-check](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml)
 
 ------------------------------------------------------------------------
 
@@ -20,10 +20,10 @@ branding](https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view
 To install from GitHub use the following:
 
 ``` r
-remotes::install_github("nmfs-fish-tools/nmfspalette")
+remotes::install_github("nmfs-ost/nmfspalette")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/tmp/Rtmpy83RTU/remotes716f159df107/nmfs-fish-tools-nmfspalette-aaf5f5e/DESCRIPTION’ ... OK
+#> * checking for file ‘/tmp/RtmpALoArl/remotes54522a2301aa/nmfs-ost-nmfspalette-7e62220/DESCRIPTION’ ... OK
 #> * preparing ‘nmfspalette’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
@@ -131,7 +131,7 @@ nmfspalette::display_nmfs_palette("regional", 6)
 These 5 palettes contain 4 complementary colors each and are identical
 to the main NOAA Fisheries palettes, but some colors have different
 names. Check out the [nmfs_cols.R
-file](https://github.com/nmfs-fish-tools/nmfspalette/blob/main/R/nmfs_cols.R)
+file](https://github.com/nmfs-ost/nmfspalette/blob/main/R/nmfs_cols.R)
 for more information.
 
 ### NOAA Fisheries background & tint colors
