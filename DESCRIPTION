@@ -15,10 +15,16 @@ License: GPL-3 | file LICENSE
 Imports: 
     ggplot2
 Suggests: 
+    dichromat,
     dplyr,
-    testthat
+    knitr,
+    recolorize,
+    rmarkdown,
+    testthat,
+    xaringanthemer
 Config/Needs/website: rsconnect, xaringan
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+VignetteBuilder: knitr

@@ -10,14 +10,13 @@ vignette: >
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-install.packages("remotes")
-remotes::install_github("gadenbuie/xaringanthemer")
+# knitr::opts_chunk$set(
+#   collapse = TRUE,
+#   comment = "#>"
+# )
+# install.packages("xaringanthemer")
 library(xaringanthemer)
-# remotes::install_github("nmfs-fish-tools/nmfspalette")
+# remotes::install_github("nmfs-ost/nmfspalette")
 library(nmfspalette)
 ```
 
