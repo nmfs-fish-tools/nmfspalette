@@ -18,13 +18,14 @@ vignette: >
 library(nmfspalette)
 library(dichromat)
 library(recolorize)
+library(ggplot2)
 ```
 
 # Background
 
 We are testing that the existing NMFS color palettes are usable to someone with color-vision deficiency (C.V.D.).
 
-We'll use an R package called [`dichromat`](https://cran.r-project.org/web/packages/dichromat/index.html) to approximate how these palettes might be perceived by someone with one of the most common forms of C.V.D.: protanopia, deutanopia, and tritanopia.
+We'll use an R package called [`dichromat`](https://cran.r-project.org/web/packages/dichromat/index.html) to approximate how these palettes might be perceived by someone with any of the most common forms of C.V.D.: protanopia, deutanopia, and tritanopia.
 
 This analysis is based on [this tutorial by Hannah Weller](https://hiweller.rbind.io/post/using-the-dichromat-package-to-check-if-your-plot-is-colorblind-friendly/).
 
@@ -32,12 +33,14 @@ This analysis is based on [this tutorial by Hannah Weller](https://hiweller.rbin
 ```{r eval=FALSE}
 install.packages("dichromat")
 install.packages("recolorize")
+install.packages("gridExtra")
 ```
 
 ## Load libraries
 ```{r}
 library(dichromat)
 library(recolorize)
+library(gridExtra)
 ```
 
 ## Create a function that shows perceptions of palettes
@@ -64,7 +67,7 @@ show_cvd_pals <- function(palette){
 ```
 
 # Test main palettes
-```{r}
+```{r fig.align='center'}
 # import main palettes from nmfs_cols.R file
 core_nmfs_pals <- list(
   `oceans` = nmfs_cols("pale_sea_blue", "light_sea_blue", "processblue", "reflexblue", "national", "o50pblack"),
@@ -101,12 +104,70 @@ alt_regional_pals <- list(`Alternative regional palette 1` = regions_alt1,
 
 ```
 
-## Test alternative palettes
-```{r}
+## Show alternative palettes
+```{r fig.align='center'}
 for (i in 1:length(alt_regional_pals)){
   print(names(alt_regional_pals)[i])
   show_cvd_pals(alt_regional_pals[[i]])
 }
 ```
+
+## Show alternative palettes in figures
+```{r message=FALSE, warning=FALSE, fig.width=7, fig.height=5}
+show_cvd_plots <- function(pal,
+                           pal_name){
+  
+  test_data <- data.frame(
+  palette_color = c("1", "2", "3", "4", "5", "6",
+                    "1", "2", "3", "4", "5", "6"),
+  y = c(1,2,3,4,5,6,
+        2,3,4,5,6,7)
+  )
+  
+  type <- "Trichromacy ('normal color vision')"
+  orig <- ggplot2::ggplot(data = test_data,
+          aes(x = palette_color,
+              y = y,
+              color = palette_color)) + 
+    geom_point(size = 4,
+               shape = 19) +
+    geom_line(size = 1) +
+    theme_light() +
+    theme(legend.position = "none") +
+    labs(subtitle = type,
+         x = "Palette color") +
+    scale_color_manual(values = pal)
+  orig
+  
+  type <- "Protanopia"
+  protan <- orig +
+    labs(subtitle = type) +
+    scale_color_manual(values = dichromat::dichromat(pal, type = "protan")) 
+  protan
+  
+  type <- "Deutanopia"
+  deutan <- orig +
+    labs(subtitle = type) +
+    scale_color_manual(values = dichromat::dichromat(pal, type = "deutan"))
+  deutan
+  
+  type <- "Tritanopia"
+  tritan <- orig +
+    labs(subtitle = type) +
+    scale_color_manual(values = dichromat::dichromat(pal, type = "tritan"))
+  tritan
+  
+  four_plots <- gridExtra::grid.arrange(orig, protan, deutan, tritan,
+                          top = pal_name)
+  
+  return(four_plots)
+}
+
+for (i in 1:length(alt_regional_pals)){
+  show_cvd_plots(pal = alt_regional_pals[[i]],
+                 pal_name = names(alt_regional_pals)[i])
+}
+```
+
 
 **Conclusion**: For someone with C.V.D., the alternative palettes 1 & 2 show colors 2 & 4 as very similar for tritanopia. Alternative palette 3 provides colors that seem distinguishable for all types of color perception.
