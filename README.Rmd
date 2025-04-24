@@ -2,8 +2,6 @@
 output: github_document
 ---
 
-[![coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/nmfs-ost/nmfspalette/refs/heads/badges/coverage-badge.json)](https://github.com/nmfs-ost/nmfspalette/tree/badges)
-
 <!-- README.md is generated from README.Rmd. Please edit README.Rmd -->
 
 ```{r, echo = FALSE, warning=FALSE, message=FALSE}
@@ -21,6 +19,8 @@ require(ggplot2)
 An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 
 [![call-r-cmd-check](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml)
+
+[![coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/nmfs-ost/nmfspalette/refs/heads/badges/coverage-badge.json)](https://github.com/nmfs-ost/nmfspalette/tree/badges)
 
 ------------------------------------------------------------------------
 
