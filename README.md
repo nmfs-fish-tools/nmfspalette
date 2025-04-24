@@ -1,11 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit README.Rmd -->
 
-# nmfspalette <a href={https:://nmfs-ost.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
+# nmfspalette <a href={https:://nmfs-ost.github.io/nmfspalette}><img src="man/figures/logo.png" alt="logo with an image of a fish in multiple palette colors" align="right" width="139" height="139"/>
 
 An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 
 [![call-r-cmd-check](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml)
+
+[![coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/nmfs-ost/nmfspalette/refs/heads/badges/coverage-badge.json)](https://github.com/nmfs-ost/nmfspalette/tree/badges)
 
 ------------------------------------------------------------------------
 
@@ -23,7 +25,7 @@ To install from GitHub use the following:
 remotes::install_github("nmfs-ost/nmfspalette")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/tmp/RtmpALoArl/remotes54522a2301aa/nmfs-ost-nmfspalette-7e62220/DESCRIPTION’ ... OK
+#> * checking for file ‘/tmp/Rtmp3w1WfO/remotes1b2353225737/nmfs-ost-nmfspalette-8e0fa0e/DESCRIPTION’ ... OK
 #> * preparing ‘nmfspalette’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
@@ -45,7 +47,7 @@ changes you would like on a fork and submit a pull request. For more
 substantial changes or to create a branch, please contact
 <sophie.breitbart@noaa.gov> (NOAA Affiliates only). We ask that all
 contributors adhere to The NOAA Fisheries Integrated Toolbox [code of
-conduct](https://github.com/nmfs-fish-tools/Resources/blob/main/CONTRIBUTING.md).
+conduct](https://github.com/nmfs-ost/Resources/blob/main/CONTRIBUTING.md).
 
 ## Usage
 
@@ -271,7 +273,7 @@ commercial product or activity by DOC or the United States Government.”
 
 ------------------------------------------------------------------------
 
-<a href="https://www.fisheries.noaa.gov/"><img src="man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" height=75 alt="NOAA Fisheries" />
+<a href="https://www.fisheries.noaa.gov/"><img src="man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" alt="NOAA Fisheries" height="75"/>
 
 [U.S. Department of Commerce](https://www.commerce.gov/) \| [National
 Oceanographic and Atmospheric Administration](https://www.noaa.gov) \|
