@@ -1,7 +1,9 @@
 
+`[![coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/nmfs-ost/nmfspalette/refs/heads/badges/coverage-badge.json)](https://github.com/nmfs-ost/nmfspalette/tree/badges)`
+
 <!-- README.md is generated from README.Rmd. Please edit README.Rmd -->
 
-# nmfspalette <a href={https:://nmfs-ost.github.io/nmfspalette}><img src="man/figures/logo.png" align="right" width=139 height=139 alt="logo with an image of a fish in multiple palette colors" />
+# nmfspalette <a href={https:://nmfs-ost.github.io/nmfspalette}><img src="man/figures/logo.png" alt="logo with an image of a fish in multiple palette colors" align="right" width="139" height="139"/>
 
 An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
 
@@ -23,7 +25,7 @@ To install from GitHub use the following:
 remotes::install_github("nmfs-ost/nmfspalette")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/tmp/RtmpALoArl/remotes54522a2301aa/nmfs-ost-nmfspalette-7e62220/DESCRIPTION’ ... OK
+#> * checking for file ‘/tmp/RtmptpIDfk/remotes51aa3b2927f0/nmfs-ost-nmfspalette-611471a/DESCRIPTION’ ... OK
 #> * preparing ‘nmfspalette’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
@@ -271,7 +273,7 @@ commercial product or activity by DOC or the United States Government.”
 
 ------------------------------------------------------------------------
 
-<a href="https://www.fisheries.noaa.gov/"><img src="man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" height=75 alt="NOAA Fisheries" />
+<a href="https://www.fisheries.noaa.gov/"><img src="man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" alt="NOAA Fisheries" height="75"/>
 
 [U.S. Department of Commerce](https://www.commerce.gov/) \| [National
 Oceanographic and Atmospheric Administration](https://www.noaa.gov) \|
