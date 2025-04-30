@@ -1,4 +1,4 @@
-# Reusable workflow to calculate coverage add it to a badge that is stored on 
+# Reusable workflow to calculate coverage add it to a badge that is stored on
 # a branch in the repo called badges.
 # note that this has only been tested to build a badge with the main branch
 # coverage; it may not work to calculate coverage from other branches.
@@ -11,4 +11,4 @@ on:
       - main
 jobs:
   call-workflow:
-    uses: nmfs-fish-tools/ghactions4r/.github/workflows/create-cov-badge.yml@create-cov-badge # change to main
+    uses: nmfs-fish-tools/ghactions4r/.github/workflows/create-cov-badge.yml@main

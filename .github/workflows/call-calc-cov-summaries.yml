@@ -15,4 +15,4 @@ on:
       - main
 jobs:
   call-workflow:
-    uses: nmfs-fish-tools/ghactions4r/.github/workflows/calc-cov-summaries.yml@calc-cov-octocov # change to main
+    uses: nmfs-fish-tools/ghactions4r/.github/workflows/calc-cov-summaries.yml@main
