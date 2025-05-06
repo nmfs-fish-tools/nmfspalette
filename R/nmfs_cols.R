@@ -183,6 +183,8 @@ nmfs_palettes <- list(
   `crustacean` = nmfs_cols("bright_crustacean", "ltorange", "alaska", "dark_crustacean"),
   `coral` = nmfs_cols("bright_coral", "vivid_coral", "pacificislands", "dark_coral"),
   `regional` = nmfs_cols("national", "westcoast", "southeast", "midatlantic", "alaska", "pacificislands"),
+  `regional_alt1` = nmfs_cols("national", "westcoast", "ltgreen", "midatlantic", "alaska", "pacificislands"),
+  `regional_alt2` = nmfs_cols("#016080", "#57aeb2", "#26DC61", "#8851D0", "alaska", "pacificislands"),
   `complement_teal` = nmfs_cols("dark_teal", "fisheries_teal", "waves", "pale_teal"),
   `complement_seagrass` = nmfs_cols("dark_seagrass", "seagrass", "vivid_seagrass", "bright_seagrass"),
   `complement_urchin` = nmfs_cols("dark_urchin", "urchin", "vivid_urchin", "bright_urchin"),
