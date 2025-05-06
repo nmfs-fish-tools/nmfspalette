@@ -1,8 +1,8 @@
 ---
-title: "Testing palettes for accessibility"
+title: "Testing palettes for color vision deficiency"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Testing palettes for accessibility}
+  %\VignetteIndexEntry{Testing palettes for color vision deficiency}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -23,7 +23,7 @@ library(ggplot2)
 
 # Background
 
-We are testing that the existing NMFS color palettes are usable to someone with color-vision deficiency (C.V.D.).
+We are testing that the existing NMFS color palettes are usable to someone with color vision deficiency (C.V.D.).
 
 We'll use an R package called [`dichromat`](https://cran.r-project.org/web/packages/dichromat/index.html) to approximate how these palettes might be perceived by someone with any of the most common forms of C.V.D.: protanopia, deutanopia, and tritanopia.
 
@@ -89,18 +89,28 @@ for (i in 1:length(core_nmfs_pals)){
 **Conclusion**: For someone with C.V.D., the regional palette could be challenging to discern. In particular, colors look very similar when viewed with the following perceptions: protanopia (3, 5); deutanopia (3, 5, 6); tritanopia (2, 3, 4).
 
 # Test alternative regional color palette
-## Create alternative palette
+## Create alternative palettes
 ```{r}
-# Julie's palettes
-regions_alt1 <- c("#002364", "#00797F", "#76BC21", "#5761C0", "#DB6015", "#B71300")
-regions_alt2 <- c("#002364", "#00797F", "#B1DC6B", "#5761C0", "#DB6015", "#B71300")
+# Option 1: using existing NMFS colors
+regions_alt1 <- c("#002364", # "national"
+                  "#00797F", # "westcoast"
+                  "#76BC21", # "ltgreen"
+                  "#5761C0", # "midatlantic"
+                  "#DB6015", # "alaska"
+                  "#B71300"  # "pacificislands"
+                  )
 
-# Sophie's new palette
-regions_alt3 <- c("#016080", "#57aeb2", "#26DC61", "#8851D0", "#DB6015", "#B71300")
+# Option 2: using some colors outside of the NMFS color set
+regions_alt2 <- c("#016080", # new color
+                  "#57aeb2", # new color
+                  "#26DC61", # new color
+                  "#8851D0", # new color
+                  "#DB6015", # "alaska"
+                  "#B71300"  # "pacificislands"
+                  )
 
 alt_regional_pals <- list(`Alternative regional palette 1` = regions_alt1,
-                          `Alternative regional palette 2` = regions_alt2,
-                          `Alternative regional palette 3` = regions_alt3)
+                          `Alternative regional palette 2` = regions_alt2)
 
 ```
 
@@ -169,5 +179,6 @@ for (i in 1:length(alt_regional_pals)){
 }
 ```
 
+**Conclusion**: For someone with C.V.D., the alternative palette 1 shows colors 2 & 4 as very similar for tritanopia. Alternative palette 2 provides colors that seem distinguishable for all types of color perception, but multiple colors in this palette are outside the NMFS brand color set.
 
-**Conclusion**: For someone with C.V.D., the alternative palettes 1 & 2 show colors 2 & 4 as very similar for tritanopia. Alternative palette 3 provides colors that seem distinguishable for all types of color perception.
+Both alternative regional palettes ("regional_alt1" and "regional_alt2", respectively) are available in the package.

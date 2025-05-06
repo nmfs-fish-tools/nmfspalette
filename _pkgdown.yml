@@ -33,9 +33,10 @@ navbar:
       menu:
       - text: Theming Presentations
         href: articles/ThemedPresentations.html
+      - text: Testing palettes for color vision deficiency
+        href: articles/testing-cvd.html
 
     tutorials:
       - name: colors
         title: Using nmfspalette colors
         url: https://cstawitz.shinyapps.io/colors/
-        
