@@ -20,12 +20,12 @@ navbar:
     github:
       text: Source Code
       icon: fab fa-github fa-lg
-      href: https://github.com/nmfs-fish-tools/nmfspalette/
+      href: https://github.com/nmfs-ost/nmfspalette/
 
     issue:
       text: Issues
       icon: fas fa-question-circle fa-lg
-      href: https://github.com/nmfs-fish-tools/nmfspalette/issues/
+      href: https://github.com/nmfs-ost/nmfspalette/issues/
 
     articles:
       text: Vignettes

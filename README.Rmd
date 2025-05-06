@@ -42,7 +42,7 @@ library(nmfspalette)
 
 ## Contributing
 
-We welcome contributions to `{nmfspalette}`. You are welcome to make any changes you would like on a fork and submit a pull request. For more substantial changes or to create a branch, please contact [sophie.breitbart\@noaa.gov](mailto:sophie.breitbart@noaa.gov){.email} (NOAA Affiliates only). We ask that all contributors adhere to The NOAA Fisheries Integrated Toolbox [code of conduct](https://github.com/nmfs-ost/Resources/blob/main/CONTRIBUTING.md).
+We welcome contributions to `{nmfspalette}`. You are welcome to make any changes you would like on a fork and submit a pull request. For more substantial changes or to create a branch, please contact sophie.breitbart@noaa.gov (NOAA Affiliates only). We ask that all contributors adhere to The NOAA Fisheries Integrated Toolbox [code of conduct](https://github.com/nmfs-ost/Resources/blob/main/CONTRIBUTING.md).
 
 ## Usage
 
