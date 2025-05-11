@@ -4,7 +4,8 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
+```{r}
+#| include: false
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -15,7 +16,6 @@ knitr::opts_chunk$set(
 
 # nmfspalette <a href={https:://nmfs-ost.github.io/nmfspalette}><img src="man/figures/logo.png" alt="logo with an image of a fish in multiple palette colors" align="right" width="139" height="139"/>
 
-
 <!-- badges: start -->
 
 [![call-r-cmd-check](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml)
@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
+An R color palette for `{ggplot2}` using NOAA Fisheries branding colors.
 
 `{nmfspalette}` implements these [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) to create a `{ggplot2}` compatible palette according to [NOAA Fisheries branding](https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view?usp=sharing) (NOAA internal only).
 
@@ -39,7 +39,8 @@ pak::pak("nmfs-ost/nmfspalette")
 
 To load the package, use:
 
-```{r, message=FALSE}
+```{r}
+#| message: false
 library(nmfspalette)
 ```
 
@@ -55,7 +56,8 @@ Extract an interpolated color palette from the default "oceans" palette.
 
 You can change the number of colors (10 shown below).
 
-```{r, default_pal}
+```{r}
+#| label: default_pal
 nmfs_palette("oceans")(10)
 ```
 
@@ -69,44 +71,58 @@ These palettes contain 4 or 6 colors.
 
 #### oceans
 
-```{r, fig.height = 2, displ_oceans}
+```{r}
+#| label: displ_oceans
+#| fig-height: 2
 display_nmfs_palette("oceans", 6)
 ```
 
 
 #### waves
 
-```{r, fig.height = 2, displ_waves}
+```{r}
+#| label: displ_waves
+#| fig-height: 2
 display_nmfs_palette("waves", 4)
 ```
 
 #### seagrass
 
-```{r, fig.height = 2, displ_seagrass}
+```{r}
+#| label: displ_seagrass
+#| fig-height: 2
 display_nmfs_palette("seagrass", 4)
 ```
 
 #### urchin
 
-```{r, fig.height = 2, displ_urchin}
+```{r}
+#| label: displ_urchin
+#| fig-height: 2
 display_nmfs_palette("urchin", 4)
 ```
 
 #### crustacean
 
-```{r, fig.height = 2, displ_crustacean}
+```{r}
+#| label: displ_crustacean
+#| fig-height: 2
 display_nmfs_palette("crustacean", 4)
 ```
 
 #### coral
 
-```{r, fig.height = 2, displ_coral}
+```{r}
+#| label: displ_coral
+#| fig-height: 2
 display_nmfs_palette("coral", 4)
 ```
 
 #### regional (discrete)
 
-```{r, fig.height = 2, displ_regional_web}
+```{r}
+#| label: displ_regional_web
+#| fig-height: 2
 display_nmfs_palette("regional", 6)
 ```
 
@@ -120,19 +136,25 @@ These palettes contain 4 colors.
 
 #### background sky
 
-```{r, fig.height = 2, displ_background_sky}
+```{r}
+#| label: displ_background_sky
+#| fig-height: 2
 display_nmfs_palette("background_sky", 4)
 ```
 
 #### background green
 
-```{r, fig.height = 2, displ_background_green}
+```{r}
+#| label: displ_background_green
+#| fig-height: 2
 display_nmfs_palette("background_green", 4)
 ```
 
 #### background gray
 
-```{r, fig.height = 2, displ_background_gray}
+```{r}
+#| label: displ_background_gray
+#| fig-height: 2
 display_nmfs_palette("background_gray", 4)
 ```
 
@@ -140,7 +162,9 @@ display_nmfs_palette("background_gray", 4)
 
 This palette contains 11 colors.
 
-```{r, fig.height = 2, displ_core}
+```{r}
+#| label: displ_core
+#| fig-height: 2
 display_nmfs_palette("core", 11)
 ```
 
@@ -150,25 +174,33 @@ These palettes contain 4 colors.
 
 #### alert red
 
-```{r, fig.height = 2, displ_alert_red}
+```{r}
+#| label: displ_alert_red
+#| fig-height: 2
 display_nmfs_palette("alert_red", 4)
 ```
 
 #### alert orange
 
-```{r, fig.height = 2, displ_alert_orange}
+```{r}
+#| label: displ_alert_orange
+#| fig-height: 2
 display_nmfs_palette("alert_orange", 4)
 ```
 
 #### alert yellow
 
-```{r, fig.height = 2, displ_alert_yellow}
+```{r}
+#| label: displ_alert_yellow
+#| fig-height: 2
 display_nmfs_palette("alert_yellow", 4)
 ```
 
 #### alert green
 
-```{r, fig.height = 2, displ_alert_green}
+```{r}
+#| label: displ_alert_green
+#| fig-height: 2
 display_nmfs_palette("alert_green", 4)
 ```
 
@@ -176,14 +208,17 @@ display_nmfs_palette("alert_green", 4)
 
 In addition to `nmfs_palette` and `display_nmfs_palette` to get palettes, you can extract colors by name. Please see the [NOAA Fisheries Branding guide](https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view?usp=sharing) (NOAA internal only) for color names. Here, for most color names, underscores are used in place of spaces. Colors defined before 2023 have no spaces in the color names.
 
-```{r, nmfs_cols}
+```{r}
+#| label: nmfs_cols
 nmfs_cols("vivid_crustacean")
 nmfs_cols("processblue")
 ```
 
 To use the palettes with `{ggplot2}`, the `scale_color_nmfs()` and `scale_fill_nmfs()` functions are provided. If no argument is given to `scale_color_nmfs()`, a default ("oceans") is used:
 
-```{r, default_plot, fig.height=3}
+```{r}
+#| label: default_plot
+#| fig-height: 3
 library(ggplot2)
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
   geom_point(size = 4) +
@@ -193,7 +228,9 @@ p
 
 `scale_fill_nmfs()` does not have a default and therefore requires a named argument, this is an example using the "crustacean" palette:
 
-```{r, scale_fill_example, fig.height=3}
+```{r}
+#| label: scale_fill_example
+#| fig-height: 3
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density)) +
   scale_fill_nmfs(palette = "crustacean", discrete = FALSE, reverse = TRUE)

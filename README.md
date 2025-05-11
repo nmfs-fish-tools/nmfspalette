@@ -11,7 +11,7 @@
 
 <!-- badges: end -->
 
-An R color palette for `{ggplot2}` using NOAA Fisheries branding colors
+An R color palette for `{ggplot2}` using NOAA Fisheries branding colors.
 
 `{nmfspalette}` implements these
 [steps](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
