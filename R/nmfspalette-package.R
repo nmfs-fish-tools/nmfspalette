@@ -12,3 +12,20 @@
 ## usethis namespace: start
 ## usethis namespace: end
 NULL
+
+globalVariables(c(
+  "Sepal.Length",
+  "Sepal.Width",
+  "Species",
+  "aes",
+  "element_text",
+  "geom_bar",
+  "geom_point",
+  "ggplot",
+  "hp",
+  "iris",
+  "manufacturer",
+  "mpg",
+  "mtcars",
+  "theme"
+))

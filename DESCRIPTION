@@ -16,7 +16,8 @@ Imports:
     ggplot2
 Suggests: 
     dplyr,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    vdiffr
 Config/Needs/website: rsconnect, xaringan
 Encoding: UTF-8
 LazyData: true

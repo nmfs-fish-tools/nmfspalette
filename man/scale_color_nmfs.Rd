@@ -24,6 +24,7 @@ Default is FALSE.}
 Color scale constructor for nmfs colors
 }
 \examples{
+library(ggplot2)
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
   geom_point(size = 4) +
   scale_color_nmfs("coral")

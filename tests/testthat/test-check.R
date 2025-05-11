@@ -6,7 +6,7 @@ test_that("color works", {
 
   # Check that it plots for a real color
   p <- plot_nmfs_cols("processblue")
-  expect_true(is.ggplot(p))
+  expect_true(is_ggplot(p))
 })
 
 test_that("palette works", {
@@ -39,7 +39,7 @@ test_that("palette works", {
 test_that("scale_color works", {
   # Check that it works with waves
   i <- plot_scale_color_nmfs("waves")
-  expect_true(is.ggplot(i))
+  expect_true(is_ggplot(i))
 
   # Check that it fails with non-name
   expect_error(plot_scale_color_nmfs("foo"))
@@ -48,17 +48,17 @@ test_that("scale_color works", {
   p <- ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
     geom_point(size = 4) +
     scale_color_nmfs()
-  expect_true(is.ggplot(p))
+  expect_true(is_ggplot(p))
 })
 
 test_that("scale_fill works", {
   # Check default
   i <- plot_scale_fill_nmfs("urchin")
-  expect_true(is.ggplot(i))
+  expect_true(is_ggplot(i))
 
   p <- ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     scale_fill_nmfs()
-  expect_true(is.ggplot(i))
+  expect_true(is_ggplot(i))
 })

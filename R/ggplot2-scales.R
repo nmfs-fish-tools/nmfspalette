@@ -10,6 +10,7 @@
 #'            [ggplot2::scale_color_gradientn()], used respectively when
 #'            `discrete` is TRUE or FALSE.
 #' @examples
+#' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #'   geom_point(size = 4) +
 #'   scale_color_nmfs("coral")
@@ -24,8 +25,7 @@ scale_color_nmfs <- function(
 
   if (discrete) {
     ggplot2::discrete_scale(
-      "colour",
-      paste0("nmfs_", palette),
+      aesthetics = "colour",
       palette = pal,
       ...
     )
@@ -46,12 +46,11 @@ scale_color_nmfs <- function(
 #'            [ggplot2::scale_fill_gradientn()], used respectively when
 #'            `discrete` is TRUE or FALSE.
 #' @examples
-#' \dontrun{
+#' library(ggplot2)
 #' ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
 #'   geom_bar() +
 #'   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
 #'   scale_fill_nmfs(palette = "crustacean", discrete = FALSE)
-#' }
 #' @export
 scale_fill_nmfs <- function(
   palette = "oceans",
@@ -63,8 +62,7 @@ scale_fill_nmfs <- function(
 
   if (discrete) {
     ggplot2::discrete_scale(
-      "fill",
-      paste0("nmfs_", palette),
+      aesthetics = "fill",
       palette = pal,
       ...
     )
