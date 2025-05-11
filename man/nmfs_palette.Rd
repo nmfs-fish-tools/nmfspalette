@@ -7,15 +7,21 @@
 nmfs_palette(palette = "oceans", reverse = FALSE, ...)
 }
 \arguments{
-\item{palette}{Character name of palette in nmfs_palettes}
+\item{palette}{Character name of palette in \code{nmfs_palettes}. Default value
+is "oceans".}
 
-\item{reverse}{Boolean indicating whether the palette should be reversed}
+\item{reverse}{Boolean indicating whether the palette should be reversed.
+Default value is FALSE.}
 
-\item{...}{Additional arguments to pass to colorRampPalette()}
+\item{...}{Additional arguments to pass to \code{\link[grDevices:colorRamp]{grDevices::colorRampPalette()}}.}
 }
 \description{
 Return function to interpolate a nmfs color palette
 }
 \examples{
 nmfs_palette("oceans")(10)
+
+# or equivalently
+oceans_pal <- nmfs_palette("oceans")
+oceans_pal(10)
 }

@@ -304,33 +304,39 @@ nmfs_palettes <- list(
 
 #' Return function to interpolate a nmfs color palette
 #'
-#' @param palette Character name of palette in nmfs_palettes
-#' @param reverse Boolean indicating whether the palette should be reversed
-#' @param ... Additional arguments to pass to colorRampPalette()
-#' @importFrom grDevices colorRampPalette
+#' @param palette Character name of palette in `nmfs_palettes`. Default value
+#' is "oceans".
+#' @param reverse Boolean indicating whether the palette should be reversed.
+#' Default value is FALSE.
+#' @param ... Additional arguments to pass to [grDevices::colorRampPalette()].
 #' @examples
 #' nmfs_palette("oceans")(10)
+#'
+#' # or equivalently
+#' oceans_pal <- nmfs_palette("oceans")
+#' oceans_pal(10)
 #' @export
 nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
   pal <- nmfs_palettes[[palette]]
 
-  if (reverse) pal <- rev(pal)
+  if (reverse) {
+    pal <- rev(pal)
+  }
 
-  colorRampPalette(pal, ...)
+  grDevices::colorRampPalette(pal, ...)
 }
 
 #' Return function to interpolate a nmfs color palette
 #'
-#' @param name Character name of palette in nmfs_palettes
-#' @param n Number of colors in palette
-#' @param ... Additional arguments to pass to image()
-#' @importFrom graphics box image
+#' @param name Character name of palette in nmfs_palettes.
+#' @param n Number of colors in palette.
+#' @param ... Additional arguments to pass to [graphics::image()].
 #' @examples
 #' display_nmfs_palette("oceans", 10)
 #' @export
 display_nmfs_palette <- function(name, n, ...) {
   pal <- nmfs_palette(name)(n)
-  image(
+  graphics::image(
     1:n,
     1,
     as.matrix(1:n),
@@ -342,5 +348,5 @@ display_nmfs_palette <- function(name, n, ...) {
     bty = "n",
     ...
   )
-  box()
+  graphics::box()
 }

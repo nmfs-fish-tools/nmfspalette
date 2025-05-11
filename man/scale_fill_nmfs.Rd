@@ -7,16 +7,18 @@
 scale_fill_nmfs(palette = "oceans", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
-\item{palette}{Character name of palette in \code{nmfs_palettes}.}
+\item{palette}{Character name of palette in \code{nmfs_palettes}. Default value
+is "oceans".}
 
-\item{discrete}{Boolean indicating whether color aesthetic is discrete or
-not.}
+\item{discrete}{Boolean indicating whether color aesthetic is discrete.
+Default value is TRUE.}
 
-\item{reverse}{Boolean indicating whether the palette should be reversed.}
+\item{reverse}{Boolean indicating whether the palette should be reversed.
+Default value is FALSE.}
 
-\item{...}{Additional arguments passed to \code{discrete_scale()} or
-\code{scale_fill_gradientn()}, used respectively when discrete is TRUE
-or FALSE.}
+\item{...}{Additional arguments passed to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}} or
+\code{\link[ggplot2:scale_gradient]{ggplot2::scale_fill_gradientn()}}, used respectively when
+\code{discrete} is TRUE or FALSE.}
 }
 \description{
 Fill scale constructor for nmfs colors
