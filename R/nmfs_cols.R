@@ -71,14 +71,13 @@ nmfs_colors <- c(
   "vivid_coral" = "#DB2207",
   "bright_coral" = "#FF6C57",
 
-
   # 2024 NOAA core colors (fisheries version)
   # Some colors, such as noaa_sky below and reflexblue above (both #003087),
   # have the same color code but different names.
   # This is because the branding guidance has been updated.
-  # We will leave the old colors as-is, and simply add the new color names (with
-  # repeated color codes), for ease of use. So, users can reference the same color
-  # with different names.
+  # We will leave the old colors as-is, and simply add the new color names
+  # (with repeated color codes), for ease of use. So, users can reference the
+  # same color with different names.
   "noaa_sky" = "#003087",
   "noaa_sea" = "#0085CA",
   "whale_gray" = "#323C46",
@@ -96,7 +95,8 @@ nmfs_colors <- c(
   "shark_gray" = "#44545F",
 
   # 2024 fisheries complementary colors
-  # All of these palettes are identical to the oceans, waves, urchin, etc. palettes above.
+  # All of these palettes are identical to the oceans, waves, urchin, etc.
+  # palettes above.
   "dark_teal" = "#005E5E",
   "fisheries_teal" = "#00797F",
   "waves" = "#1EBEC7",
@@ -122,7 +122,6 @@ nmfs_colors <- c(
   # "vivid_coral" # already defined above
   # "bright_coral" # already defined above
 
-
   # 2024 fisheries background & tint colors
 
   # "midnight_sky" # already defined above
@@ -138,7 +137,6 @@ nmfs_colors <- c(
   "dove_gray_tint_1" = "#A5AAAF",
   "dove_gray_tint_2" = "#CBCFD1",
   "gray_tint_3" = "#F1F2F3",
-
 
   # NOAA alert colors
   "dark_red" = "#901200",
@@ -176,112 +174,180 @@ nmfs_cols <- function(...) {
 }
 
 nmfs_palettes <- list(
-  `oceans` = nmfs_cols("pale_sea_blue", "light_sea_blue", "processblue", "reflexblue", "national", "o50pblack"),
-  `waves` = nmfs_cols("pale_teal", "bright_teal", "westcoast", "dark_teal_green"),
-  `seagrass` = nmfs_cols("bright_seagrass", "ltgreen", "southeast", "dark_seagrass"),
-  `urchin` = nmfs_cols("bright_urchin", "vivid_urchin", "midatlantic", "dark_urchin"),
-  `crustacean` = nmfs_cols("bright_crustacean", "ltorange", "alaska", "dark_crustacean"),
-  `coral` = nmfs_cols("bright_coral", "vivid_coral", "pacificislands", "dark_coral"),
-  `regional` = nmfs_cols("national", "westcoast", "southeast", "midatlantic", "alaska", "pacificislands"),
-  `complement_teal` = nmfs_cols("dark_teal", "fisheries_teal", "waves", "pale_teal"),
-  `complement_seagrass` = nmfs_cols("dark_seagrass", "seagrass", "vivid_seagrass", "bright_seagrass"),
-  `complement_urchin` = nmfs_cols("dark_urchin", "urchin", "vivid_urchin", "bright_urchin"),
-  `complement_crustacean` = nmfs_cols("dark_crustacean", "crustacean", "vivid_crustacean", "bright_crustacean"),
-  `complement_coral` = nmfs_cols("dark_coral", "coral", "vivid_coral", "bright_coral"),
-  `background_sky` = nmfs_cols("midnight_sky", "sky_tint_1", "sky_tint_2", "sky_tint_3"),
-  `background_green` = nmfs_cols("turtle_green", "green_tint_1", "green_tint_2", "green_tint_3"),
-  `background_gray` = nmfs_cols("whale_gray", "dove_gray_tint_1", "dove_gray_tint_2", "gray_tint_3"),
-  `core` = nmfs_cols("noaa_sky", "noaa_sea", "whale_gray", "midnight_sky", "twilight_sky", "light_sea_blue", "pale_sea_blue", "medium_sea_blue", "deep_sea_blue", "dove_gray", "gull_white"),
+  `oceans` = nmfs_cols(
+    "pale_sea_blue",
+    "light_sea_blue",
+    "processblue",
+    "reflexblue",
+    "national",
+    "o50pblack"
+  ),
+  `waves` = nmfs_cols(
+    "pale_teal",
+    "bright_teal",
+    "westcoast",
+    "dark_teal_green"
+  ),
+  `seagrass` = nmfs_cols(
+    "bright_seagrass",
+    "ltgreen",
+    "southeast",
+    "dark_seagrass"
+  ),
+  `urchin` = nmfs_cols(
+    "bright_urchin",
+    "vivid_urchin",
+    "midatlantic",
+    "dark_urchin"
+  ),
+  `crustacean` = nmfs_cols(
+    "bright_crustacean",
+    "ltorange",
+    "alaska",
+    "dark_crustacean"
+  ),
+  `coral` = nmfs_cols(
+    "bright_coral",
+    "vivid_coral",
+    "pacificislands",
+    "dark_coral"
+  ),
+  `regional` = nmfs_cols(
+    "national",
+    "westcoast",
+    "southeast",
+    "midatlantic",
+    "alaska",
+    "pacificislands"
+  ),
+  `complement_teal` = nmfs_cols(
+    "dark_teal",
+    "fisheries_teal",
+    "waves",
+    "pale_teal"
+  ),
+  `complement_seagrass` = nmfs_cols(
+    "dark_seagrass",
+    "seagrass",
+    "vivid_seagrass",
+    "bright_seagrass"
+  ),
+  `complement_urchin` = nmfs_cols(
+    "dark_urchin",
+    "urchin",
+    "vivid_urchin",
+    "bright_urchin"
+  ),
+  `complement_crustacean` = nmfs_cols(
+    "dark_crustacean",
+    "crustacean",
+    "vivid_crustacean",
+    "bright_crustacean"
+  ),
+  `complement_coral` = nmfs_cols(
+    "dark_coral",
+    "coral",
+    "vivid_coral",
+    "bright_coral"
+  ),
+  `background_sky` = nmfs_cols(
+    "midnight_sky",
+    "sky_tint_1",
+    "sky_tint_2",
+    "sky_tint_3"
+  ),
+  `background_green` = nmfs_cols(
+    "turtle_green",
+    "green_tint_1",
+    "green_tint_2",
+    "green_tint_3"
+  ),
+  `background_gray` = nmfs_cols(
+    "whale_gray",
+    "dove_gray_tint_1",
+    "dove_gray_tint_2",
+    "gray_tint_3"
+  ),
+  `core` = nmfs_cols(
+    "noaa_sky",
+    "noaa_sea",
+    "whale_gray",
+    "midnight_sky",
+    "twilight_sky",
+    "light_sea_blue",
+    "pale_sea_blue",
+    "medium_sea_blue",
+    "deep_sea_blue",
+    "dove_gray",
+    "gull_white"
+  ),
   `alert_red` = nmfs_cols("dark_red", "red", "vivid_red", "bright_red"),
-  `alert_orange` = nmfs_cols("dark_orange", "orange", "vivid_orange", "bright_orange"),
-  `alert_yellow` = nmfs_cols("dark_yellow", "yellow", "vivid_yellow", "bright_yellow"),
-  `alert_green` = nmfs_cols("dark_green", "green", "vivid_green", "bright_green")
+  `alert_orange` = nmfs_cols(
+    "dark_orange",
+    "orange",
+    "vivid_orange",
+    "bright_orange"
+  ),
+  `alert_yellow` = nmfs_cols(
+    "dark_yellow",
+    "yellow",
+    "vivid_yellow",
+    "bright_yellow"
+  ),
+  `alert_green` = nmfs_cols(
+    "dark_green",
+    "green",
+    "vivid_green",
+    "bright_green"
+  )
 )
 
 #' Return function to interpolate a nmfs color palette
 #'
-#' @param palette Character name of palette in nmfs_palettes
-#' @param reverse Boolean indicating whether the palette should be reversed
-#' @param ... Additional arguments to pass to colorRampPalette()
-#' @importFrom grDevices colorRampPalette
+#' @param palette Character name of palette in `nmfs_palettes`. Default value
+#' is "oceans".
+#' @param reverse Boolean indicating whether the palette should be reversed.
+#' Default value is FALSE.
+#' @param ... Additional arguments to pass to [grDevices::colorRampPalette()].
 #' @examples
 #' nmfs_palette("oceans")(10)
+#'
+#' # or equivalently
+#' oceans_pal <- nmfs_palette("oceans")
+#' oceans_pal(10)
 #' @export
 nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
+  # TODO write a nice error message for if the palette is not present below
   pal <- nmfs_palettes[[palette]]
 
-  if (reverse) pal <- rev(pal)
+  if (reverse) {
+    pal <- rev(pal)
+  }
 
-  colorRampPalette(pal, ...)
+  grDevices::colorRampPalette(pal, ...)
 }
 
 #' Return function to interpolate a nmfs color palette
 #'
-#' @param name Character name of palette in nmfs_palettes
-#' @param n Number of colors in palette
-#' @param ... Additional arguments to pass to image()
-#' @importFrom graphics box image
+#' @param name Character name of palette in nmfs_palettes.
+#' @param n Number of colors in palette.
+#' @param ... Additional arguments to pass to [graphics::image()].
 #' @examples
 #' display_nmfs_palette("oceans", 10)
 #' @export
 display_nmfs_palette <- function(name, n, ...) {
   pal <- nmfs_palette(name)(n)
-  image(1:n, 1, as.matrix(1:n),
+  graphics::image(
+    1:n,
+    1,
+    as.matrix(1:n),
     col = pal,
-    xlab = paste(name), ylab = "", xaxt = "n",
-    yaxt = "n", bty = "n", ...
+    xlab = paste(name),
+    ylab = "",
+    xaxt = "n",
+    yaxt = "n",
+    bty = "n",
+    ...
   )
-  box()
-}
-
-
-#' Color scale constructor for nmfs colors
-#'
-#' @param palette Character name of palette in nmfs_palettes
-#' @param discrete Boolean indicating whether color aesthetic is discrete or not
-#' @param reverse Boolean indicating whether the palette should be reversed
-#' @param ... Additional arguments passed to discrete_scale() or
-#'            scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
-#' @importFrom ggplot2 ggplot geom_point discrete_scale scale_color_gradientn aes
-#' @examples
-#' \dontrun{
-#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
-#'   geom_point(size = 4) +
-#'   scale_color_nmfs("coral")
-#' }
-#' @export
-scale_color_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
-  pal <- nmfs_palette(palette = palette, reverse = reverse)
-
-  if (discrete) {
-    discrete_scale("colour", paste0("nmfs_", palette), palette = pal, ...)
-  } else {
-    scale_color_gradientn(colours = pal(256), ...)
-  }
-}
-
-#' Fill scale constructor for nmfs colors
-#'
-#' @param palette Character name of palette in nmfs_palettes
-#' @param discrete Boolean indicating whether color aesthetic is discrete or not
-#' @param reverse Boolean indicating whether the palette should be reversed
-#' @param ... Additional arguments passed to discrete_scale() or
-#'            scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
-#' @importFrom ggplot2 ggplot geom_bar theme aes discrete_scale scale_fill_gradientn
-#' @examples
-#' \dontrun{
-#' ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
-#'   geom_bar() +
-#'   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-#'   scale_fill_nmfs(palette = "crustacean", discrete = FALSE)
-#' }
-#' @export
-scale_fill_nmfs <- function(palette = "oceans", discrete = TRUE, reverse = FALSE, ...) {
-  pal <- nmfs_palette(palette = palette, reverse = reverse)
-
-  if (discrete) {
-    discrete_scale("fill", paste0("nmfs_", palette), palette = pal, ...)
-  } else {
-    scale_fill_gradientn(colours = pal(256), ...)
-  }
+  graphics::box()
 }

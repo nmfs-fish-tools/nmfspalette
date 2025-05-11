@@ -4,3 +4,7 @@
 ^docs$
 ^pkgdown$
 ^\.github$
+^README\.Rmd$
+^\.octocov\.yml$
+^\.devcontainer$
+^codecov\.yml$

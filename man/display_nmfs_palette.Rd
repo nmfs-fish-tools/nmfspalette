@@ -7,11 +7,11 @@
 display_nmfs_palette(name, n, ...)
 }
 \arguments{
-\item{name}{Character name of palette in nmfs_palettes}
+\item{name}{Character name of palette in nmfs_palettes.}
 
-\item{n}{Number of colors in palette}
+\item{n}{Number of colors in palette.}
 
-\item{...}{Additional arguments to pass to image()}
+\item{...}{Additional arguments to pass to \code{\link[graphics:image]{graphics::image()}}.}
 }
 \description{
 Return function to interpolate a nmfs color palette
