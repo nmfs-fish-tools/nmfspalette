@@ -7,3 +7,4 @@
 ^README\.Rmd$
 ^\.octocov\.yml$
 ^\.devcontainer$
+^codecov\.yml$

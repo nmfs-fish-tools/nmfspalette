@@ -6,9 +6,9 @@
 <!-- badges: start -->
 
 [![call-r-cmd-check](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml/badge.svg)](https://github.com/nmfs-ost/nmfspalette/actions/workflows/call-r-cmd-check.yml)
-
 [![coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/nmfs-ost/nmfspalette/refs/heads/badges/coverage-badge.json)](https://github.com/nmfs-ost/nmfspalette/tree/badges)
-
+[![Codecov test
+coverage](https://codecov.io/gh/nmfs-ost/nmfspalette/graph/badge.svg)](https://app.codecov.io/gh/nmfs-ost/nmfspalette)
 <!-- badges: end -->
 
 An R color palette for `{ggplot2}` using NOAA Fisheries branding colors.
