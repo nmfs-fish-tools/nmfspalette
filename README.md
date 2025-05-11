@@ -54,7 +54,7 @@ Extract an interpolated color palette from the default “oceans” palette.
 You can change the number of colors (10 shown below).
 
 ``` r
-nmfspalette::nmfs_palette("oceans")(10)
+nmfs_palette("oceans")(10)
 #>  [1] "#C6E6F0" "#8CCBE3" "#53B0D7" "#1F95CF" "#0072BB" "#004295" "#002B7B"
 #>  [8] "#002467" "#001D55" "#001743"
 ```
@@ -70,7 +70,7 @@ These palettes contain 4 or 6 colors.
 #### oceans
 
 ``` r
-nmfspalette::display_nmfs_palette("oceans", 6)
+display_nmfs_palette("oceans", 6)
 ```
 
 <img src="man/figures/README-displ_oceans-1.png" width="100%" />
@@ -78,7 +78,7 @@ nmfspalette::display_nmfs_palette("oceans", 6)
 #### waves
 
 ``` r
-nmfspalette::display_nmfs_palette("waves", 4)
+display_nmfs_palette("waves", 4)
 ```
 
 <img src="man/figures/README-displ_waves-1.png" width="100%" />
@@ -86,7 +86,7 @@ nmfspalette::display_nmfs_palette("waves", 4)
 #### seagrass
 
 ``` r
-nmfspalette::display_nmfs_palette("seagrass", 4)
+display_nmfs_palette("seagrass", 4)
 ```
 
 <img src="man/figures/README-displ_seagrass-1.png" width="100%" />
@@ -94,7 +94,7 @@ nmfspalette::display_nmfs_palette("seagrass", 4)
 #### urchin
 
 ``` r
-nmfspalette::display_nmfs_palette("urchin", 4)
+display_nmfs_palette("urchin", 4)
 ```
 
 <img src="man/figures/README-displ_urchin-1.png" width="100%" />
@@ -102,7 +102,7 @@ nmfspalette::display_nmfs_palette("urchin", 4)
 #### crustacean
 
 ``` r
-nmfspalette::display_nmfs_palette("crustacean", 4)
+display_nmfs_palette("crustacean", 4)
 ```
 
 <img src="man/figures/README-displ_crustacean-1.png" width="100%" />
@@ -110,7 +110,7 @@ nmfspalette::display_nmfs_palette("crustacean", 4)
 #### coral
 
 ``` r
-nmfspalette::display_nmfs_palette("coral", 4)
+display_nmfs_palette("coral", 4)
 ```
 
 <img src="man/figures/README-displ_coral-1.png" width="100%" />
@@ -118,7 +118,7 @@ nmfspalette::display_nmfs_palette("coral", 4)
 #### regional (discrete)
 
 ``` r
-nmfspalette::display_nmfs_palette("regional", 6)
+display_nmfs_palette("regional", 6)
 ```
 
 <img src="man/figures/README-displ_regional_web-1.png" width="100%" />
@@ -138,7 +138,7 @@ These palettes contain 4 colors.
 #### background sky
 
 ``` r
-nmfspalette::display_nmfs_palette("background_sky", 4)
+display_nmfs_palette("background_sky", 4)
 ```
 
 <img src="man/figures/README-displ_background_sky-1.png" width="100%" />
@@ -146,7 +146,7 @@ nmfspalette::display_nmfs_palette("background_sky", 4)
 #### background green
 
 ``` r
-nmfspalette::display_nmfs_palette("background_green", 4)
+display_nmfs_palette("background_green", 4)
 ```
 
 <img src="man/figures/README-displ_background_green-1.png" width="100%" />
@@ -154,7 +154,7 @@ nmfspalette::display_nmfs_palette("background_green", 4)
 #### background gray
 
 ``` r
-nmfspalette::display_nmfs_palette("background_gray", 4)
+display_nmfs_palette("background_gray", 4)
 ```
 
 <img src="man/figures/README-displ_background_gray-1.png" width="100%" />
@@ -164,7 +164,7 @@ nmfspalette::display_nmfs_palette("background_gray", 4)
 This palette contains 11 colors.
 
 ``` r
-nmfspalette::display_nmfs_palette("core", 11)
+display_nmfs_palette("core", 11)
 ```
 
 <img src="man/figures/README-displ_core-1.png" width="100%" />
@@ -176,7 +176,7 @@ These palettes contain 4 colors.
 #### alert red
 
 ``` r
-nmfspalette::display_nmfs_palette("alert_red", 4)
+display_nmfs_palette("alert_red", 4)
 ```
 
 <img src="man/figures/README-displ_alert_red-1.png" width="100%" />
@@ -184,7 +184,7 @@ nmfspalette::display_nmfs_palette("alert_red", 4)
 #### alert orange
 
 ``` r
-nmfspalette::display_nmfs_palette("alert_orange", 4)
+display_nmfs_palette("alert_orange", 4)
 ```
 
 <img src="man/figures/README-displ_alert_orange-1.png" width="100%" />
@@ -192,7 +192,7 @@ nmfspalette::display_nmfs_palette("alert_orange", 4)
 #### alert yellow
 
 ``` r
-nmfspalette::display_nmfs_palette("alert_yellow", 4)
+display_nmfs_palette("alert_yellow", 4)
 ```
 
 <img src="man/figures/README-displ_alert_yellow-1.png" width="100%" />
@@ -200,7 +200,7 @@ nmfspalette::display_nmfs_palette("alert_yellow", 4)
 #### alert green
 
 ``` r
-nmfspalette::display_nmfs_palette("alert_green", 4)
+display_nmfs_palette("alert_green", 4)
 ```
 
 <img src="man/figures/README-displ_alert_green-1.png" width="100%" />
@@ -216,10 +216,10 @@ underscores are used in place of spaces. Colors defined before 2023 have
 no spaces in the color names.
 
 ``` r
-nmfspalette::nmfs_cols("vivid_crustacean")
+nmfs_cols("vivid_crustacean")
 #> vivid_crustacean 
 #>        "#FF8400"
-nmfspalette::nmfs_cols("processblue")
+nmfs_cols("processblue")
 #> processblue 
 #>   "#0085CA"
 ```
