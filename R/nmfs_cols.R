@@ -317,6 +317,7 @@ nmfs_palettes <- list(
 #' oceans_pal(10)
 #' @export
 nmfs_palette <- function(palette = "oceans", reverse = FALSE, ...) {
+  # TODO write a nice error message for if the palette is not present below
   pal <- nmfs_palettes[[palette]]
 
   if (reverse) {
