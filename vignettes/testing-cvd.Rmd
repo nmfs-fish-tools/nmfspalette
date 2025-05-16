@@ -182,3 +182,11 @@ for (i in 1:length(alt_regional_pals)){
 **Conclusion**: For someone with C.V.D., the alternative palette 1 shows colors 2 & 4 as very similar for tritanopia. Alternative palette 2 provides colors that seem distinguishable for all types of color perception, but multiple colors in this palette are outside the NMFS brand color set.
 
 Both alternative regional palettes ("regional_alt1" and "regional_alt2", respectively) are available in the package.
+
+```{r, fig.height = 2, fig.align='center'}
+display_nmfs_palette("regional_alt1", 6)
+```
+
+```{r, fig.height = 2, fig.align='center'}
+display_nmfs_palette("regional_alt2", 6)
+```
