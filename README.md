@@ -25,7 +25,7 @@ To install from GitHub use the following:
 remotes::install_github("nmfs-ost/nmfspalette")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/tmp/Rtmp3w1WfO/remotes1b2353225737/nmfs-ost-nmfspalette-8e0fa0e/DESCRIPTION’ ... OK
+#> * checking for file ‘/tmp/RtmpXZINjj/remotesa7157289d20f/nmfs-ost-nmfspalette-b2a1e93/DESCRIPTION’ ... OK
 #> * preparing ‘nmfspalette’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
@@ -127,6 +127,28 @@ nmfspalette::display_nmfs_palette("regional", 6)
 ```
 
 ![](man/figures/displ_regional_web-1.png)<!-- -->
+
+##### Alternative regional palettes
+
+For some with color vision deficiency (C.V.D.), it may be difficult to
+discern the colors in the regional palette. We have provided two
+alternative regional palettes, below. *Note*: The alternative palette 1
+contains colors that are entirely within the NMFS brand color set;
+alternative palette 2 does not. However, the colors in alternative
+palette 1 may be less distinguishable for all types of color perception
+as opposed to alternative palette 2.
+
+``` r
+nmfspalette::display_nmfs_palette("regional_alt1", 6)
+```
+
+![](man/figures/displ_regional_web2-1.png)<!-- -->
+
+``` r
+nmfspalette::display_nmfs_palette("regional_alt2", 6)
+```
+
+![](man/figures/displ_regional_web3-1.png)<!-- -->
 
 ### NOAA Fisheries complementary colors
 
