@@ -128,7 +128,7 @@
 <code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"nmfs-ost/nmfspalette"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ── R CMD build ─────────────────────────────────────────────────────────────────</span></span>
-<span><span class="co">#&gt; * checking for file ‘/tmp/Rtmp3w1WfO/remotes1b2353225737/nmfs-ost-nmfspalette-8e0fa0e/DESCRIPTION’ ... OK</span></span>
+<span><span class="co">#&gt; * checking for file ‘/tmp/RtmpXZINjj/remotesa7157289d20f/nmfs-ost-nmfspalette-b2a1e93/DESCRIPTION’ ... OK</span></span>
 <span><span class="co">#&gt; * preparing ‘nmfspalette’:</span></span>
 <span><span class="co">#&gt; * checking DESCRIPTION meta-information ... OK</span></span>
 <span><span class="co">#&gt; * checking for LF line-endings in source and make files and shell scripts</span></span>
@@ -211,6 +211,17 @@
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"regional"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/displ_regional_web-1.png"><!-- --></p>
+<div class="section level5">
+<h5 id="alternative-regional-palettes">Alternative regional palettes<a class="anchor" aria-label="anchor" href="#alternative-regional-palettes"></a>
+</h5>
+<p>For some with color vision deficiency (C.V.D.), it may be difficult to discern the colors in the regional palette. We have provided two alternative regional palettes, below. <em>Note</em>: The alternative palette 1 contains colors that are entirely within the NMFS brand color set; alternative palette 2 does not. However, the colors in alternative palette 1 may be less distinguishable for all types of color perception as opposed to alternative palette 2.</p>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"regional_alt1"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_regional_web2-1.png"><!-- --></p>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"regional_alt2"</span>, <span class="fl">6</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/displ_regional_web3-1.png"><!-- --></p>
+</div>
 </div>
 </div>
 <div class="section level3">
@@ -225,21 +236,21 @@
 <div class="section level4">
 <h4 id="background-sky">background sky<a class="anchor" aria-label="anchor" href="#background-sky"></a>
 </h4>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"background_sky"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/displ_background_sky-1.png"><!-- --></p>
 </div>
 <div class="section level4">
 <h4 id="background-green">background green<a class="anchor" aria-label="anchor" href="#background-green"></a>
 </h4>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"background_green"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/displ_background_green-1.png"><!-- --></p>
 </div>
 <div class="section level4">
 <h4 id="background-gray">background gray<a class="anchor" aria-label="anchor" href="#background-gray"></a>
 </h4>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"background_gray"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/displ_background_gray-1.png"><!-- --></p>
 </div>
@@ -248,7 +259,7 @@
 <h3 id="noaa-core-colors-fisheries-version">NOAA core colors (Fisheries version)<a class="anchor" aria-label="anchor" href="#noaa-core-colors-fisheries-version"></a>
 </h3>
 <p>This palette contains 11 colors.</p>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"core"</span>, <span class="fl">11</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/displ_core-1.png"><!-- --></p>
 </div>
@@ -259,28 +270,28 @@
 <div class="section level4">
 <h4 id="alert-red">alert red<a class="anchor" aria-label="anchor" href="#alert-red"></a>
 </h4>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"alert_red"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/displ_alert_red-1.png"><!-- --></p>
 </div>
 <div class="section level4">
 <h4 id="alert-orange">alert orange<a class="anchor" aria-label="anchor" href="#alert-orange"></a>
 </h4>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"alert_orange"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/displ_alert_orange-1.png"><!-- --></p>
 </div>
 <div class="section level4">
 <h4 id="alert-yellow">alert yellow<a class="anchor" aria-label="anchor" href="#alert-yellow"></a>
 </h4>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"alert_yellow"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/displ_alert_yellow-1.png"><!-- --></p>
 </div>
 <div class="section level4">
 <h4 id="alert-green">alert green<a class="anchor" aria-label="anchor" href="#alert-green"></a>
 </h4>
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/display_nmfs_palette.html">display_nmfs_palette</a></span><span class="op">(</span><span class="st">"alert_green"</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/displ_alert_green-1.png"><!-- --></p>
 </div>
@@ -290,7 +301,7 @@
 <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h2>
 <p>In addition to <code>nmfs_palette</code> and <code>display_nmfs_palette</code> to get palettes, you can extract colors by name. Please see the <a href="https://drive.google.com/file/d/1lXHmfGWCj6pI_Dr3C-Dwcnf1pXOIOztp/view?usp=sharing" class="external-link">NOAA Fisheries Branding guide</a> (NOAA internal only) for color names. Here, for most color names, underscores are used in place of spaces. Colors defined before 2023 have no spaces in the color names.</p>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">nmfspalette</span><span class="fu">::</span><span class="fu"><a href="reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"vivid_crustacean"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; vivid_crustacean </span></span>
 <span><span class="co">#&gt;        "#FF8400"</span></span>
@@ -298,14 +309,14 @@
 <span><span class="co">#&gt; processblue </span></span>
 <span><span class="co">#&gt;   "#0085CA"</span></span></code></pre></div>
 <p>To use the palettes with <a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a>, the <code><a href="reference/scale_color_nmfs.html">scale_color_nmfs()</a></code> and <code><a href="reference/scale_fill_nmfs.html">scale_fill_nmfs()</a></code> functions are provided. If no argument is given to <code><a href="reference/scale_color_nmfs.html">scale_color_nmfs()</a></code>, a default (“oceans”) is used:</p>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span><span class="va">iris</span>, <span class="fu">aes</span><span class="op">(</span><span class="va">Sepal.Width</span>, <span class="va">Sepal.Length</span>, color <span class="op">=</span> <span class="va">Species</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span>size <span class="op">=</span> <span class="fl">4</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/scale_color_nmfs.html">scale_color_nmfs</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">p</span></span></code></pre></div>
 <p><img src="reference/figures/default_plot-1.png"><!-- --></p>
 <p><code><a href="reference/scale_fill_nmfs.html">scale_fill_nmfs()</a></code> does not have a default and therefore requires a named argument, this is an example using the “crustacean” palette:</p>
-<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">faithfuld</span>, <span class="fu">aes</span><span class="op">(</span><span class="va">waiting</span>, <span class="va">eruptions</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_raster</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>fill <span class="op">=</span> <span class="va">density</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/scale_fill_nmfs.html">scale_fill_nmfs</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"crustacean"</span>, discrete <span class="op">=</span> <span class="cn">FALSE</span>, reverse <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>

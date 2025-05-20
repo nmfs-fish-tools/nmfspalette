@@ -152,7 +152,7 @@ tutorial by Hannah Weller</a>.</p>
 <h3 id="create-a-function-that-shows-perceptions-of-palettes">Create a function that shows perceptions of palettes<a class="anchor" aria-label="anchor" href="#create-a-function-that-shows-perceptions-of-palettes"></a>
 </h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">show_cvd_pals</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">palette</span><span class="op">)</span><span class="op">{</span></span>
+<code class="sourceCode R"><span><span class="va">show_cvd_pals</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">palette</span><span class="op">)</span> <span class="op">{</span></span>
 <span>  <span class="co"># Convert palette into three palettes approximating how someone with each type of C.V.D. would perceive the original palette</span></span>
 <span></span>
 <span>  <span class="co">## protanopia</span></span>
@@ -161,11 +161,11 @@ tutorial by Hannah Weller</a>.</p>
 <span>  <span class="va">deutan</span> <span class="op">&lt;-</span> <span class="fu">dichromat</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/dichromat/man/dichromat.html" class="external-link">dichromat</a></span><span class="op">(</span><span class="va">palette</span>, type <span class="op">=</span> <span class="st">"deutan"</span><span class="op">)</span></span>
 <span>  <span class="co">## tritanopia</span></span>
 <span>  <span class="va">tritan</span> <span class="op">&lt;-</span> <span class="fu">dichromat</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/dichromat/man/dichromat.html" class="external-link">dichromat</a></span><span class="op">(</span><span class="va">palette</span>, type <span class="op">=</span> <span class="st">"tritan"</span><span class="op">)</span></span>
-<span>  </span>
+<span></span>
 <span>  <span class="co"># Plot the palettes and compare</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/graphics/layout.html" class="external-link">layout</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span>, nrow <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mar <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">4</span><span class="op">)</span><span class="op">)</span></span>
-<span>  </span>
+<span></span>
 <span>  <span class="fu">recolorize</span><span class="fu">::</span><span class="fu"><a href="https://hiweller.github.io/recolorize/reference/plotColorPalette.html" class="external-link">plotColorPalette</a></span><span class="op">(</span><span class="va">palette</span>, main <span class="op">=</span> <span class="st">"Trichromacy ('normal color vision')"</span><span class="op">)</span></span>
 <span>  <span class="fu">recolorize</span><span class="fu">::</span><span class="fu"><a href="https://hiweller.github.io/recolorize/reference/plotColorPalette.html" class="external-link">plotColorPalette</a></span><span class="op">(</span><span class="va">protan</span>, main <span class="op">=</span> <span class="st">"Protanopia"</span><span class="op">)</span></span>
 <span>  <span class="fu">recolorize</span><span class="fu">::</span><span class="fu"><a href="https://hiweller.github.io/recolorize/reference/plotColorPalette.html" class="external-link">plotColorPalette</a></span><span class="op">(</span><span class="va">deutan</span>, main <span class="op">=</span> <span class="st">"Deutanopia"</span><span class="op">)</span></span>
@@ -189,7 +189,7 @@ tutorial by Hannah Weller</a>.</p>
 <span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Show comparisons for each palette</span></span>
-<span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">core_nmfs_pals</span><span class="op">)</span><span class="op">)</span><span class="op">{</span></span>
+<span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">core_nmfs_pals</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">core_nmfs_pals</span><span class="op">)</span><span class="op">[</span><span class="va">i</span><span class="op">]</span>, <span class="st">" palette"</span><span class="op">)</span><span class="op">)</span></span>
 <span>  <span class="fu">show_cvd_pals</span><span class="op">(</span><span class="va">core_nmfs_pals</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="op">}</span></span></code></pre></div>
@@ -220,31 +220,35 @@ deutanopia (3, 5, 6); tritanopia (2, 3, 4).</p>
 </h3>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Option 1: using existing NMFS colors</span></span>
-<span><span class="va">regions_alt1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"#002364"</span>, <span class="co"># "national"</span></span>
-<span>                  <span class="st">"#00797F"</span>, <span class="co"># "westcoast"</span></span>
-<span>                  <span class="st">"#76BC21"</span>, <span class="co"># "ltgreen"</span></span>
-<span>                  <span class="st">"#5761C0"</span>, <span class="co"># "midatlantic"</span></span>
-<span>                  <span class="st">"#DB6015"</span>, <span class="co"># "alaska"</span></span>
-<span>                  <span class="st">"#B71300"</span>  <span class="co"># "pacificislands"</span></span>
-<span>                  <span class="op">)</span></span>
+<span><span class="va">regions_alt1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>  <span class="st">"#002364"</span>, <span class="co"># "national"</span></span>
+<span>  <span class="st">"#00797F"</span>, <span class="co"># "westcoast"</span></span>
+<span>  <span class="st">"#76BC21"</span>, <span class="co"># "ltgreen"</span></span>
+<span>  <span class="st">"#5761C0"</span>, <span class="co"># "midatlantic"</span></span>
+<span>  <span class="st">"#DB6015"</span>, <span class="co"># "alaska"</span></span>
+<span>  <span class="st">"#B71300"</span> <span class="co"># "pacificislands"</span></span>
+<span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Option 2: using some colors outside of the NMFS color set</span></span>
-<span><span class="va">regions_alt2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"#016080"</span>, <span class="co"># new color</span></span>
-<span>                  <span class="st">"#57aeb2"</span>, <span class="co"># new color</span></span>
-<span>                  <span class="st">"#26DC61"</span>, <span class="co"># new color</span></span>
-<span>                  <span class="st">"#8851D0"</span>, <span class="co"># new color</span></span>
-<span>                  <span class="st">"#DB6015"</span>, <span class="co"># "alaska"</span></span>
-<span>                  <span class="st">"#B71300"</span>  <span class="co"># "pacificislands"</span></span>
-<span>                  <span class="op">)</span></span>
+<span><span class="va">regions_alt2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>  <span class="st">"#016080"</span>, <span class="co"># new color</span></span>
+<span>  <span class="st">"#57aeb2"</span>, <span class="co"># new color</span></span>
+<span>  <span class="st">"#26DC61"</span>, <span class="co"># new color</span></span>
+<span>  <span class="st">"#8851D0"</span>, <span class="co"># new color</span></span>
+<span>  <span class="st">"#DB6015"</span>, <span class="co"># "alaska"</span></span>
+<span>  <span class="st">"#B71300"</span> <span class="co"># "pacificislands"</span></span>
+<span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">alt_regional_pals</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>`Alternative regional palette 1` <span class="op">=</span> <span class="va">regions_alt1</span>,</span>
-<span>                          `Alternative regional palette 2` <span class="op">=</span> <span class="va">regions_alt2</span><span class="op">)</span></span></code></pre></div>
+<span><span class="va">alt_regional_pals</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
+<span>  `Alternative regional palette 1` <span class="op">=</span> <span class="va">regions_alt1</span>,</span>
+<span>  `Alternative regional palette 2` <span class="op">=</span> <span class="va">regions_alt2</span></span>
+<span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="show-alternative-palettes">Show alternative palettes<a class="anchor" aria-label="anchor" href="#show-alternative-palettes"></a>
 </h3>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">alt_regional_pals</span><span class="op">)</span><span class="op">)</span><span class="op">{</span></span>
+<code class="sourceCode R"><span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">alt_regional_pals</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">alt_regional_pals</span><span class="op">)</span><span class="op">[</span><span class="va">i</span><span class="op">]</span><span class="op">)</span></span>
 <span>  <span class="fu">show_cvd_pals</span><span class="op">(</span><span class="va">alt_regional_pals</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="op">}</span></span></code></pre></div>
@@ -258,57 +262,71 @@ deutanopia (3, 5, 6); tritanopia (2, 3, 4).</p>
 </h3>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">show_cvd_plots</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">pal</span>,</span>
-<span>                           <span class="va">pal_name</span><span class="op">)</span><span class="op">{</span></span>
-<span>  </span>
+<span>                           <span class="va">pal_name</span><span class="op">)</span> <span class="op">{</span></span>
 <span>  <span class="va">test_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span></span>
-<span>  palette_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1"</span>, <span class="st">"2"</span>, <span class="st">"3"</span>, <span class="st">"4"</span>, <span class="st">"5"</span>, <span class="st">"6"</span>,</span>
-<span>                    <span class="st">"1"</span>, <span class="st">"2"</span>, <span class="st">"3"</span>, <span class="st">"4"</span>, <span class="st">"5"</span>, <span class="st">"6"</span><span class="op">)</span>,</span>
-<span>  y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">4</span>,<span class="fl">5</span>,<span class="fl">6</span>,</span>
-<span>        <span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">4</span>,<span class="fl">5</span>,<span class="fl">6</span>,<span class="fl">7</span><span class="op">)</span></span>
+<span>    palette_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>      <span class="st">"1"</span>, <span class="st">"2"</span>, <span class="st">"3"</span>, <span class="st">"4"</span>, <span class="st">"5"</span>, <span class="st">"6"</span>,</span>
+<span>      <span class="st">"1"</span>, <span class="st">"2"</span>, <span class="st">"3"</span>, <span class="st">"4"</span>, <span class="st">"5"</span>, <span class="st">"6"</span></span>
+<span>    <span class="op">)</span>,</span>
+<span>    y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>      <span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">6</span>,</span>
+<span>      <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span></span>
+<span>    <span class="op">)</span></span>
 <span>  <span class="op">)</span></span>
-<span>  </span>
+<span></span>
 <span>  <span class="va">type</span> <span class="op">&lt;-</span> <span class="st">"Trichromacy ('normal color vision')"</span></span>
-<span>  <span class="va">orig</span> <span class="op">&lt;-</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">test_data</span>,</span>
-<span>          <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">palette_color</span>,</span>
-<span>              y <span class="op">=</span> <span class="va">y</span>,</span>
-<span>              color <span class="op">=</span> <span class="va">palette_color</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
-<span>    <span class="fu">geom_point</span><span class="op">(</span>size <span class="op">=</span> <span class="fl">4</span>,</span>
-<span>               shape <span class="op">=</span> <span class="fl">19</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="va">orig</span> <span class="op">&lt;-</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span></span>
+<span>    data <span class="op">=</span> <span class="va">test_data</span>,</span>
+<span>    <span class="fu">aes</span><span class="op">(</span></span>
+<span>      x <span class="op">=</span> <span class="va">palette_color</span>,</span>
+<span>      y <span class="op">=</span> <span class="va">y</span>,</span>
+<span>      color <span class="op">=</span> <span class="va">palette_color</span></span>
+<span>    <span class="op">)</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu">geom_point</span><span class="op">(</span></span>
+<span>      size <span class="op">=</span> <span class="fl">4</span>,</span>
+<span>      shape <span class="op">=</span> <span class="fl">19</span></span>
+<span>    <span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">geom_line</span><span class="op">(</span>size <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">theme_light</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">theme</span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span> <span class="op">+</span></span>
-<span>    <span class="fu">labs</span><span class="op">(</span>subtitle <span class="op">=</span> <span class="va">type</span>,</span>
-<span>         x <span class="op">=</span> <span class="st">"Palette color"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu">labs</span><span class="op">(</span></span>
+<span>      subtitle <span class="op">=</span> <span class="va">type</span>,</span>
+<span>      x <span class="op">=</span> <span class="st">"Palette color"</span></span>
+<span>    <span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">scale_color_manual</span><span class="op">(</span>values <span class="op">=</span> <span class="va">pal</span><span class="op">)</span></span>
 <span>  <span class="va">orig</span></span>
-<span>  </span>
+<span></span>
 <span>  <span class="va">type</span> <span class="op">&lt;-</span> <span class="st">"Protanopia"</span></span>
 <span>  <span class="va">protan</span> <span class="op">&lt;-</span> <span class="va">orig</span> <span class="op">+</span></span>
 <span>    <span class="fu">labs</span><span class="op">(</span>subtitle <span class="op">=</span> <span class="va">type</span><span class="op">)</span> <span class="op">+</span></span>
-<span>    <span class="fu">scale_color_manual</span><span class="op">(</span>values <span class="op">=</span> <span class="fu">dichromat</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/dichromat/man/dichromat.html" class="external-link">dichromat</a></span><span class="op">(</span><span class="va">pal</span>, type <span class="op">=</span> <span class="st">"protan"</span><span class="op">)</span><span class="op">)</span> </span>
+<span>    <span class="fu">scale_color_manual</span><span class="op">(</span>values <span class="op">=</span> <span class="fu">dichromat</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/dichromat/man/dichromat.html" class="external-link">dichromat</a></span><span class="op">(</span><span class="va">pal</span>, type <span class="op">=</span> <span class="st">"protan"</span><span class="op">)</span><span class="op">)</span></span>
 <span>  <span class="va">protan</span></span>
-<span>  </span>
+<span></span>
 <span>  <span class="va">type</span> <span class="op">&lt;-</span> <span class="st">"Deutanopia"</span></span>
 <span>  <span class="va">deutan</span> <span class="op">&lt;-</span> <span class="va">orig</span> <span class="op">+</span></span>
 <span>    <span class="fu">labs</span><span class="op">(</span>subtitle <span class="op">=</span> <span class="va">type</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">scale_color_manual</span><span class="op">(</span>values <span class="op">=</span> <span class="fu">dichromat</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/dichromat/man/dichromat.html" class="external-link">dichromat</a></span><span class="op">(</span><span class="va">pal</span>, type <span class="op">=</span> <span class="st">"deutan"</span><span class="op">)</span><span class="op">)</span></span>
 <span>  <span class="va">deutan</span></span>
-<span>  </span>
+<span></span>
 <span>  <span class="va">type</span> <span class="op">&lt;-</span> <span class="st">"Tritanopia"</span></span>
 <span>  <span class="va">tritan</span> <span class="op">&lt;-</span> <span class="va">orig</span> <span class="op">+</span></span>
 <span>    <span class="fu">labs</span><span class="op">(</span>subtitle <span class="op">=</span> <span class="va">type</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">scale_color_manual</span><span class="op">(</span>values <span class="op">=</span> <span class="fu">dichromat</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/dichromat/man/dichromat.html" class="external-link">dichromat</a></span><span class="op">(</span><span class="va">pal</span>, type <span class="op">=</span> <span class="st">"tritan"</span><span class="op">)</span><span class="op">)</span></span>
 <span>  <span class="va">tritan</span></span>
-<span>  </span>
+<span></span>
 <span>  <span class="va">four_plots</span> <span class="op">&lt;-</span> <span class="fu">gridExtra</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/gridExtra/man/arrangeGrob.html" class="external-link">grid.arrange</a></span><span class="op">(</span><span class="va">orig</span>, <span class="va">protan</span>, <span class="va">deutan</span>, <span class="va">tritan</span>,</span>
-<span>                          top <span class="op">=</span> <span class="va">pal_name</span><span class="op">)</span></span>
-<span>  </span>
+<span>    top <span class="op">=</span> <span class="va">pal_name</span></span>
+<span>  <span class="op">)</span></span>
+<span></span>
 <span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html" class="external-link">return</a></span><span class="op">(</span><span class="va">four_plots</span><span class="op">)</span></span>
 <span><span class="op">}</span></span>
 <span></span>
-<span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">alt_regional_pals</span><span class="op">)</span><span class="op">)</span><span class="op">{</span></span>
-<span>  <span class="fu">show_cvd_plots</span><span class="op">(</span>pal <span class="op">=</span> <span class="va">alt_regional_pals</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span>,</span>
-<span>                 pal_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">alt_regional_pals</span><span class="op">)</span><span class="op">[</span><span class="va">i</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">alt_regional_pals</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="fu">show_cvd_plots</span><span class="op">(</span></span>
+<span>    pal <span class="op">=</span> <span class="va">alt_regional_pals</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span>,</span>
+<span>    pal_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">alt_regional_pals</span><span class="op">)</span><span class="op">[</span><span class="va">i</span><span class="op">]</span></span>
+<span>  <span class="op">)</span></span>
 <span><span class="op">}</span></span></code></pre></div>
 <p><img src="testing-cvd_files/figure-html/unnamed-chunk-8-1.png" width="672"><img src="testing-cvd_files/figure-html/unnamed-chunk-8-2.png" width="672"></p>
 <p><strong>Conclusion</strong>: For someone with C.V.D., the alternative
