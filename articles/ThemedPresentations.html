@@ -58,14 +58,14 @@
   </a>
 </li>
 <li>
-  <a href="https://github.com/nmfs-fish-tools/nmfspalette/" class="external-link">
+  <a href="https://github.com/nmfs-ost/nmfspalette/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
 
     Source Code
   </a>
 </li>
 <li>
-  <a href="https://github.com/nmfs-fish-tools/nmfspalette/issues/" class="external-link">
+  <a href="https://github.com/nmfs-ost/nmfspalette/issues/" class="external-link">
     <span class="fas fa-question-circle fa-lg"></span>
 
     Issues
@@ -83,12 +83,15 @@
 <li>
       <a href="../articles/ThemedPresentations.html">Theming Presentations</a>
     </li>
+    <li>
+      <a href="../articles/testing-cvd.html">Testing palettes for color vision deficiency</a>
+    </li>
   </ul>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/nmfs-fish-tools/nmfspalette/" class="external-link">
+  <a href="https://github.com/nmfs-ost/nmfspalette/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
 
     Source Code
@@ -111,7 +114,7 @@
                         <h4 data-toc-skip class="author">Christine
 Stawitz</h4>
             
-            <h4 data-toc-skip class="date">2025-05-02</h4>
+            <h4 data-toc-skip class="date">2025-05-20</h4>
       
 
       <div class="hidden name"><code>ThemedPresentations.Rmd</code></div>
@@ -158,9 +161,9 @@ to match NOAA Fisheries theming.</p>
 <span>  link_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"medteal"</span><span class="op">)</span><span class="op">)</span>,</span>
 <span>  text_slide_number_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"lightteal"</span><span class="op">)</span><span class="op">)</span>,</span>
 <span>  code_highlight_color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="fu"><a href="../reference/nmfs_cols.html">nmfs_cols</a></span><span class="op">(</span><span class="st">"medteal"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="op">)</span></span>
-<span><span class="co">#&gt; Warning: Colors that will be used by `theme_xaringan()` need to be in</span></span>
-<span><span class="co">#&gt; hexadecimal format: text_color, header_color</span></span></code></pre></div>
+<span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## Warning: Colors that will be used by `theme_xaringan()` need to be in</span></span>
+<span><span class="co">## hexadecimal format: text_color, header_color</span></span></code></pre>
 </div>
 <div class="section level2">
 <h2 id="font-theming">Font theming<a class="anchor" aria-label="anchor" href="#font-theming"></a>
@@ -175,7 +178,7 @@ arguments need to be wrapped in <code>google_font()</code> or
 Google fonts, search for names on the web to find fonts similar to your
 choice - searching for “Calibri Google font” yielded their equivalent:
 “Carlito”.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">style_xaringan</span><span class="op">(</span></span>
 <span>  header_font_google <span class="op">=</span> <span class="fu">google_font</span><span class="op">(</span><span class="st">"Arimo"</span><span class="op">)</span>,</span>
 <span>  text_font_google <span class="op">=</span> <span class="fu">google_font</span><span class="op">(</span><span class="st">"Carlito"</span>, <span class="st">"300"</span>, <span class="st">"300i"</span><span class="op">)</span>,</span>
@@ -188,7 +191,7 @@ choice - searching for “Calibri Google font” yielded their equivalent:
 <div class="section level2">
 <h2 id="background-images">Background images<a class="anchor" aria-label="anchor" href="#background-images"></a>
 </h2>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Find package directory</span></span>
 <span><span class="va">images_path</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"static"</span>, package <span class="op">=</span> <span class="st">"nmfspalette"</span><span class="op">)</span></span>
 <span></span>
@@ -202,7 +205,7 @@ choice - searching for “Calibri Google font” yielded their equivalent:
 <div class="section level2">
 <h2 id="extra-css">Extra css<a class="anchor" aria-label="anchor" href="#extra-css"></a>
 </h2>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">style_xaringan</span><span class="op">(</span>extra_css <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">".remark-slide-number"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
 <span>  <span class="st">"font-size"</span> <span class="op">=</span> <span class="st">"0.6em"</span>,</span>
 <span>  <span class="st">"font-weight"</span> <span class="op">=</span> <span class="st">"bold"</span>,</span>
