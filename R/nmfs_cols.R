@@ -156,7 +156,14 @@ nmfs_colors <- c(
   "dark_green" = "#365E17",
   "green" = "#4B8320",
   "vivid_green" = "#76BC21",
-  "bright_green" = "#B1DC6B"
+  "bright_green" = "#B1DC6B",
+
+  # alternative regional palette colors
+  # NOTE: these are not in the official NMFS branding guide.
+  "alt_reg_1" = "#016080",
+  "alt_reg_2" = "#57aeb2",
+  "alt_reg_3" = "#26DC61",
+  "alt_reg_4" = "#8851D0"
 )
 
 #' Function to extract nmfs colors as hex codes
@@ -183,6 +190,8 @@ nmfs_palettes <- list(
   `crustacean` = nmfs_cols("bright_crustacean", "ltorange", "alaska", "dark_crustacean"),
   `coral` = nmfs_cols("bright_coral", "vivid_coral", "pacificislands", "dark_coral"),
   `regional` = nmfs_cols("national", "westcoast", "southeast", "midatlantic", "alaska", "pacificislands"),
+  `regional_alt1` = nmfs_cols("national", "westcoast", "ltgreen", "midatlantic", "alaska", "pacificislands"),
+  `regional_alt2` = nmfs_cols("alt_reg_1", "alt_reg_2", "alt_reg_3", "alt_reg_4", "alaska", "pacificislands"),
   `complement_teal` = nmfs_cols("dark_teal", "fisheries_teal", "waves", "pale_teal"),
   `complement_seagrass` = nmfs_cols("dark_seagrass", "seagrass", "vivid_seagrass", "bright_seagrass"),
   `complement_urchin` = nmfs_cols("dark_urchin", "urchin", "vivid_urchin", "bright_urchin"),

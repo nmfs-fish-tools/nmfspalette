@@ -42,7 +42,7 @@ library(nmfspalette)
 
 ## Contributing
 
-We welcome contributions to `{nmfspalette}`. You are welcome to make any changes you would like on a fork and submit a pull request. For more substantial changes or to create a branch, please contact [sophie.breitbart\@noaa.gov](mailto:sophie.breitbart@noaa.gov){.email} (NOAA Affiliates only). We ask that all contributors adhere to The NOAA Fisheries Integrated Toolbox [code of conduct](https://github.com/nmfs-ost/Resources/blob/main/CONTRIBUTING.md).
+We welcome contributions to `{nmfspalette}`. You are welcome to make any changes you would like on a fork and submit a pull request. For more substantial changes or to create a branch, please contact sophie.breitbart@noaa.gov (NOAA Affiliates only). We ask that all contributors adhere to The NOAA Fisheries Integrated Toolbox [code of conduct](https://github.com/nmfs-ost/Resources/blob/main/CONTRIBUTING.md).
 
 ## Usage
 
@@ -105,6 +105,20 @@ nmfspalette::display_nmfs_palette("coral", 4)
 ```{r, fig.height = 2, displ_regional_web}
 nmfspalette::display_nmfs_palette("regional", 6)
 ```
+
+##### Alternative regional palettes
+
+For some with color vision deficiency (C.V.D.), it may be difficult to discern the colors in the regional palette. We have provided two alternative regional palettes, below.
+*Note*: The alternative palette 1 contains colors that are entirely within the NMFS brand color set; alternative palette 2 does not. However, the colors in alternative palette 1 may be less distinguishable for all types of color perception as opposed to alternative palette 2.
+
+```{r, fig.height = 2, displ_regional_web2}
+nmfspalette::display_nmfs_palette("regional_alt1", 6)
+```
+
+```{r, fig.height = 2, displ_regional_web3}
+nmfspalette::display_nmfs_palette("regional_alt2", 6)
+```
+
 
 ### NOAA Fisheries complementary colors
 
